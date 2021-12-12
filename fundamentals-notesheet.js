@@ -71,15 +71,32 @@ function insideTheseParenthesesIsAn(Argument) {} //ARGUMENTS
 //Arguments are placed inside the parentheses of a function call. 
 //NOTE: NOT ALL functions will require an argument, and some functions take multiple arguments. NOT TO BE CONFUSED WITH PARAMETERS
 
+
 //LETS USE MATH
 function multiplyMe(a, b, c) {
     return a * b * c; // When a return statement is used in a function body, the execution of the function is stopped. If specified, a given value is returned to the function caller. 
 };
+function purchase(itemName, quantity){
+    console.log(`here are my arguments: ${itemName} & ${quantity}`); // "arguments[0], arguments[1]" could replace "${itemName} & ${quantity}" and it would PRINT exactly the same. Parameters are the names. arguments are the values.
+    console.log(arguments);
+}
+
+purchase('bag of chips', 2) // argument[0]: 'bag of chips', argument[1]: 2
+
+function nowAddThisShitUp(){
+    let sum = 0;
+    for(let i = 0; i < arguments.length; i++){
+        sum += arguments[i];
+    }
+    console.log(sum)
+}
+
 
 console.log(multiplyMe(30, 60, 90))
+nowAddThisShitUp(15,30,37,38,45,47)
 
-//Here's  a more advanced example using an arrow function..
-//below is an modification of a coin toss game (heads or tails)
+//Here's  an example using an arrow function..
+//a coin toss game (heads or tails)
 // node more than once and see if it changes..
 
 YeVsDrake = () => {
