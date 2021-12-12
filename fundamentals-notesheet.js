@@ -19,10 +19,15 @@
 
 //---------------------------------------------------------------------
 
+console.log("sanity check") // this - console.log() - is your friend. use him to check your code. and sanity. 
+
 //DATA TYPES ===========================================================
-number: 0 //this can be whole or decimal. positive or negative.
-string: 'zero' // letters, words, sentences..anything inside quotations is a string
-boolean: "true" || "false";
+//number: 0 //this can be whole or decimal. positive or negative.
+//string: 'zero' // letters, words, sentences..anything inside quotations is a string
+//boolean: "true" || "false";
+//null: // no value
+//undefined:
+
 
 
 //VARIABLES
@@ -31,12 +36,12 @@ boolean: "true" || "false";
 //In JS, variables can be defined using var, const, and let - then giving the variable a unique name. 
 // For example:
 
-const vibes = 'its lit'
-var goodMusic = 'a vibe'
-var goodMusic = 'good times' //because we used var, the variable can later receive a new value. 
+const vibes = 'oh its lit den'
+var goodMusic = 'issa vibe'
+var goodMusic = 'good shit' //because we used var, the variable can later receive a new value. 
 //NOTE: this is also true for let, but NOT const
 console.log(vibes) //PRINTS: 'its lit'
-console.log(goodMusic) //PRINTS: 'good times'
+console.log(goodMusic) //PRINTS: 'good shit'
 
 
 //--or--
@@ -64,7 +69,7 @@ function fightClub(shh) {} ///Here I am calling a function "fightClub", with an 
 function insideTheseParenthesesIsAn(Argument) {} //ARGUMENTS
 //An argument is extra information given to a function that tell it how to run. 
 //Arguments are placed inside the parentheses of a function call. 
-//NOTE: NOT ALL functions will require an argument, and some functions take multiple arguments
+//NOTE: NOT ALL functions will require an argument, and some functions take multiple arguments. NOT TO BE CONFUSED WITH PARAMETERS
 
 //LETS USE MATH
 function multiplyMe(a, b, c) {
@@ -140,7 +145,7 @@ if (lemons !== 'rotten') {
 };
 
 
-//LOGICAL OPERATORS: ==========================================================
+//LOGICAL OPERATORS: =================================== IF/ ELSE =============================
 
 // "===", "!==", ">", "<" 
 
