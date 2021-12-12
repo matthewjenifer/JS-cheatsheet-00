@@ -15,6 +15,7 @@
 //NESTED ARRAYS
 //WHILE-LOOPS
 //OBJECTS
+//CONSTRUCTORS
 
 //---------------------------------------------------------------------
 
@@ -267,3 +268,48 @@ var horror = {
 }; // "psycho" and "nightmareOnElm" are both PROPERTIES of the OBJECT named horror. both have strings as values.
 
 console.log(horror.psycho) // DOT NOTATION is used to access a property of an object. see: objectName.propertyName 
+
+
+//CONSTRUCTORS ==============================================================
+//A constructor is a special method for assigning properties to any object. These are automatically called when creating an object.
+
+class Car {
+
+    constructor(make, model, year, color){
+        this.make = make; 
+        this.model = model;
+        this.year = year;
+        this.color = color;
+    }
+
+    drive(){
+        console.log("You drive the", this.model);
+    }
+    brake(){
+        console.log("You step on the", this.model+"'s brakes");
+    }
+    whatIsThis(){ 
+        return this; // "this." references the parent object. ie: THIS<constructor<CAR(class)
+    }
+
+}
+
+
+
+let car1 = new Car("Ford", "Mustang", 2022, "Red");
+let car2 = new Car("Chevy", "Corvette", 2021, "Blue");
+console.log(car1.whatIsThis())
+
+console.log(car1.make);
+console.log(car1.model);
+console.log(car1.year);
+console.log(car1.color);
+
+console.log(car2.make);
+console.log(car2.model);
+console.log(car2.year);
+console.log(car2.color);
+
+car1.drive();
+car2.brake();
+
