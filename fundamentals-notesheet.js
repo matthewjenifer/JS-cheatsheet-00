@@ -264,6 +264,6 @@ while (i < 20) {
 var horror = {
     psycho: 'oh God mother..blood!',
     nightmareOnElm: '1,2 freddy coming for you',
-}; // "pyscho" and "nightmareOnElm" are both PROPERTIES of the OBJECT named horror. both have strings as values.
+}; // "psycho" and "nightmareOnElm" are both PROPERTIES of the OBJECT named horror. both have strings as values.
 
 console.log(horror.psycho) // DOT NOTATION is used to access a property of an object. see: objectName.propertyName 
