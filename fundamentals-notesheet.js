@@ -322,11 +322,6 @@ let car1 = new Car("Ford", "Mustang", 2022, "Red");
 let car2 = new Car("Chevy", "Corvette", 2021, "Blue");
 console.log(car1.whatIsThis())
 
-console.log(car1.make);
-console.log(car1.model);
-console.log(car1.year);
-console.log(car1.color);
-
 console.log(car2.make);
 console.log(car2.model);
 console.log(car2.year);
