@@ -8,6 +8,7 @@
 //ARRAYS
 //INDEXING
 //IF-STATEMENTS
+//TERNARY OPERATORS
 //LOGICAL OPERATORS
 //CONDITIONALS
 //FOR-OR LOOPS
@@ -38,17 +39,25 @@ console.log("sanity check") // this - console.log() - is your friend. use him to
 
 const vibes = 'oh its lit den'
 var goodMusic = 'issa vibe'
-var goodMusic = 'good shit' //because we used var, the variable can later receive a new value. 
-//NOTE: this is also true for let, but NOT const
+var goodMusic = 'good shit' //because we used var(global scope), the variable can later receive a new value. 
+//NOTE: this is also true for let(local scope), but NOT const
 console.log(vibes) //PRINTS: 'its lit'
 console.log(goodMusic) //PRINTS: 'good shit'
-
 
 //--or--
 
 var y = 9;
 var x = y;
 console.log(x) //PRINTS: 9
+
+//SCOPE: In coding, scope determines where a variable can be used. Variables can have either global or local scope. A global variable can be used throughout the code. Local variables can only be used inside the block where it's declared. - For Ex:
+
+var x = 17;
+if (x > 10) {
+    let x = 10;
+}
+console.log(x); //PRINTS: 17. The original value is printed, due to the scope of x when it is declared "10"
+
 
 
 //...OH BTW: WHAT ARE CODE BLOCKS?
@@ -101,11 +110,12 @@ nowAddThisShitUp(15,30,37,38,45,47)
 
 YeVsDrake = () => {
     //if this ^^^ wasn't an arrow function, you would've wrote: function YeOrDrake() { }
-    // The Math.floor() function returns the largest integer less than or equal to a given number.
-    return (Math.floor(Math.random() * 2) == 0 ? 'YE' : 'DRAKE');
-    // The Math.random() function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) with approximately uniform distribution over that range — which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.
+    return (Math.floor(Math.random() * 2) == 0 ? 'YE' : 'DRAKE'); //This uses a TERNARY OPERATOR..
+   
+    //NOTE: The Math.floor() function returns the largest integer less than or equal to a given number.
+   
+    //NOTE: The Math.random() function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) with approximately uniform distribution over that range — which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.
 };
-
 
 console.log(YeVsDrake())
 
@@ -161,10 +171,21 @@ if (lemons !== 'rotten') {
     }
 };
 
+//TERNARY OPERATORS ======================================
+//Ternary operators are a way to write IF/ELSE statements with less code ("?" = "if" , ":" = "else"). It begins with the test, then after the "?" symbol, is the code that runs if the test is true. The last part, after the ":" symbol, is the code that runs if the test is false. -  For Ex:
+
+1 === 1 ? console.log('all is right in the world') : console.log('something is horribly wrong'); 
+
+//THIS ^^^^^ is another way of writing the code seen below:
+
+if (1 === 1) {
+   console.log('all is right in the world');
+} else {
+   console.log('something is horribly wrong');
+}
 
 //LOGICAL OPERATORS: =================================== IF/ ELSE =============================
 
-// "===", "!==", ">", "<" 
 
 // "||" is the "or" operator: the or operator combines two statements into a true OR false value. 
 //This means the total value will become true as long as one side of the operator registers as true. 
@@ -176,6 +197,8 @@ if (2 === 4 || 1 + 1 === 2) {
 } else {
     console.log('both are false.')
 };
+
+// "===", "!==", ">", "<"
 
 // ANOTHER OPERATOR is "&&": "&&" combines two statements into a true or false value. 
 //In other words, both sides of && must be true in order for the code to run. 
@@ -247,7 +270,7 @@ console.log('Its the 10 Crack Commandments:');
 for (var i = 1; i < 10; i = i + 1) {
     //(i < 10;) The second part is a test that determines if the loop should keep repeating: is i(1) less than ten? then continue..again, is i(2) less than 10? then continue..and so on...
     console.log(i);
-    // (i = i + 1) And the third part updates the looping variable each time the loop repeats. *NOTE* (i = i++) === indefinitely 
+    // (i = i + 1) And the third part updates the looping variable each time the loop repeats. *NOTE* (i = i++) === (i = i + 1)
 };
 
 
