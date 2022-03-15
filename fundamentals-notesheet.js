@@ -1,5 +1,5 @@
 //THIS SHEET COVERS A FEW TOPICS: Use "Ctrl-F" to jump ahead by topic..feel free to suggest simpler code/ways-to ..correct logical blind-spots..I intend to update this
-//--------------------------------------------------------------------
+//----------------------------------------------------------------------------------
 
 //DATA TYPES
 //VARIABLES
@@ -7,18 +7,23 @@
 //FUNCTIONS
 //ARRAYS
 //INDEXING
-//IF-STATEMENTS
+//IF-STATEMENTS 
 //TERNARY OPERATORS
 //LOGICAL OPERATORS
-//CONDITIONALS
-//FOR-OR LOOPS
+//CONDITIONALS 
+//FOR-OR LOOPS 
 //CLASSIC FOR LOOPS
 //NESTED ARRAYS
 //WHILE-LOOPS
 //OBJECTS
-//CONSTRUCTORS
+//CLASS CONSTRUCTORS
 
-//---------------------------------------------------------------------
+//(VSCODE HACKS):
+// Hold "alt" while clicking multiple places to delete/re-write several instances
+// You can select one and  use ctrl + D to select the next ones
+
+
+// -----------------------------------------------------------------------------------
 
 console.log("sanity check") // this - console.log() - is your friend. use him to check your code. and sanity. 
 
@@ -34,19 +39,21 @@ console.log("sanity check") // this - console.log() - is your friend. use him to
 //VARIABLES
 
 //A variable allows you to reference the same piece of information multiple times. 
-//In JS, variables can be defined using var, const, and let - then giving the variable a unique name. 
+//In JS, variables can be defined using var, const, and let - then giving the variable a unique name. | JavaScript is sensitive, case sensitive that is. So variables like lastName and lastname are not the same.
 // For example:
 
 const vibes = 'oh its lit den'
 var goodMusic = 'issa vibe'
 var goodMusic = 'good shit' //because we used var(global scope), the variable can later receive a new value. 
 //NOTE: this is also true for let(local scope), but NOT const
+var goodmusic = 'dope' 
 console.log(vibes) //PRINTS: 'its lit'
 console.log(goodMusic) //PRINTS: 'good shit'
+console.log(goodmusic) //PRINTS: 'dope'
 
 //--or--
 
-var y = 9;
+var y = 9; // Every written "instruction" is called a statement. JavaScript statements are separated by semicolons.
 var x = y;
 console.log(x) //PRINTS: 9
 
@@ -73,7 +80,9 @@ const forRealTho = {
 //All functions end with "()". Functions can take ARGUMENTS* to give the computer extra information. 
 //For example:
 
-function fightClub(shh) {} ///Here I am calling a function "fightClub", with an argument called: "shh". 
+function fightClub(shh) {
+    console.log('..the first rule of fight club..')
+} ///Here I am calling a function "fightClub", with an argument called: "shh". 
 
 function insideTheseParenthesesIsAn(Argument) {} //ARGUMENTS
 //An argument is extra information given to a function that tell it how to run. 
@@ -85,24 +94,25 @@ function insideTheseParenthesesIsAn(Argument) {} //ARGUMENTS
 function multiplyMe(a, b, c) {
     return a * b * c; // When a return statement is used in a function body, the execution of the function is stopped. If specified, a given value is returned to the function caller. 
 };
-function purchase(itemName, quantity){
+console.log(multiplyMe(3, 6, 9))
+
+function purchase(itemName, quantity) {
     console.log(`here are my arguments: ${itemName} & ${quantity}`); // "arguments[0], arguments[1]" could replace "${itemName} & ${quantity}" and it would PRINT exactly the same. Parameters are the names. arguments are the values.
     console.log(arguments);
 }
 
 purchase('bag of chips', 2) // argument[0]: 'bag of chips', argument[1]: 2
 
-function nowAddThisShitUp(){
+function nowAddThisShitUp() {
     let sum = 0;
-    for(let i = 0; i < arguments.length; i++){
+    for (let i = 0; i < arguments.length; i++) {
         sum += arguments[i];
     }
     console.log(sum)
 }
 
 
-console.log(multiplyMe(30, 60, 90))
-nowAddThisShitUp(15,30,37,38,45,47)
+nowAddThisShitUp(15, 30, 37, 38, 45, 47)
 
 //Here's  an example using an arrow function..
 //a coin toss game (heads or tails)
@@ -111,9 +121,9 @@ nowAddThisShitUp(15,30,37,38,45,47)
 YeVsDrake = () => {
     //if this ^^^ wasn't an arrow function, you would've wrote: function YeOrDrake() { }
     return (Math.floor(Math.random() * 2) == 0 ? 'YE' : 'DRAKE'); //This uses a TERNARY OPERATOR..
-   
+
     //NOTE: The Math.floor() function returns the largest integer less than or equal to a given number.
-   
+
     //NOTE: The Math.random() function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) with approximately uniform distribution over that range — which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.
 };
 
@@ -174,14 +184,14 @@ if (lemons !== 'rotten') {
 //TERNARY OPERATORS ======================================
 //Ternary operators are a way to write IF/ELSE statements with less code ("?" = "if" , ":" = "else"). It begins with the test, then after the "?" symbol, is the code that runs if the test is true. The last part, after the ":" symbol, is the code that runs if the test is false. -  For Ex:
 
-1 === 1 ? console.log('all is right in the world') : console.log('something is horribly wrong'); 
+1 === 1 ? console.log('all is right in the world') : console.log('something is horribly wrong');
 
 //THIS ^^^^^ is another way of writing the code seen below:
 
 if (1 === 1) {
-   console.log('all is right in the world');
+    console.log('all is right in the world');
 } else {
-   console.log('something is horribly wrong');
+    console.log('something is horribly wrong');
 }
 
 //LOGICAL OPERATORS: =================================== IF/ ELSE =============================
@@ -313,33 +323,52 @@ var horror = {
 }; // "psycho" and "nightmareOnElm" are both PROPERTIES of the OBJECT named horror. both have strings as values.
 
 console.log(horror.psycho) // DOT NOTATION is used to access a property of an object. see: objectName.propertyName 
+console.log(typeof horror)//PRINTS element type (object)
 
+//CLASS OBJECTS
+class Person {
+
+    greet(otherPerson) { //methods are (basically) functions when they exist within a CLass. (methods and functions are two sides of the same coin)
+        console.log(`Hi ${otherPerson}`)
+    }
+    walk() {
+        console.log('The weather is nice!')
+    }
+}
+
+//we are instantiating - meaning we are creating a new unique object based on the parameters assigned
+const ann = new Person()
+
+ann.greet('Pat') //PRINT: Hi Pat
+//the greet method will access the NEW Person() ann and return 'Hi ____" from within {} 
+ann.walk() //PRINT: The weather is nice! 
+
+//------------------------------------------------------------------------------------------
 
 //CONSTRUCTORS ==============================================================
 //A constructor is a special method for assigning properties to any object. These are automatically called when creating an object.
-
 class Car {
 
-    constructor(make, model, year, color){
-        this.make = make; 
+    constructor(make, model, year, color) { //inside the parentheses we pass the properties of the parent object as parameters. 
+        this.make = make; // The "this" keyword is used to attach the class with each constructor parameter.
         this.model = model;
         this.year = year;
         this.color = color;
     }
 
-    drive(){
+    drive() {
         console.log("You drive the", this.model);
     }
-    brake(){
-        console.log("You step on the", this.model+"'s brakes");
+    brake() {
+        console.log("You step on the", this.model + "'s brakes");
     }
-    whatIsThis(){ 
+    whatIsThis() {
         return this; // "this." references the parent object. ie: THIS<constructor<CAR(class)
     }
 
 }
 
-
+//------------------------------------------------------------------------------------------
 
 let car1 = new Car("Ford", "Mustang", 2022, "Red");
 let car2 = new Car("Chevy", "Corvette", 2021, "Blue");
@@ -352,4 +381,13 @@ console.log(car2.color);
 
 car1.drive();
 car2.brake();
+//------------------------------------------------------------------------------------------
 
+let person = {
+    firstName: 'Igor',
+    intro: function () {
+        console.log(`Hello I'm ${this.firstName}! I am ${this.age}`)
+    },
+    age: 999
+}
+person.intro()
