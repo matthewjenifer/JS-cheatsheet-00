@@ -261,12 +261,17 @@ console.log(fruits.join('_'))
 console.log(fruits.splice(2))
 
 // Add strawberry, kiwi, and grapes at the end
-
+fruits.push('strawberry', 'kiwi', 'grapes');
+console.log(fruits)
 // Remove apple
+console.log(fruits.shift(0))
 
 // Add mango at the beginning of the array
-
+fruits.unshift('mango')
+console.log(fruits)
 // Add lemon, and grapefruit between mango and banana
+fruits.splice(1, 0, 'lemon', 'grapefruit')
+console.log(fruits)
 
 // Remove banana and strawberry
 
