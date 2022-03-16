@@ -274,23 +274,34 @@ fruits.splice(1, 0, 'lemon', 'grapefruit')
 console.log(fruits)
 
 // Remove banana and strawberry
-
+console.log(fruits.splice(3,2))
+console.log(fruits)
 // Create a new array called exoticFruits. Add 3 exotic fruits inside of this array. Create a new variable and assign it with the value of concatinating fruits array and exoticFruits array.
+var exoticFruits = ['passion fruit', 'dragon fruit', 'papaya'];
+var fruitSalad = fruits.concat(exoticFruits);
+console.log(fruitSalad)
 
 // Return the last two exotic fruits without altering the newly concatenated array.
-
+console.log(fruitSalad.splice(6,2))
 // Lane said she needs help re-organizing her items in alphabetical order.
 const laneIsMessy = ["pencil", "paper", "notebook", "computer"]
+console.log(laneIsMessy.sort())
 
 // Brandon accidentally stepped into the mirror world and needs help reversing his words.
 const mirrorMirrorOnTheWall = ["all", "them", "of", "greatest", "the", "is", "who"]
+console.log(mirrorMirrorOnTheWall.reverse())
 
-// David said he''s trying to stop cursing so much, and he wants to start with his text messages. Help him write code to eliminate the badword in his sentences. Must return a string sentence. Must use filter(). :) 
-
-const davidNoBadWords = "I am so tired of this badword food. I do not want this badword badword food."
+// David said he''s trying to stop cursing so much, and he wants to start with his text messages. Help him write code to eliminate the bad word in his sentences. Must return a string sentence. Must use filter(). :) 
+const davidNoBadWords = "I am so tired of this badword food. I do not want this badword badword food.".replace('badword','').replace('badword','').replace('badword','')
+console.log(davidNoBadWords)
 
 // Man math is hard. Let's make our computer do it for us. Use reduce() to find the total of the numbers in numbersToAddUp
 const numbersToAddUp = [99, 5677, 232, 84, 2, 231]
+const initialValue = 0;
+const addedNumbers = numbersToAddUp.reduce(
+  (previousValue, currentValue) => previousValue + currentValue,
+  initialValue);
+console.log(addedNumbers)
 
 // Create a variable and assign a value of a copied array using the spread operator
 
