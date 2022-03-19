@@ -14,9 +14,9 @@ console.log(sum); // prints: 16?
 function main() {
     var distance = parseInt(readLine(), 10);
     var milesPerHr = 40;
-    var inHours = distance / milesPerHr;
-    var inMinutes = inHours * 60;
-    console.log(inMinutes);   
+    var distanceInHours = distance / milesPerHr;
+    var distanceInMinutes = distanceInHours * 60;
+    console.log(distanceInMinutes);   
 }
 
 

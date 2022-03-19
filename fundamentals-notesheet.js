@@ -21,7 +21,7 @@ var trueOrFalse = false;
 
 // the backslash (\) escape character comes to the rescue when you need to put quotes within strings (and a bunch of other situations) by transforming special characters into string characters: (\').
 var howToQuoteMidString = 'Backslashes help you \'\'code\'\' quotation marks';
-document.write(howToQuoteMidString) // will print on screen
+//document.write(howToQuoteMidString) // will print on screen
 console.log(howToQuoteMidString) // will print in console
 
 //other examples: (\n) = new line (think C++)..(\t) = tab.. https://www.tutorialspoint.com/escape-sequences-in-java
@@ -178,7 +178,8 @@ var lemons = 'ripe';
 var numOfLemons = 6;
 if (lemons !== 'rotten') {
     if (numOfLemons > 5) {
-        alert('Lets make lemonade!') // alert() will generate a popup alert box that contains the information inside the parentheses.
+        console.log('Lets make lemonade!')
+        // alert('Lets make lemonade!') // alert() will generate a popup alert box that contains the information inside the parentheses.
     }
 };
 
@@ -186,11 +187,14 @@ if (lemons !== 'rotten') {
 
 var funkIsOnThe = 3;
 if (funkIsOnThe == 1) {
-    document.write("<h1>YabaDabaDoozieBaBa</h1>");
+    console.log("<h1>YabaDabaDoozieBaBa</h1>");
+   //document.write("<h1>YabaDabaDoozieBaBa</h1>");
 } else if (funkIsOnThe == 2) {
-    document.write("<h2>Gadda Goo Gah</h2>");
+    console.log("<h2>Gadda Goo Gah</h2>");
+    //document.write("<h2>Gadda Goo Gah</h2>");
 } else { // The final else statement "ends" the else if statement and should be always written after the if and else if statements.
-    document.write("<h2>Oh Word</h2>");
+    console.log("<h2>Oh Word</h2>");
+    //document.write("<h2>Oh Word</h2>");
 }
 
 //TERNARY OPERATORS ======================================
@@ -315,6 +319,11 @@ for (var firstNumber of [
     }
 };
 
+for(i=0;i<5;i++){
+    if(i==5) {
+        break;
+    } console.log(i+ "broke here")
+}
 
 //WHILE-LOOPS
 // As long as the condition is true, code is executed..
@@ -328,6 +337,13 @@ while (i < 20) {
     console.log('Wake me when we get to 10')
     i++
 };
+
+//DO WHILE LOOPS
+var j = 11;
+do {
+    console.log(j);
+    j++;
+} while(j<=17); // This loop will execute the code block once, before checking if the condition is true, and then it will repeat the loop as long as the condition is true. | The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested.
 
 
 //OBJECTS =============================================================
@@ -424,12 +440,17 @@ switch(martin) { // we can use the switch statement to perform different actions
 var x = 3;
 switch (x) {
     case 1:
-    document.write(x);
+    console.log(x);
     break;
     case 2:
-    document.write(x+2);
+    console.log(x+2);
     break;
     default:
-    document.write(x+5); // prints: 8
+    console.log(x+5); // prints: 8
 }
 
+for(l =0; l <= 10; l++) {
+    if(l == 5) {
+        continue; // Unlike the break statement, the continue statement breaks only one iteration in the loop, and continues with the next iteration.
+    } console.log(l + " skipping 5") // The value 5 is not printed in your console, because continue skips that iteration of the loop.
+}
