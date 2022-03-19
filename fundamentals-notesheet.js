@@ -1,49 +1,50 @@
-//THIS SHEET COVERS A FEW TOPICS: Use "Ctrl-F" to jump ahead by topic..feel free to suggest simpler code/ways-to ..correct logical blind-spots..I intend to update this
-//----------------------------------------------------------------------------------
 
-//DATA TYPES
-//VARIABLES
-//CODE BLOCKS
-//FUNCTIONS
-//ARRAYS
-//INDEXING
-//IF-STATEMENTS 
-//TERNARY OPERATORS
-//LOGICAL OPERATORS
-//CONDITIONALS 
-//FOR-OR LOOPS 
-//CLASSIC FOR LOOPS
-//NESTED ARRAYS
-//WHILE-LOOPS
-//OBJECTS
-//CLASS CONSTRUCTORS
-
-//(VSCODE HACKS):
 // Hold "alt" while clicking multiple places to delete/re-write several instances
 // You can select one and  use ctrl + D to select the next ones
+
+//what is eval? https://www.youtube.com/watch?v=M7VVxOEhi8E
 
 
 // -----------------------------------------------------------------------------------
 
 console.log("sanity check") // this - console.log() - is your friend. use him to check your code. and sanity. 
 
-//DATA TYPES ===========================================================
+//DATA TYPES: The term data type refers to the types of values a program can work with. The sky's the limit with JavaScript variables, which can hold a bunch of different data types–numbers, strings, arrays, you name it.
+
 //number: 0 //this can be whole or decimal. positive or negative.
-//string: 'zero' // letters, words, sentences..anything inside quotations is a string
 //boolean: "true" || "false";
+var booleansAre = true;
+var trueOrFalse = false;
 //null: // no value
 //undefined:
+//string: 'zero' // letters, words, sentences..anything inside quotations is a string
 
+// the backslash (\) escape character comes to the rescue when you need to put quotes within strings (and a bunch of other situations) by transforming special characters into string characters: (\').
+var howToQuoteMidString = 'Backslashes help you \'\'code\'\' quotation marks';
+document.write(howToQuoteMidString) // will print on screen
+console.log(howToQuoteMidString) // will print in console
 
+//other examples: (\n) = new line (think C++)..(\t) = tab.. https://www.tutorialspoint.com/escape-sequences-in-java
 
-//VARIABLES
+var modulusOperator = 26 % 6; // The Modulus (%) operator returns the division remainder (what’s left over). In JavaScript, we can use the modulus operator on integers AND on floating point numbers.
+console.log(modulusOperator) // prints: 2
+
+// Increment ++: The increment operator increases the numeric value of its operand by 1. When placed before the operand, it’ll return the incremented value. When placed after it, it’ll return the original value and then increments the operand. | Decrement --: The decrement operator decreases the numeric value of its operand by 1. When placed before the operand, it’ll return the decremented value. When placed after the operand, it’ll return the original value and then decrements the operand.
+
+var g = 0;
+var f = 9;
+var g = f++; // note: at this line of code, the value of both g and f are redefined (see output)
+console.log(g); //prints: 9
+console.log(f); //prints: 10
+
+//VARIABLES: Variables are containers for storing data values. The value of a variable can change throughout the program. Declaring a variable is as simple as using the keyword var.JavaScript is sensitive, case sensitive that is. So variables like lastName and lastname are not the same.
 
 //A variable allows you to reference the same piece of information multiple times. 
 //In JS, variables can be defined using var, const, and let - then giving the variable a unique name. | JavaScript is sensitive, case sensitive that is. So variables like lastName and lastname are not the same.
 // For example:
 
 const vibes = 'oh its lit den'
-var goodMusic = 'issa vibe'
+var goodMusic = 'issa vibe' //The first character of a variable name must be a letter, underscore (_), or a dollar sign ($) (Subsequent characters can be letters, digits, underscores, or dollar signs). The first character of a variable name can’t be a number. Variable names can’t include a mathematical or logical operator in their name. For instance, 2*something or this+that. Variable names can’t contain spaces. You’re not allowed to use any special symbols, like my#num, num%, etc. JavaScript is a hyphen free zone.
 var goodMusic = 'good shit' //because we used var(global scope), the variable can later receive a new value. 
 //NOTE: this is also true for let(local scope), but NOT const
 var goodmusic = 'dope' 
@@ -164,7 +165,7 @@ console.log(soSimpleAs)
 //For Ex:
 
 var aNickel = 'found a penny.';
-if (aNickel === 5) { // "===": is an OPERATOR, not to be confused with "="... essentially it asks the computer if these two elements are equal each other
+if (aNickel === 5) { // "===": is a COMPARISON OPERATOR, not to be confused with "="... essentially it asks the computer if these two elements are equal each other. You get either true or false. Here a string is being compared to a number  | https://github.com/matthewjenifer/explaining-equals-to-me/blob/main/equalsVsStrictEquals.js
     console.log('Hey look, a nickel!')
 }
 if (aNickel !== 5) { // "!==": is the same as saying "doesn't equal"..more on that later..
@@ -177,9 +178,20 @@ var lemons = 'ripe';
 var numOfLemons = 6;
 if (lemons !== 'rotten') {
     if (numOfLemons > 5) {
-        console.log('Lets make lemonade!')
+        alert('Lets make lemonade!') // alert() will generate a popup alert box that contains the information inside the parentheses.
     }
 };
+
+//ELSE-IF: The else if statement is useful because it lets us specify a new condition if the first condition is false.
+
+var funkIsOnThe = 3;
+if (funkIsOnThe == 1) {
+    document.write("<h1>YabaDabaDoozieBaBa</h1>");
+} else if (funkIsOnThe == 2) {
+    document.write("<h2>Gadda Goo Gah</h2>");
+} else { // The final else statement "ends" the else if statement and should be always written after the if and else if statements.
+    document.write("<h2>Oh Word</h2>");
+}
 
 //TERNARY OPERATORS ======================================
 //Ternary operators are a way to write IF/ELSE statements with less code ("?" = "if" , ":" = "else"). It begins with the test, then after the "?" symbol, is the code that runs if the test is true. The last part, after the ":" symbol, is the code that runs if the test is false. -  For Ex:
@@ -227,7 +239,7 @@ if (1 < 2 && 5 > 0) { // both sides are true, so console will PRINT Facts.
 let age = 17
 
 if (age >= 18) {
-    console.log("access granted: age" + age)
+    console.log("access granted: age " + age) // Concatenation: We can use concatenation (represented by the + sign) to build strings made up of multiple smaller strings, or by joining strings with other types.
 } else {
     console.log("access denied: age " + age)
 };
@@ -391,3 +403,28 @@ let person = {
     age: 999
 }
 person.intro()
+
+var martin = 2;
+switch(martin) { // we can use the switch statement to perform different actions based on different conditions. The switch expression is evaluated once. The value of the expression is compared with the values of each case, and if there’s a match, that block of code is executed. You can have as many case statements as you need.
+        case 1:
+        console.log("...n'if I tell you a duck could pull a truck, thenshutupnhookthasuckaup");
+        break; // The break keyword essentially switches the switch statement off. Breaking out of the switch block stops the execution of more code and case testing inside the block. Usually, a break should be put in each case statement.
+        case 2:
+        console.log("Jerome we aint tryna be hangin wit you either man..");
+        break;
+        default:
+        console.log("Yeah come on Jerome we aint got all night, now look you gonna help us or what? ...");
+}
+
+var x = 3;
+switch (x) {
+    case 1:
+    document.write(x);
+    break;
+    case 2:
+    document.write(x+2);
+    break;
+    default:
+    document.write(x+5); // prints: 8
+}
+
