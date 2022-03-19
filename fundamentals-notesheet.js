@@ -290,11 +290,16 @@ function shuffle(array) {
 console.log('Its the 10 Crack Commandments:');
 //(for var i = 1;) is the first part. This happens before the loop starts and defines a looping variable. Like saying: i (at the beginning of this loop) starts with: 1 
 for (var i = 1; i < 10; i = i + 1) {
-    //(i < 10;) The second part is a test that determines if the loop should keep repeating: is i(1) less than ten? then continue..again, is i(2) less than 10? then continue..and so on...
+    //(i < 10;) The second part is the condition for running the loop- a test that determines if the loop should keep repeating: is i(1) less than ten? then continue..again, is i(2) less than 10? then continue..and so on...
     console.log(i);
     // (i = i + 1) And the third part updates the looping variable each time the loop repeats. *NOTE* (i = i++) === (i = i + 1)
 };
 
+var j = 0; // since j is declared here, you wont need the first statement in the loop below. Statement 2 is optional, but only if you put a break inside the loop. Otherwise, the loop will never end!
+for(;j<10;) { // Statement 3 is also optional, but only if you increment your values inside the loop. See below:
+    console.log(j);
+    j++;
+}
 
 // ANOTHER LOOP EXAMPLE WITH NESTED ARRAYS...
 
@@ -412,7 +417,7 @@ switch(martin) { // we can use the switch statement to perform different actions
         case 2:
         console.log("Jerome we aint tryna be hangin wit you either man..");
         break;
-        default:
+        default: // Often there will be no match, but we still need the program to output something...for this we use the default keyword, which specifies the code to run if there’s no case match. The default block can be omitted, if there is no need to handle the case when no match is found.
         console.log("Yeah come on Jerome we aint got all night, now look you gonna help us or what? ...");
 }
 
