@@ -78,21 +78,24 @@ const forRealTho = {
 //FUNCTIONS ============================================================
 
 //A function tells a computer to do a certain thing. 
-//All functions end with "()". Functions can take ARGUMENTS* to give the computer extra information. 
-//For example:
+
+//All functions end with "()". Functions can take ARGUMENTS* to give the computer extra information. Code reuse: Define the code once, and use it many times. Use the same code many times with different arguments, to produce different results. A JavaScript function is executed when "something" invokes, or calls, it. To call a function, start with the name of the function, then follow it with the arguments in parentheses. You can also call a function using this syntax: myFunction.call(). The difference is that when calling in this way, you're passing the 'this' keyword to a function. You'll learn about it later.
+
+//To define a JavaScript function, use the function keyword, followed by a name, followed by a set of parentheses (). The code to be executed by the function is placed inside curly brackets {}. function name(){}. Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). Once the function is defined, JavaScript allows you to call it as many times as you want to. 
 
 function fightClub(shh) {
     console.log('..the first rule of fight club..')
 } ///Here I am calling a function "fightClub", with an argument called: "shh". 
 
-function insideTheseParenthesesIsAn(Argument) {} //ARGUMENTS
+function insideTheseParenthesesIsAn(Argument) {} //ARGUMENTS/PARAMETERS
+
 //An argument is extra information given to a function that tell it how to run. 
 //Arguments are placed inside the parentheses of a function call. 
 //NOTE: NOT ALL functions will require an argument, and some functions take multiple arguments. NOT TO BE CONFUSED WITH PARAMETERS
 
 
 //LETS USE MATH
-function multiplyMe(a, b, c) {
+function multiplyMe(a, b, c) { // You can define multiple parameters for a function by comma-separating them.
     return a * b * c; // When a return statement is used in a function body, the execution of the function is stopped. If specified, a given value is returned to the function caller. 
 };
 console.log(multiplyMe(3, 6, 9))
@@ -350,7 +353,7 @@ do {
 //An object stores multiple values that have property (or key) names. 
 //This allows them to be easily accessed later in the code.
 
-var horror = {
+var horror = { // Using Object Initializers: Spaces and line breaks are not important. An object definition can span multiple lines.
     psycho: 'oh God mother..blood!',
     nightmareOnElm: '1,2 freddy coming for you',
 }; // "psycho" and "nightmareOnElm" are both PROPERTIES of the OBJECT named horror. both have strings as values.
@@ -358,9 +361,10 @@ var horror = {
 console.log(horror.psycho) // DOT NOTATION is used to access a property of an object. see: objectName.propertyName 
 console.log(typeof horror)//PRINTS element type (object)
 
+
 //CLASS OBJECTS
 class Person {
-
+    
     greet(otherPerson) { //methods are (basically) functions when they exist within a CLass. (methods and functions are two sides of the same coin)
         console.log(`Hi ${otherPerson}`)
     }
@@ -372,6 +376,8 @@ class Person {
 //we are instantiating - meaning we are creating a new unique object based on the parameters assigned
 const ann = new Person()
 
+//OBJECT METHODS: An object method is a property that contains a function definition: objectName.methodName(). In "console.log()" The "log()" function is actually a method of the "console" object. Methods are functions that are stored as object properties.
+
 ann.greet('Pat') //PRINT: Hi Pat
 //the greet method will access the NEW Person() ann and return 'Hi ____" from within {} 
 ann.walk() //PRINT: The weather is nice! 
@@ -379,11 +385,11 @@ ann.walk() //PRINT: The weather is nice!
 //------------------------------------------------------------------------------------------
 
 //CONSTRUCTORS ==============================================================
-//A constructor is a special method for assigning properties to any object. These are automatically called when creating an object.
+//A constructor is a special method for assigning properties to any object. These are automatically called when creating an object. This allows you to create only a single object. Sometimes, we need to set an "object type" that can be used to create a number of objects of a single type. The standard way to create an "object type" is to use an object constructor function.
 class Car {
 
     constructor(make, model, year, color) { //inside the parentheses we pass the properties of the parent object as parameters. 
-        this.make = make; // The "this" keyword is used to attach the class with each constructor parameter.
+        this.make = make; // The "this" keyword is used to attach the class with each constructor parameter. Note that this is not a variable. It is a keyword, and its value cannot be changed. 
         this.model = model;
         this.year = year;
         this.color = color;
@@ -401,13 +407,11 @@ class Car {
 
 }
 
-//------------------------------------------------------------------------------------------
-
-let car1 = new Car("Ford", "Mustang", 2022, "Red");
+let car1 = new Car("Ford", "Mustang", 2022, "Red"); //Once you have an object constructor, you can use the new keyword to create new objects of the same type.
 let car2 = new Car("Chevy", "Corvette", 2021, "Blue");
 console.log(car1.whatIsThis())
 
-console.log(car2.make);
+console.log(car2.make); // Access the object's properties by using the dot syntax, as you did before.
 console.log(car2.model);
 console.log(car2.year);
 console.log(car2.color);

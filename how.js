@@ -38,4 +38,20 @@ function main() {
     }
     console.log(i);
 }
+
+// Create a function called convert, which takes two parameters: the amount to convert, and the rate, and returns the resulting amount. The code to take the parameters as input and call the function is already present in the Playground.
+
+function main() {
+    var amount = parseFloat(readLine(), 10);
+    var rate = parseFloat(readLine(), 10);
     
+    console.log(convert(amount, rate));
+}
+
+// Create the function to make the code work.
+
+function  convert(amount,rate){
+    let cvt = amount * rate;
+    return cvt;
+    
+}
