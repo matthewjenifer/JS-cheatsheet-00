@@ -1,7 +1,20 @@
-* {
+body {
     background-color: teal;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: white;
+}
+
+button {
+    color: grey;
+    cursor: pointer;
+}
+
+#demo2 {
+    cursor: pointer;
+}
+
+#entrypoint {
+    cursor: pointer;
 }

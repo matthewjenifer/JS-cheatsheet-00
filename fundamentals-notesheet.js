@@ -509,6 +509,10 @@ console.log(day); //prints: the current date and time
 var entry = document.getElementById("entrypoint"); // All HTML elements are objects. And as we know every object has properties and methods. The document object has methods that allow you to select the desired HTML element.
 entry.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem nostrum, aliquid molestiae quos, omnis nam mollitia nisi ex, voluptatem minus totam magnam! Cupiditate dignissimos optio, similique hic non repellendus."; // document.body.innerHTML = "Accessing innerHTML"; // As "body" is an element of the DOM, we can access it using the document object and change the content of the innerHTML property. The innerHTML property can be used on almost all HTML elements to change its content.
 
+function changeColor(obj) {
+    obj.style.color = "Peru";
+}
+
 var secondInsert = document.getElementsByClassName("demo"); // The getElementsByClassName() method returns a collection of all elements in the document with the specified class name.
 for (var i = 0; i < secondInsert.length; i++) {
     secondInsert[i].innerHTML = "------------------------------------------------------------------------------------------------";
@@ -529,12 +533,17 @@ for (var i = 0; i < secondInsert.length; i++) {
 // CHANGING ATTRIBUTES 
 
 var pic = document.getElementById("myimg"); // Once you have selected the elements you want to work with, you can change their attributes. As we have seen in the previous lessons, we can change the text content of an element using the innerHTML property. Similarly, we can change the attributes of elements. Practically all attributes of an element can be changed using JavaScript.
-pic.src = "https://tinyurl.com/ya5cklfr";
+pic.src = "https://tinyurl.com/y8r87l52";
 
 // CHANGING STYLES  
 
 var entry2 = document.getElementById("entrypoint");
 entry2.style.color = "white"; // The style of HTML elements can also be changed using JavaScript. All style attributes can be accessed using the style object of the element. 
+
+    // document.getElementById("myBtn").onClick = changeBackgroundColor;
+    // function changeBackgroundColor() {
+    //     document.querySelector('body').style.background = "MediumOrchid";
+    // }
 
 // CREATING ELEMENTS
 
