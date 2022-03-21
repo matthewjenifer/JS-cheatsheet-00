@@ -39,9 +39,9 @@ console.log(f); //prints: 10
 
 //VARIABLES: Variables are containers for storing data values. The value of a variable can change throughout the program. Declaring a variable is as simple as using the keyword var.JavaScript is sensitive, case sensitive that is. So variables like lastName and lastname are not the same.
 
-//A variable allows you to reference the same piece of information multiple times. 
-//In JS, variables can be defined using var, const, and let - then giving the variable a unique name. | JavaScript is sensitive, case sensitive that is. So variables like lastName and lastname are not the same.
-// For example:
+    //A variable allows you to reference the same piece of information multiple times. 
+    //In JS, variables can be defined using var, const, and let - then giving the variable a unique name. | JavaScript is sensitive, case sensitive that is. So variables like lastName and lastname are not the same.
+    // For example:
 
 const vibes = 'oh its lit den'
 var goodMusic = 'issa vibe' //The first character of a variable name must be a letter, underscore (_), or a dollar sign ($) (Subsequent characters can be letters, digits, underscores, or dollar signs). The first character of a variable name can’t be a number. Variable names can’t include a mathematical or logical operator in their name. For instance, 2*something or this+that. Variable names can’t contain spaces. You’re not allowed to use any special symbols, like my#num, num%, etc. JavaScript is a hyphen free zone.
@@ -79,9 +79,9 @@ const forRealTho = {
 
 //A function tells a computer to do a certain thing. 
 
-//All functions end with "()". Functions can take ARGUMENTS* to give the computer extra information. Code reuse: Define the code once, and use it many times. Use the same code many times with different arguments, to produce different results. A JavaScript function is executed when "something" invokes, or calls, it. To call a function, start with the name of the function, then follow it with the arguments in parentheses. You can also call a function using this syntax: myFunction.call(). The difference is that when calling in this way, you're passing the 'this' keyword to a function. You'll learn about it later.
+    //All functions end with "()". Functions can take ARGUMENTS* to give the computer extra information. Code reuse: Define the code once, and use it many times. Use the same code many times with different arguments, to produce different results. A JavaScript function is executed when "something" invokes, or calls, it. To call a function, start with the name of the function, then follow it with the arguments in parentheses. You can also call a function using this syntax: myFunction.call(). The difference is that when calling in this way, you're passing the 'this' keyword to a function. You'll learn about it later.
 
-//To define a JavaScript function, use the function keyword, followed by a name, followed by a set of parentheses (). The code to be executed by the function is placed inside curly brackets {}. function name(){}. Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). Once the function is defined, JavaScript allows you to call it as many times as you want to. 
+        //To define a JavaScript function, use the function keyword, followed by a name, followed by a set of parentheses (). The code to be executed by the function is placed inside curly brackets {}. function name(){}. Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). Once the function is defined, JavaScript allows you to call it as many times as you want to. 
 
 function fightClub(shh) {
     console.log('..the first rule of fight club..')
@@ -185,10 +185,10 @@ console.log(soSimpleAs)
 
 //IF-STATEMENTS ============================================================
 
-//If statements allow you to run a specific section of code when a test is true. 
-//The code inside the parentheses "()"" is the test. If the test is true then the code inside the block "{}"" will run. 
-//If the test is not true, then the code inside the block doesn't run. 
-//For Ex:
+    //If statements allow you to run a specific section of code when a test is true. 
+    //The code inside the parentheses "()"" is the test. If the test is true then the code inside the block "{}"" will run. 
+    //If the test is not true, then the code inside the block doesn't run. 
+    //For Ex:
 
 var aNickel = 'found a penny.';
 if (aNickel === 5) { // "===": is a COMPARISON OPERATOR, not to be confused with "="... essentially it asks the computer if these two elements are equal each other. You get either true or false. Here a string is being compared to a number  | https://github.com/matthewjenifer/explaining-equals-to-me/blob/main/equalsVsStrictEquals.js
@@ -211,20 +211,20 @@ if (lemons !== 'rotten') {
 
 //ELSE-IF: The else if statement is useful because it lets us specify a new condition if the first condition is false.
 
-var funkIsOnThe = 3;
+var funkIsOnThe = 2;
 if (funkIsOnThe == 1) {
-    console.log("<h1>YabaDabaDoozieBaBa</h1>");
+    console.log("YabaDabaDoozieBaBa");
    //document.write("<h1>YabaDabaDoozieBaBa</h1>");
 } else if (funkIsOnThe == 2) {
-    console.log("<h2>Gadda Goo Gah</h2>");
+    console.log("Gadda Goo Gah");
     //document.write("<h2>Gadda Goo Gah</h2>");
 } else { // The final else statement "ends" the else if statement and should be always written after the if and else if statements.
-    console.log("<h2>Oh Word</h2>");
+    console.log("Oh Word");
     //document.write("<h2>Oh Word</h2>");
 }
 
 //TERNARY OPERATORS ======================================
-//Ternary operators are a way to write IF/ELSE statements with less code ("?" = "if" , ":" = "else"). It begins with the test, then after the "?" symbol, is the code that runs if the test is true. The last part, after the ":" symbol, is the code that runs if the test is false. -  For Ex:
+    //Ternary operators are a way to write IF/ELSE statements with less code ("?" = "if" , ":" = "else"). It begins with the test, then after the "?" symbol, is the code that runs if the test is true. The last part, after the ":" symbol, is the code that runs if the test is false. -  For Ex:
 
 1 === 1 ? console.log('all is right in the world') : console.log('something is horribly wrong');
 
@@ -238,11 +238,10 @@ if (1 === 1) {
 
 //LOGICAL OPERATORS: =================================== IF/ ELSE =============================
 
-
-// "||" is the "or" operator: the or operator combines two statements into a true OR false value. 
-//This means the total value will become true as long as one side of the operator registers as true. 
-//another way or saying that: the cumulative statement can only become false if both sides of || are false.
-//For Ex:
+    // "||" is the "or" operator: the or operator combines two statements into a true OR false value. 
+    //This means the total value will become true as long as one side of the operator registers as true. 
+    //another way or saying that: the cumulative statement can only become false if both sides of || are false.
+    //For Ex:
 
 if (2 === 4 || 1 + 1 === 2) {
     console.log('one of these is true..')
@@ -277,9 +276,9 @@ if (age >= 18) {
 
 //FOR-OF LOOPS ===================================================================
 
-// A loop repeats any section of code within curly brackets "{}"". 
-//In JS, a for loop goes through each element in an array or string, repeating the code for each element 
-//For Ex:
+    // A loop repeats any section of code within curly brackets "{}"". 
+    //In JS, a for loop goes through each element in an array or string, repeating the code for each element 
+    //For Ex:
 
 var deck = [
     'AoS',
@@ -314,8 +313,8 @@ function shuffle(array) {
 };
 
 //CLASSIC FOR-LOOP
-//In JS, a classic loop repeats the same code inside the block "{}" a specified number of times. 
-//It is defined in three parts: 
+    //In JS, a classic loop repeats the same code inside the block "{}" a specified number of times. 
+    //It is defined in three parts: 
 
 console.log('Its the 10 Crack Commandments:');
 //(for var i = 1;) is the first part. This happens before the loop starts and defines a looping variable. Like saying: i (at the beginning of this loop) starts with: 1 
@@ -373,8 +372,8 @@ do {
 
 
 //OBJECTS =============================================================
-//An object stores multiple values that have property (or key) names. 
-//This allows them to be easily accessed later in the code.
+    //An object stores multiple values that have property (or key) names. 
+    //This allows them to be easily accessed later in the code.
 
 var horror = { // Using Object Initializers: Spaces and line breaks are not important. An object definition can span multiple lines.
     psycho: 'oh God mother..blood!',
@@ -408,7 +407,7 @@ ann.walk() //PRINT: The weather is nice!
 //------------------------------------------------------------------------------------------
 
 //CONSTRUCTORS ==============================================================
-//A constructor is a special method for assigning properties to any object. These are automatically called when creating an object. This allows you to create only a single object. Sometimes, we need to set an "object type" that can be used to create a number of objects of a single type. The standard way to create an "object type" is to use an object constructor function.
+    //A constructor is a special method for assigning properties to any object. These are automatically called when creating an object. This allows you to create only a single object. Sometimes, we need to set an "object type" that can be used to create a number of objects of a single type. The standard way to create an "object type" is to use an object constructor function.
 class Car {
 
     constructor(make, model, year, color) { //inside the parentheses we pass the properties of the parent object as parameters. 
@@ -490,16 +489,64 @@ var day = new Date();
 //     var secs = day.getSeconds();
 //     document.body.innerHTML = ' ' + hours + ':' + mins + ':' + secs;
 // }
-document.write(day); //prints: the current date and time
+console.log(day); //prints: the current date and time
 
 // THE DOM: When you open any webpage in a browser, the HTML of the page is loaded and rendered visually on the screen. To accomplish that, the browser builds the Document Object Model of that page, which is an object oriented model of its logical structure. The DOM of an HTML document can be represented as a nested set of boxes. JavaScript can be used to manipulate the DOM of a page dynamically add, delete and modify elements. 
 
-//DOM TREE: The DOM represents a document as a tree structure. HTML elements become interrelated nodes in a tree. All those nodes in the tree have some kind of relations among each other. Nodes can have child nodes. Nodes on the same tree level are called siblings. For Example:
+    //DOM TREE: The DOM represents a document as a tree structure. HTML elements become interrelated nodes in a tree. All those nodes in the tree have some kind of relations among each other. Nodes can have child nodes. Nodes on the same tree level are called siblings. For Example:
 
-// <html> has two children (<head>, <body>);
-// <head> has one child (<title>) and one parent (<html>);
-// <title> has one parent (<head>) and no children;
-// <body> has two children (<h1> and <a>) and one parent (<html>); 
+            // <html> has two children (<head>, <body>);
+            // <head> has one child (<title>) and one parent (<html>);
+            // <title> has one parent (<head>) and no children;
+            // <body> has two children (<h1> and <a>) and one parent (<html>); 
 
-// It is important to understand the relationships between elements in an HTML document in order to be able to manipulate them with JavaScript.
+    // It is important to understand the relationships between elements in an HTML document in order to be able to manipulate them with JavaScript.
 
+//THE DOCUMENT OBJECT  
+
+//There is a predefined document object in JavaScript, which can be used to access all elements on the DOM. In other words, the document object is the owner (or root) of all objects on your webpage. So, if you want to access objects in an HTML page, you always start with accessing the document object. 
+
+var entry = document.getElementById("entrypoint"); // All HTML elements are objects. And as we know every object has properties and methods. The document object has methods that allow you to select the desired HTML element.
+entry.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem nostrum, aliquid molestiae quos, omnis nam mollitia nisi ex, voluptatem minus totam magnam! Cupiditate dignissimos optio, similique hic non repellendus."; // document.body.innerHTML = "Accessing innerHTML"; // As "body" is an element of the DOM, we can access it using the document object and change the content of the innerHTML property. The innerHTML property can be used on almost all HTML elements to change its content.
+
+var secondInsert = document.getElementsByClassName("demo"); // The getElementsByClassName() method returns a collection of all elements in the document with the specified class name.
+for (var i = 0; i < secondInsert.length; i++) {
+    secondInsert[i].innerHTML = "------------------------------------------------------------------------------------------------";
+}
+
+// WORKING WITH DOM
+
+// Each element in the DOM has a set of properties and methods that provide information about their relationships in the DOM:
+
+    // element.childNodes returns an array of an element's child nodes.
+    // element.firstChild returns the first child node of an element.
+    // element.lastChild returns the last child node of an element.
+    // element.hasChildNodes returns true if an element has any child nodes, otherwise false.
+    // element.nextSibling returns the next node at the same tree level.
+    // element.previousSibling returns the previous node at the same tree level.
+    // element.parentNode returns the parent node of an element.
+
+// CHANGING ATTRIBUTES 
+
+var pic = document.getElementById("myimg"); // Once you have selected the elements you want to work with, you can change their attributes. As we have seen in the previous lessons, we can change the text content of an element using the innerHTML property. Similarly, we can change the attributes of elements. Practically all attributes of an element can be changed using JavaScript.
+pic.src = "https://tinyurl.com/ya5cklfr";
+
+// CHANGING STYLES  
+
+var entry2 = document.getElementById("entrypoint");
+entry2.style.color = "white"; // The style of HTML elements can also be changed using JavaScript. All style attributes can be accessed using the style object of the element. 
+
+// CREATING ELEMENTS
+
+// Use the following methods to create new nodes:
+
+    //element.cloneNode() clones an element and returns the resulting node.
+    // document.createElement(element) creates a new element node.
+    // document.createTextNode(text) creates a new text node.
+
+    // var para = document.createElement("p")
+    // var node = document.createTextNode("Some new text");
+    // para.appendChild(node); // element.appendChild(newNode) adds a new child node to an element as the last child node.
+
+    // var div = document.getElementById("demo2");
+    // div.appendChild(p);
