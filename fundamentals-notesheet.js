@@ -348,7 +348,7 @@ for (var firstNumber of [
 for(i=0;i<5;i++){
     if(i==5) {
         break;
-    } console.log(i+ "broke here")
+    } console.log(i+ " stopping at 5 (before 5, because: index)")
 }
 
 //WHILE-LOOPS
