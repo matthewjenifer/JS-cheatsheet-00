@@ -122,26 +122,49 @@ nowAddThisShitUp(15, 30, 37, 38, 45, 47)
 //a coin toss game (heads or tails)
 // node more than once and see if it changes..
 
-YeVsDrake = () => {
+//The Math Object: The Math object allows you to perform mathematical tasks, and includes several properties. Math has no constructor. There's no need to create a Math object first.
+
+YeVsSkeete = () => {
     //if this ^^^ wasn't an arrow function, you would've wrote: function YeOrDrake() { }
-    return (Math.floor(Math.random() * 2) == 0 ? 'YE' : 'DRAKE'); //This uses a TERNARY OPERATOR..
+    return (Math.floor(Math.random() * 2) == 0 ? 'YE' : 'SKEETE'); //This uses a TERNARY OPERATOR..
 
     //NOTE: The Math.floor() function returns the largest integer less than or equal to a given number.
 
     //NOTE: The Math.random() function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) with approximately uniform distribution over that range — which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.
 };
 
-console.log(YeVsDrake())
+console.log(YeVsSkeete());
 
+console.log(Math.sqrt(81)); //prints: square root - 9
 
 //ARRAYS =============================================================
 
-var thisIsAnArray = ['one', 'two', 'three']; //In JS an array is a list of items. Array can be found inside of regular brackets "[]". The items can be different data types: numbers, strings, and even other arrays. 
+var thisIsAnArray = ['one', 'two', 'three']; //In JS an array is a list of items. Array can be found inside of regular brackets "[]". The items can be different data types: numbers, strings, and even other arrays. This is an example of array literal syntax. The array literal syntax is the recommended way to declare arrays.
 var fourFiveSixIsNestedHere = [1, 2, 3[4, 5, 6]]; //An array inside another array is called a NESTED array.
+
+var choices = new Array("first choice", "second choice", "third choice"); // This syntax declares an array named courses, which stores three values, or elements.
+
+// You can also declare an array, tell it the number of elements it will store, and add the elements later. An array is a special type of object. An array uses numbers to access its elements, and an object uses names to access its members.
+
+var options = new Array(); // JavaScript arrays are dynamic, so you can declare an array and not pass any arguments with the Array() constructor. You can then add the elements dynamically. You can add as many elements as you need to.
+options[0] = "1st option";
+options[1] = "2nd option";
+options[2] = "3rd option";
+console.log(options[2]);
+
+//ASSOCIATIVE ARRAYS: While many programming languages support arrays with named indexes (text instead of numbers), called associative arrays JavaScript does not. However, you still can use the named array syntax, which will produce an object. Now, nephew is treated as an object, instead of being an array. The named indexes "name" and "age" become properties of the person object. Remember that JavaScript does not support arrays with named indexes. In JavaScript, arrays always use numbered indexes. It is better to use an object when you want the index to be a string (text). Use an array when you want the index to be a number. If you use a named index, JavaScript will redefine the array to a standard object.
+
+var nephew = [];
+nephew["name"] = "Elijah";
+nephew["age"] = 13;
+console.log(nephew["name"]);
 
 //INDEXING ============================================================
 
 //In most programing languages(JS included), arrays are indexed starting at 0. - For Ex:
+
+var choice = choices[1];
+console.log(choice); //prints: second choice
 
 var happyMeal = [
     'drink', // index of 0
@@ -154,7 +177,7 @@ var iWantTheToyFirst = happyMeal[3]
 console.log(iWantTheToyFirst) //PRINTS: toy
 
 var J5 = 'ABC'; // STRINGS are indexed similarly.
-var oneTwoThree = J5[3] // NOTE: J5(3) will print "undefined".. 
+var oneTwoThree = J5[3] // NOTE: Attempting to access an index outside of the array, returns the value undefined. J5(3) will print "undefined".. 
 var soSimpleAs = J5[2] //..but an index of 2 will pluck "c" from a string of 3 characters: 'abc'
 console.log(oneTwoThree)
 console.log(soSimpleAs)
@@ -458,3 +481,25 @@ for(l =0; l <= 10; l++) {
         continue; // Unlike the break statement, the continue statement breaks only one iteration in the loop, and continues with the next iteration.
     } console.log(l + " skipping 5") // The value 5 is not printed in your console, because continue skips that iteration of the loop.
 }
+
+// THE DATE OBJECT: The Date object enables us to work with dates. A date consists of a year, a month, a day, an hour, a minute, a second and milliseconds. Using new Date(), lets create a new date object with the current date and time:
+var day = new Date();
+// function printTime(){
+//     var hours = day.getHours();
+//     var mins = day.getMinutes();
+//     var secs = day.getSeconds();
+//     document.body.innerHTML = ' ' + hours + ':' + mins + ':' + secs;
+// }
+document.write(day); //prints: the current date and time
+
+// THE DOM: When you open any webpage in a browser, the HTML of the page is loaded and rendered visually on the screen. To accomplish that, the browser builds the Document Object Model of that page, which is an object oriented model of its logical structure. The DOM of an HTML document can be represented as a nested set of boxes. JavaScript can be used to manipulate the DOM of a page dynamically add, delete and modify elements. 
+
+//DOM TREE: The DOM represents a document as a tree structure. HTML elements become interrelated nodes in a tree. All those nodes in the tree have some kind of relations among each other. Nodes can have child nodes. Nodes on the same tree level are called siblings. For Example:
+
+// <html> has two children (<head>, <body>);
+// <head> has one child (<title>) and one parent (<html>);
+// <title> has one parent (<head>) and no children;
+// <body> has two children (<h1> and <a>) and one parent (<html>); 
+
+// It is important to understand the relationships between elements in an HTML document in order to be able to manipulate them with JavaScript.
+
