@@ -2,11 +2,11 @@
 // https://www.reddit.com/r/maschine/comments/u3043j/chord_mode_cheatsheet_inspired_by_7_super_common/
 
 class Chord {
-    constructor(pad,type,name,tone,numeral,mode,smartkey) {
+    constructor(pad,type,name,quality,numeral,mode,smartkey) {
         this.pad = pad;
         this.type = type;
         this.name = name;
-        this.tone = tone;
+        this.quality = quality;
         this.numeral = numeral;
         this.mode = mode;
         this.smartkey = smartkey;
@@ -20,8 +20,8 @@ class Chord {
     name() {
         console.log("Chord Name:", this.name);
     }
-    tone() {
-        console.log("Maj/Min:", this.tone);
+    quality() {
+        console.log("Maj/Min:", this.quality);
     }
     numeral() {
         console.log("Pos:", this.numeral);
