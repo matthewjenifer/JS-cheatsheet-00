@@ -37,7 +37,7 @@ class Chord {
     }
 };
 
-let chord1maj1 = new Chord(1,'Maj1','C','major', '(I)','Ionioan', 'C'); 
+let chord1maj1 = new Chord(1,'Maj1','C','major', '(I)','Ionian', 'C'); 
 let chord2maj1 = new Chord(2,'Maj1','Emi','minor', '(iii)', 'Phrygian','C#'); // how can we separate the root note from the chord descriptor? Can we insert each scale degree as an independent variable? | ex: , Chord(2,'Maj1', e, 'mi','minor', '(iii)', 'Phrygian','C#'); | cont. below
 let chord3maj1 = new Chord(3,'Maj1','F','major', '(IV)', 'Lydian', 'D');
 let chord4maj1 = new Chord(4,'Maj1','G','major', '(V)', 'Mixolydian','Eb'); // how about the chord position?
