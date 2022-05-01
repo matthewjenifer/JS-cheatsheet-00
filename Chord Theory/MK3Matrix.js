@@ -23,10 +23,10 @@ class Chord {
         console.log("Maj/Min:", this.tone);
     }
     numeral() {
-        console.log("Position:", this.numeral);
+        console.log("Pos:", this.numeral);
     }
     mode() {
-        console.log("Associated-Mode:", this.mode);
+        console.log("Assoc-Mode:", this.mode);
     }
     smartkey() {
         console.log("Smart Key:", this.smartkey);
