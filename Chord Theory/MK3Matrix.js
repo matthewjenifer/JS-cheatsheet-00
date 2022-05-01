@@ -263,7 +263,7 @@ console.log("----")
 // console.log(chord10maj1.padData())
 // console.log(chord11maj1.padData())
 // console.log(chord12maj1.padData())
-console.log("--------------")
+// console.log("--------------")
 // console.log(chord1maj2.padData())
 // console.log(chord2maj2.padData())
 // console.log(chord3maj2.padData())
@@ -472,3 +472,16 @@ let e = 9;
 let fSharp = 10;
 let f = 11;
 let gSharp = 12;
+
+let rootNote = a;
+let secondDeg = bFlat;
+let thirdDeg = b;
+let fourthDeg = cSharp;
+let fifthDeg = c;
+let sixthDeg = dSharp;
+let seventhDeg = d;
+let eighthDeg = eFlat;
+let ninthDeg = e;
+let tenthDeg = fSharp;
+let eleventhDeg = f;
+let twelveDeg = gSharp;
