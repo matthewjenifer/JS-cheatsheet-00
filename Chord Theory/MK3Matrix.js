@@ -27,7 +27,7 @@ class Chord {
         console.log("Position:", this.numeral);
     }
     mode() {
-        console.log("Associated Mode:", this.mode);
+        console.log("Associated-Mode:", this.mode);
     }
     padData() {
         return this;
@@ -242,18 +242,19 @@ let set10p = new Chord('Min8',10,'Abma7#5','augmented');
 let set11p = new Chord('Min8',11,'G7(b9,b13)','major');
 let set12p = new Chord('Min8',12,'Cmi9 ma7','minor');
 
+console.log("--------------")
 console.log(set1a.padData())
-console.log(set2a.padData())
-console.log(set3a.padData())
-console.log(set4a.padData())
-console.log(set5a.padData())
-console.log(set6a.padData())
-console.log(set7a.padData())
-console.log(set8a.padData())
-console.log(set9a.padData())
-console.log(set10a.padData())
-console.log(set11a.padData())
-console.log(set12a.padData())
+// console.log(set2a.padData())
+// console.log(set3a.padData())
+// console.log(set4a.padData())
+// console.log(set5a.padData())
+// console.log(set6a.padData())
+// console.log(set7a.padData())
+// console.log(set8a.padData())
+// console.log(set9a.padData())
+// console.log(set10a.padData())
+// console.log(set11a.padData())
+// console.log(set12a.padData())
 console.log("--------------")
 // console.log(set1b.padData())
 // console.log(set2b.padData())
@@ -450,3 +451,16 @@ console.log("--------------")
 // console.log(set11p.padData())
 // console.log(set12p.padData())
 // console.log("--------------")
+
+let a = 1;
+let bFlat = 2;
+let b = 3;
+let cSharp = 4;
+let c = 5;
+let dSharp = 6;
+let d = 7;
+let eFlat = 8;
+let e = 9;
+let fSharp = 10;
+let f = 11;
+let gSharp = 12;
