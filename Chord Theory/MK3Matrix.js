@@ -245,16 +245,16 @@ let chord10min8 = new Chord(10,'Min8','Abma7#5','augmented');
 let chord11min8 = new Chord(11,'Min8','G7(b9,b13)','major');
 let chord12min8 = new Chord(12,'Min8','Cmi9ma7','minor');
 
-console.log("--------------")
-console.log(chord1maj1.padData())
-console.log("--------------")
-console.log(chord1maj1.type)
-console.log(chord1maj1.name)
-// console.log(chord2maj1.name())
-console.log(chord1maj1.numeral)
-console.log("----")
-console.log(chord1maj1.mode)
-console.log("----")
+console.log("--------------");
+console.log(chord1maj1.padData());
+console.log("--------------");
+console.log(chord1maj1.type);
+console.log(chord1maj1.name);
+// console.log(chord2maj1.name());
+console.log(chord1maj1.numeral);
+console.log("----");
+console.log(chord1maj1.mode);
+console.log("----");
 // console.log(chord2maj1.padData())
 // console.log(chord3maj1.padData())
 // console.log(chord4maj1.padData())
@@ -461,7 +461,7 @@ console.log("----")
 // console.log(chord10min8.padData())
 // console.log(chord11min8.padData())
 // console.log(chord12min8.padData())
-// console.log("--------------")
+// console.log("--------------");
 
 
 let rootNote = 1;
