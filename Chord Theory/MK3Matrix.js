@@ -2,10 +2,11 @@
 // https://www.reddit.com/r/maschine/comments/u3043j/chord_mode_cheatsheet_inspired_by_7_super_common/
 
 class Chord {
-    constructor(pad,type,name,quality,numeral,mode,smartkey) {
+    constructor(pad,type,name,accent, quality,numeral,mode,smartkey) {
         this.pad = pad;
         this.type = type;
         this.name = name;
+        this.accent = accent;
         this.quality = quality;
         this.numeral = numeral;
         this.mode = mode;
@@ -19,6 +20,9 @@ class Chord {
     }
     name() {
         console.log("Chord Name:", this.name);
+    }
+    accent() {
+        console.log("Chord Name:", this.accent);
     }
     quality() {
         console.log("Maj/Min:", this.quality);
@@ -37,20 +41,34 @@ class Chord {
     }
 };
 
-let chord1maj1 = new Chord(1,'Maj1','C','major', '(I)','Ionian', 'C'); 
-let chord2maj1 = new Chord(2,'Maj1','Emi','minor', '(iii)', 'Phrygian','C#'); // how can we separate the root note from the chord descriptor? Can we insert each scale degree as an independent variable? | ex: , Chord(2,'Maj1', e, 'mi','minor', '(iii)', 'Phrygian','C#'); | cont. below
-let chord3maj1 = new Chord(3,'Maj1','F','major', '(IV)', 'Lydian', 'D');
-let chord4maj1 = new Chord(4,'Maj1','G','major', '(V)', 'Mixolydian','Eb'); // how about the chord position?
-let chord5maj1 = new Chord(5,'Maj1','Ami','minor', '(vi)', 'Aeolian','E');
-let chord6maj1 = new Chord(6,'Maj1','Esus4','major','n/a','F'); // ex: Chord(6,'Maj1', e, 'sus4','major','n/a','F');
-let chord7maj1 = new Chord(7,'Maj1','Gadd9','major','n/a','F#');
-let chord8maj1 = new Chord(8,'Maj1','Dmi','minor','(ii)', 'Dorian','G');
-let chord9maj1 = new Chord(9,'Maj1','Fadd9','major','n/a','Ab');
-let chord10maj1 = new Chord(10,'Maj1','F6','major','n/a','A');
-let chord11maj1 = new Chord(11,'Maj1','Gsus4','major','n/a','Bb');
-let chord12maj1 = new Chord(12,'Maj1','G','major','n/a','B');
+let root = 'C';
+let second = 'C#';
+let third = 'D';
+let fourth = 'Eb';
+let fifth = 'E';
+let sixth = 'F';
+let seventh = 'F#';
+let eighth = 'G';
+let ninth = 'G#';
+let tenth = 'A';
+let eleventh = 'Bb';
+let twelve = 'B';
 
-let chord1maj2 = new Chord(1,'Maj2','C','major');
+
+let chord1maj1 = new Chord(1,'Maj1', root ,"-",'major', '(I)','Ionian', 'C'); 
+let chord2maj1 = new Chord(2,'Maj1', fifth ,'-mi','minor', '(iii)', 'Phrygian','C#'); 
+let chord3maj1 = new Chord(3,'Maj1', sixth ,'-','major', '(IV)', 'Lydian', 'D');
+let chord4maj1 = new Chord(4,'Maj1', eighth ,'-','major', '(V)', 'Mixolydian','Eb'); // how about the chord position? independent variable
+let chord5maj1 = new Chord(5,'Maj1', tenth ,'-mi','minor', '(vi)', 'Aeolian','E');
+let chord6maj1 = new Chord(6,'Maj1', fifth ,'-sus4','major','n/a','F'); 
+let chord7maj1 = new Chord(7,'Maj1', eighth ,'-add9','major','n/a','F#');
+let chord8maj1 = new Chord(8,'Maj1', third ,'-mi','minor','(ii)', 'Dorian','G');
+let chord9maj1 = new Chord(9,'Maj1', sixth ,'-add9','major','n/a','Ab');
+let chord10maj1 = new Chord(10,'Maj1', sixth ,'-6','major','n/a','A');
+let chord11maj1 = new Chord(11,'Maj1', eighth ,'-sus4','major','n/a','Bb');
+let chord12maj1 = new Chord(12,'Maj1', eighth ,'-','major','n/a','B');
+
+let chord1maj2 = new Chord(1,'Maj2', root,'major');
 let chord2maj2 = new Chord(2,'Maj2','C/B','major');
 let chord3maj2 = new Chord(3,'Maj2','C/A','major');
 let chord4maj2 = new Chord(4,'Maj2','C/G','major');
@@ -63,7 +81,7 @@ let chord10maj2 = new Chord(10,'Maj2','F','major');
 let chord11maj2 = new Chord(11,'Maj2','Gsus4','major');
 let chord12maj2 = new Chord(12,'Maj2','G6','major');
 
-let chord1maj3 = new Chord(1,'Maj3','C','major');
+let chord1maj3 = new Chord(1,'Maj3', root ,'major');
 let chord2maj3 = new Chord(2,'Maj3','Ami','minor');
 let chord3maj3 = new Chord(3,'Maj3','Fmaj7','major');
 let chord4maj3 = new Chord(4,'Maj3','Gsus4','major');
@@ -76,7 +94,7 @@ let chord10maj3 = new Chord(10,'Maj3','Bbadd9','major');
 let chord11maj3 = new Chord(11,'Maj3','Gsus4','major');
 let chord12maj3 = new Chord(12,'Maj3','Fadd9','major');
 
-let chord1maj4 = new Chord(1,'Maj4','C','major');
+let chord1maj4 = new Chord(1,'Maj4', root ,'major');
 let chord2maj4 = new Chord(2,'Maj4','G','major');
 let chord3maj4 = new Chord(3,'Maj4','Ami','minor');
 let chord4maj4 = new Chord(4,'Maj4','F6','major');
@@ -89,10 +107,10 @@ let chord10maj4 = new Chord(10,'Maj4','Ami7','minor');
 let chord11maj4 = new Chord(11,'Maj4','G/B','major');
 let chord12maj4 = new Chord(12,'Maj4','Dmi/G','minor');
 
-let chord1maj5 = new Chord(1,'Maj5','C','major');
+let chord1maj5 = new Chord(1,'Maj5', root ,'major');
 let chord2maj5 = new Chord(2,'Maj5','D','major');
 let chord3maj5 = new Chord(3,'Maj5','F','major');
-let chord4maj5 = new Chord(4,'Maj5','C','major');
+let chord4maj5 = new Chord(4,'Maj5', root ,'major');
 let chord5maj5 = new Chord(5,'Maj5','Ab','major');
 let chord6maj5 = new Chord(6,'Maj5','Eb','major');
 let chord7maj5 = new Chord(7,'Maj5','Bb','major');
@@ -102,7 +120,7 @@ let chord10maj5 = new Chord(10,'Maj5','Bbadd9','minor');
 let chord11maj5 = new Chord(11,'Maj5','F6','major');
 let chord12maj5 = new Chord(12,'Maj5','Cadd9','major');
 
-let chord1maj6 = new Chord(1,'Maj6','C','major');
+let chord1maj6 = new Chord(1,'Maj6', root ,'major');
 let chord2maj6 = new Chord(2,'Maj6','G','major');
 let chord3maj6 = new Chord(3,'Maj6','Dmi','minor');
 let chord4maj6 = new Chord(4,'Maj6','Ami','minor');
@@ -115,7 +133,7 @@ let chord10maj6 = new Chord(10,'Maj6','Emi7','minor');
 let chord11maj6 = new Chord(11,'Maj6','C/F','major');
 let chord12maj6 = new Chord(12,'Maj6','Gsus4','major');
 
-let chord1maj7 = new Chord(1,'Maj7','C','major');
+let chord1maj7 = new Chord(1,'Maj7', root ,'major');
 let chord2maj7 = new Chord(2,'Maj7','G','major');
 let chord3maj7 = new Chord(3,'Maj7','Ami','minor');
 let chord4maj7 = new Chord(4,'Maj7','Emi','minor');
@@ -247,6 +265,13 @@ let chord12min8 = new Chord(12,'Min8','Cmi9ma7','minor');
 
 console.log("--------------");
 console.log(chord1maj1.padData());
+// console.log(chord2maj1.padData());
+// console.log(chord3maj1.padData());
+// console.log(chord4maj1.padData());
+// console.log(chord5maj1.padData());
+// console.log(chord6maj1.padData());
+// console.log(chord7maj1.padData());
+// console.log(chord8maj1.padData());
 console.log("--------------");
 console.log(chord1maj1.type);
 console.log(chord1maj1.name);
@@ -462,17 +487,3 @@ console.log("----");
 // console.log(chord11min8.padData())
 // console.log(chord12min8.padData())
 // console.log("--------------");
-
-
-let rootNote = 1;
-let secondDeg = 2;
-let thirdDeg = 3;
-let fourthDeg = 4;
-let fifthDeg = 5;
-let sixthDeg = 6;
-let seventhDeg = 7;
-let eighthDeg = 8;
-let ninthDeg = 9;
-let tenthDeg = 10;
-let eleventhDeg = 11;
-let twelveDeg = 12;
