@@ -38,11 +38,11 @@ class Chord {
 };
 
 let chord1maj1 = new Chord(1,'Maj1','C','major', '(I)','Ionioan', 'C'); 
-let chord2maj1 = new Chord(2,'Maj1','Emi','minor', '(iii)', 'Phrygian','C#'); //how can we separate the root note from the chord descriptor? Can we insert each scale degree as an independent variable? | ex: , Chord(2,'Maj1', e, 'mi','minor', '(iii)', 'Phrygian','C#'); | cont. below
+let chord2maj1 = new Chord(2,'Maj1','Emi','minor', '(iii)', 'Phrygian','C#'); // how can we separate the root note from the chord descriptor? Can we insert each scale degree as an independent variable? | ex: , Chord(2,'Maj1', e, 'mi','minor', '(iii)', 'Phrygian','C#'); | cont. below
 let chord3maj1 = new Chord(3,'Maj1','F','major', '(IV)', 'Lydian', 'D');
-let chord4maj1 = new Chord(4,'Maj1','G','major', '(V)', 'Mixolydian','Eb');
+let chord4maj1 = new Chord(4,'Maj1','G','major', '(V)', 'Mixolydian','Eb'); // how about the chord position?
 let chord5maj1 = new Chord(5,'Maj1','Ami','minor', '(vi)', 'Aeolian','E');
-let chord6maj1 = new Chord(6,'Maj1','Esus4','major','n/a','F'); // Chord(6,'Maj1', e, 'sus4','major','n/a','F');
+let chord6maj1 = new Chord(6,'Maj1','Esus4','major','n/a','F'); // ex: Chord(6,'Maj1', e, 'sus4','major','n/a','F');
 let chord7maj1 = new Chord(7,'Maj1','Gadd9','major','n/a','F#');
 let chord8maj1 = new Chord(8,'Maj1','Dmi','minor','(ii)', 'Dorian','G');
 let chord9maj1 = new Chord(9,'Maj1','Fadd9','major','n/a','Ab');
@@ -466,25 +466,25 @@ console.log("----")
 let a = 1;
 let bFlat = 2;
 let b = 3;
-let cSharp = 4;
-let c = 5;
-let dSharp = 6;
-let d = 7;
-let eFlat = 8;
-let e = 9;
+let c = 4;
+let cSharp = 5;
+let d = 6;
+let eFlat = 7;
+let e = 8;
+let f = 9;
 let fSharp = 10;
-let f = 11;
+let g = 11;
 let gSharp = 12;
 
 let rootNote = a;
 let secondDeg = bFlat;
 let thirdDeg = b;
-let fourthDeg = cSharp;
-let fifthDeg = c;
-let sixthDeg = dSharp;
-let seventhDeg = d;
-let eighthDeg = eFlat;
-let ninthDeg = e;
+let fourthDeg = c;
+let fifthDeg = cSharp;
+let sixthDeg = d;
+let seventhDeg = eFlat;
+let eighthDeg = e;
+let ninthDeg = f;
 let tenthDeg = fSharp;
-let eleventhDeg = f;
+let eleventhDeg = g;
 let twelveDeg = gSharp;
