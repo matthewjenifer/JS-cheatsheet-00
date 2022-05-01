@@ -1,3 +1,5 @@
+// https://www.reddit.com/r/maschine/comments/u3043j/chord_mode_cheatsheet_inspired_by_7_super_common/
+
 class Chord {
     constructor(pad,type,name,tone,numeral,mode,smartkey) {
         this.pad = pad;
