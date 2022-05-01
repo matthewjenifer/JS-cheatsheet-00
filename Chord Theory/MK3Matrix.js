@@ -1,3 +1,4 @@
+// https://www.figma.com/file/cSKRnG5LTuPCbYysuOPPww/ChordTheoryApp?node-id=0%3A1
 // https://www.reddit.com/r/maschine/comments/u3043j/chord_mode_cheatsheet_inspired_by_7_super_common/
 
 class Chord {
@@ -26,7 +27,7 @@ class Chord {
         console.log("Pos:", this.numeral);
     }
     mode() {
-        console.log("Assoc-Mode:", this.mode);
+        console.log("Mode:", this.mode);
     }
     smartkey() {
         console.log("Smart Key:", this.smartkey);
