@@ -1,15 +1,12 @@
 class Chord {
-    constructor(smartkey,type,pad,name,tone,numeral,mode) {
-        this.smartkey = smartkey;
+    constructor(type,pad,name,tone,numeral,mode,smartkey) {
         this.type = type;
         this.pad = pad;
         this.name = name;
         this.tone = tone;
         this.numeral = numeral;
         this.mode = mode;
-    }
-    smartkey() {
-        console.log("Smart Key:", this.smartkey);
+        this.smartkey = smartkey;
     }
     type() {
         console.log("Type:", this.type);
@@ -29,23 +26,26 @@ class Chord {
     mode() {
         console.log("Associated-Mode:", this.mode);
     }
+    smartkey() {
+        console.log("Smart Key:", this.smartkey);
+    }
     padData() {
         return this;
     }
 };
 
-let chord1maj1 = new Chord('C','Maj1',1,'C','major', '(I)','Ionioan');
-let chord2maj1 = new Chord('C#','Maj1',2,'Emi','minor', '(iii)', 'Phrygian');
-let chord3maj1 = new Chord('D','Maj1',3,'F','major', '(IV)', 'Lydian');
-let chord4maj1 = new Chord('Eb','Maj1',4,'G','major', '(V)', 'Mixolydian');
-let chord5maj1 = new Chord('E','Maj1',5,'Ami','minor', '(vi)', 'Aeolian');
-let chord6maj1 = new Chord('F','Maj1',6,'Esus4','major');
-let chord7maj1 = new Chord('F#','Maj1',7,'Gadd9','major');
-let chord8maj1 = new Chord('G','Maj1',8,'Dmi','minor','(ii)', 'Dorian');
-let chord9maj1 = new Chord('G#','Maj1',9,'Fadd9','major');
-let chord10maj1 = new Chord('A','Maj1',10,'F6','major');
-let chord11maj1 = new Chord('Bb','Maj1',11,'Gsus4','major');
-let chord12maj1 = new Chord('B','Maj1',12,'G','major');
+let chord1maj1 = new Chord('Maj1',1,'C','major', '(I)','Ionioan', 'C');
+let chord2maj1 = new Chord('Maj1',2,'Emi','minor', '(iii)', 'Phrygian','C#');
+let chord3maj1 = new Chord('Maj1',3,'F','major', '(IV)', 'Lydian', 'D');
+let chord4maj1 = new Chord('Maj1',4,'G','major', '(V)', 'Mixolydian','Eb');
+let chord5maj1 = new Chord('Maj1',5,'Ami','minor', '(vi)', 'Aeolian','E');
+let chord6maj1 = new Chord('Maj1',6,'Esus4','major','n/a','F');
+let chord7maj1 = new Chord('Maj1',7,'Gadd9','major','n/a','F#');
+let chord8maj1 = new Chord('Maj1',8,'Dmi','minor','(ii)', 'Dorian','G');
+let chord9maj1 = new Chord('Maj1',9,'Fadd9','major','n/a','Ab');
+let chord10maj1 = new Chord('Maj1',10,'F6','major','n/a','A');
+let chord11maj1 = new Chord('Maj1',11,'Gsus4','major','n/a','Bb');
+let chord12maj1 = new Chord('Maj1',12,'G','major','n/a','B');
 
 let chord1maj2 = new Chord('Maj2',1,'C','major');
 let chord2maj2 = new Chord('Maj2',2,'C/B','major');
