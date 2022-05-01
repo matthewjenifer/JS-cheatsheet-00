@@ -86,7 +86,7 @@ class Chord {
         console.log("Chord Name:", this.chord);
     }
     type() {
-        console.log("Harmonic Quality:", this.type);
+        console.log("Maj/Min:", this.type);
     }
     padData() {
         return this;
