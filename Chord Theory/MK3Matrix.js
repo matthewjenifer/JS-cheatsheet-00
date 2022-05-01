@@ -125,13 +125,13 @@ let chord10maj7 = new Chord('Maj7',10,'G','major');
 let chord11maj7 = new Chord('Maj7',11,'F/A','major');
 let chord12maj7 = new Chord('Maj7',12,'G7/B','major');
 
-let chord1maj8 = new Chord('Maj8',1,'Cmaj9','major');
+let chord1maj8 = new Chord('Maj8',1,'Cma9','major');
 let chord2maj8 = new Chord('Maj8',2,'C#dim','minor');
 let chord3maj8 = new Chord('Maj8',3,'Dmi9','minor');
 let chord4maj8 = new Chord('Maj8',4,'D#dim7','minor');
 let chord5maj8 = new Chord('Maj8',5,'Emi9','minor');
 let chord6maj8 = new Chord('Maj8',6,'C9#5','augmented');
-let chord7maj8 = new Chord('Maj8',7,'Fmaj7add13','major');
+let chord7maj8 = new Chord('Maj8',7,'Fma7add13','major');
 let chord8maj8 = new Chord('Maj8',8,'Bb9','major');
 let chord9maj8 = new Chord('Maj8',9,'Emi7','minor');
 let chord10maj8 = new Chord('Maj8',10,'A9','major');
@@ -221,7 +221,7 @@ let chord2min7 = new Chord('Min7',2,'Ab9','major');
 let chord3min7 = new Chord('Min7',3,'Cmi11','minor');
 let chord4min7 = new Chord('Min7',4,'C7(#9,b13)','major');
 let chord5min7 = new Chord('Min7',5,'Fmi9','minor');
-let chord6min7 = new Chord('Min7',6,'Eb ma7/F','major');
+let chord6min7 = new Chord('Min7',6,'Ebma7/F','major');
 let chord7min7 = new Chord('Min7',7,'C11','major');
 let chord8min7 = new Chord('Min7',8,'Ami11','minor');
 let chord9min7 = new Chord('Min7',9,'Ab7#11','major');
@@ -240,7 +240,7 @@ let chord8min8 = new Chord('Min8',8,'Bbmi7 b5','minor');
 let chord9min8 = new Chord('Min8',9,'Ami11','minor');
 let chord10min8 = new Chord('Min8',10,'Abma7#5','augmented');
 let chord11min8 = new Chord('Min8',11,'G7(b9,b13)','major');
-let chord12min8 = new Chord('Min8',12,'Cmi9 ma7','minor');
+let chord12min8 = new Chord('Min8',12,'Cmi9ma7','minor');
 
 console.log("--------------")
 console.log(chord1maj1.padData())
