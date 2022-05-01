@@ -1,4 +1,4 @@
-const { chord } = require("tonal");
+// const { chord } = require("tonal");
 
 // var chordsets = {
 //     maj1: {
@@ -125,9 +125,9 @@ let set3c = new Chord('Maj3',3,'Fmaj7','major');
 let set4c = new Chord('Maj3',4,'Gsus4','major');
 let set5c = new Chord('Maj3',5,'Amiadd9','minor');
 let set6c = new Chord('Maj3',6,'F6','major');
-let set7c = new Chord('Maj3',7,'Csus2','major');
+let set7c = new Chord('Maj3',7,'Csus2','minor');
 let set8c = new Chord('Maj3',8,'G','major');
-let set9c = new Chord('Maj3',9,'Dsus2','major');
+let set9c = new Chord('Maj3',9,'Dsus2','minor');
 let set10c = new Chord('Maj3',10,'Bbadd9','major');
 let set11c = new Chord('Maj3',11,'Gsus4','major');
 let set12c = new Chord('Maj3',12,'Fadd9','major');
@@ -189,7 +189,7 @@ let set2h = new Chord('Maj8',2,'C#dim','minor');
 let set3h = new Chord('Maj8',3,'Dmi9','minor');
 let set4h = new Chord('Maj8',4,'D#dim7','minor');
 let set5h = new Chord('Maj8',5,'Emi9','minor');
-let set6h = new Chord('Maj8',6,'C9#5','major');
+let set6h = new Chord('Maj8',6,'C9#5','augmented');
 let set7h = new Chord('Maj8',7,'Fmaj7add13','major');
 let set8h = new Chord('Maj8',8,'Bb9','major');
 let set9h = new Chord('Maj8',9,'Emi7','minor');
@@ -232,7 +232,7 @@ let set6k = new Chord('Min3',6,'Fmi','minor');
 let set7k = new Chord('Min3',7,'Cmi/G','minor');
 let set8k = new Chord('Min3',8,'Gsus4','major');
 let set9k = new Chord('Min3',9,'Cmi','minor');
-let set10k = new Chord('Min3',10,'Cmi#5','minor');
+let set10k = new Chord('Min3',10,'Cmi#5','augmented');
 let set11k = new Chord('Min3',11,'Cmi6','minor');
 let set12k = new Chord('Min3',12,'Cmi7','minor');
 
@@ -297,7 +297,7 @@ let set6p = new Chord('Min8',6,'Ab mi7','major');
 let set7p = new Chord('Min8',7,'Eb mi7','major');
 let set8p = new Chord('Min8',8,'Bb mi7 b5','minor');
 let set9p = new Chord('Min8',9,'Ami11','minor');
-let set10p = new Chord('Min8',10,'Abma7#5','major');
+let set10p = new Chord('Min8',10,'Abma7#5','augmented');
 let set11p = new Chord('Min8',11,'G7(b9,b13)','major');
 let set12p = new Chord('Min8',12,'Cmi9 ma7','major');
 
