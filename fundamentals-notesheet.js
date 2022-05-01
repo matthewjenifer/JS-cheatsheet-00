@@ -1,4 +1,3 @@
-
 // Hold "alt" while clicking multiple places to delete/re-write several instances
 // You can select one and  use ctrl + D to select the next ones
 
@@ -39,15 +38,15 @@ console.log(f); //prints: 10
 
 //VARIABLES: Variables are containers for storing data values. The value of a variable can change throughout the program. Declaring a variable is as simple as using the keyword var.JavaScript is sensitive, case sensitive that is. So variables like lastName and lastname are not the same.
 
-    //A variable allows you to reference the same piece of information multiple times. 
-    //In JS, variables can be defined using var, const, and let - then giving the variable a unique name. | JavaScript is sensitive, case sensitive that is. So variables like lastName and lastname are not the same.
-    // For example:
+//A variable allows you to reference the same piece of information multiple times. 
+//In JS, variables can be defined using var, const, and let - then giving the variable a unique name. | JavaScript is sensitive, case sensitive that is. So variables like lastName and lastname are not the same.
+// For example:
 
 const vibes = 'oh its lit den'
 var goodMusic = 'issa vibe' //The first character of a variable name must be a letter, underscore (_), or a dollar sign ($) (Subsequent characters can be letters, digits, underscores, or dollar signs). The first character of a variable name can’t be a number. Variable names can’t include a mathematical or logical operator in their name. For instance, 2*something or this+that. Variable names can’t contain spaces. You’re not allowed to use any special symbols, like my#num, num%, etc. JavaScript is a hyphen free zone.
 var goodMusic = 'good shit' //because we used var(global scope), the variable can later receive a new value. 
 //NOTE: this is also true for let(local scope), but NOT const
-var goodmusic = 'dope' 
+var goodmusic = 'dope'
 console.log(vibes) //PRINTS: 'its lit'
 console.log(goodMusic) //PRINTS: 'good shit'
 console.log(goodmusic) //PRINTS: 'dope'
@@ -79,9 +78,9 @@ const forRealTho = {
 
 //A function tells a computer to do a certain thing. 
 
-    //All functions end with "()". Functions can take ARGUMENTS* to give the computer extra information. Code reuse: Define the code once, and use it many times. Use the same code many times with different arguments, to produce different results. A JavaScript function is executed when "something" invokes, or calls, it. To call a function, start with the name of the function, then follow it with the arguments in parentheses. You can also call a function using this syntax: myFunction.call(). The difference is that when calling in this way, you're passing the 'this' keyword to a function. You'll learn about it later.
+//All functions end with "()". Functions can take ARGUMENTS* to give the computer extra information. Code reuse: Define the code once, and use it many times. Use the same code many times with different arguments, to produce different results. A JavaScript function is executed when "something" invokes, or calls, it. To call a function, start with the name of the function, then follow it with the arguments in parentheses. You can also call a function using this syntax: myFunction.call(). The difference is that when calling in this way, you're passing the 'this' keyword to a function. You'll learn about it later.
 
-        //To define a JavaScript function, use the function keyword, followed by a name, followed by a set of parentheses (). The code to be executed by the function is placed inside curly brackets {}. function name(){}. Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). Once the function is defined, JavaScript allows you to call it as many times as you want to. 
+//To define a JavaScript function, use the function keyword, followed by a name, followed by a set of parentheses (). The code to be executed by the function is placed inside curly brackets {}. function name(){}. Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). Once the function is defined, JavaScript allows you to call it as many times as you want to. 
 
 function fightClub(shh) {
     console.log('..the first rule of fight club..')
@@ -185,10 +184,10 @@ console.log(soSimpleAs)
 
 //IF-STATEMENTS ============================================================
 
-    //If statements allow you to run a specific section of code when a test is true. 
-    //The code inside the parentheses "()"" is the test. If the test is true then the code inside the block "{}"" will run. 
-    //If the test is not true, then the code inside the block doesn't run. 
-    //For Ex:
+//If statements allow you to run a specific section of code when a test is true. 
+//The code inside the parentheses "()"" is the test. If the test is true then the code inside the block "{}"" will run. 
+//If the test is not true, then the code inside the block doesn't run. 
+//For Ex:
 
 var aNickel = 'found a penny.';
 if (aNickel === 5) { // "===": is a COMPARISON OPERATOR, not to be confused with "="... essentially it asks the computer if these two elements are equal each other. You get either true or false. Here a string is being compared to a number  | https://github.com/matthewjenifer/explaining-equals-to-me/blob/main/equalsVsStrictEquals.js
@@ -214,7 +213,7 @@ if (lemons !== 'rotten') {
 var funkIsOnThe = 2;
 if (funkIsOnThe == 1) {
     console.log("YabaDabaDoozieBaBa");
-   //document.write("<h1>YabaDabaDoozieBaBa</h1>");
+    //document.write("<h1>YabaDabaDoozieBaBa</h1>");
 } else if (funkIsOnThe == 2) {
     console.log("Gadda Goo Gah");
     //document.write("<h2>Gadda Goo Gah</h2>");
@@ -224,7 +223,7 @@ if (funkIsOnThe == 1) {
 }
 
 //TERNARY OPERATORS ======================================
-    //Ternary operators are a way to write IF/ELSE statements with less code ("?" = "if" , ":" = "else"). It begins with the test, then after the "?" symbol, is the code that runs if the test is true. The last part, after the ":" symbol, is the code that runs if the test is false. -  For Ex:
+//Ternary operators are a way to write IF/ELSE statements with less code ("?" = "if" , ":" = "else"). It begins with the test, then after the "?" symbol, is the code that runs if the test is true. The last part, after the ":" symbol, is the code that runs if the test is false. -  For Ex:
 
 1 === 1 ? console.log('all is right in the world') : console.log('something is horribly wrong');
 
@@ -238,10 +237,10 @@ if (1 === 1) {
 
 //LOGICAL OPERATORS: =================================== IF/ ELSE =============================
 
-    // "||" is the "or" operator: the or operator combines two statements into a true OR false value. 
-    //This means the total value will become true as long as one side of the operator registers as true. 
-    //another way or saying that: the cumulative statement can only become false if both sides of || are false.
-    //For Ex:
+// "||" is the "or" operator: the or operator combines two statements into a true OR false value. 
+//This means the total value will become true as long as one side of the operator registers as true. 
+//another way or saying that: the cumulative statement can only become false if both sides of || are false.
+//For Ex:
 
 if (2 === 4 || 1 + 1 === 2) {
     console.log('one of these is true..')
@@ -276,9 +275,9 @@ if (age >= 18) {
 
 //FOR-OF LOOPS ===================================================================
 
-    // A loop repeats any section of code within curly brackets "{}"". 
-    //In JS, a for loop goes through each element in an array or string, repeating the code for each element 
-    //For Ex:
+// A loop repeats any section of code within curly brackets "{}"". 
+//In JS, a for loop goes through each element in an array or string, repeating the code for each element 
+//For Ex:
 
 var deck = [
     'AoS',
@@ -313,8 +312,8 @@ function shuffle(array) {
 };
 
 //CLASSIC FOR-LOOP
-    //In JS, a classic loop repeats the same code inside the block "{}" a specified number of times. 
-    //It is defined in three parts: 
+//In JS, a classic loop repeats the same code inside the block "{}" a specified number of times. 
+//It is defined in three parts: 
 
 console.log('Its the 10 Crack Commandments:');
 //(for var i = 1;) is the first part. This happens before the loop starts and defines a looping variable. Like saying: i (at the beginning of this loop) starts with: 1 
@@ -325,7 +324,7 @@ for (var i = 1; i < 10; i = i + 1) {
 };
 
 var j = 0; // since j is declared here, you wont need the first statement in the loop below. Statement 2 is optional, but only if you put a break inside the loop. Otherwise, the loop will never end!
-for(;j<10;) { // Statement 3 is also optional, but only if you increment your values inside the loop. See below:
+for (; j < 10;) { // Statement 3 is also optional, but only if you increment your values inside the loop. See below:
     console.log(j);
     j++;
 }
@@ -344,10 +343,11 @@ for (var firstNumber of [
     }
 };
 
-for(i=0;i<5;i++){
-    if(i==5) {
+for (i = 0; i < 5; i++) {
+    if (i == 5) {
         break;
-    } console.log(i+ " stopping at 5 (before 5, because: index)")
+    }
+    console.log(i + " stopping at 5 (before 5, because: index)")
 }
 
 //WHILE-LOOPS
@@ -368,12 +368,12 @@ var j = 11;
 do {
     console.log(j);
     j++;
-} while(j<=17); // This loop will execute the code block once, before checking if the condition is true, and then it will repeat the loop as long as the condition is true. | The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested.
+} while (j <= 17); // This loop will execute the code block once, before checking if the condition is true, and then it will repeat the loop as long as the condition is true. | The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested.
 
 
 //OBJECTS =============================================================
-    //An object stores multiple values that have property (or key) names. 
-    //This allows them to be easily accessed later in the code.
+//An object stores multiple values that have property (or key) names. 
+//This allows them to be easily accessed later in the code.
 
 var horror = { // Using Object Initializers: Spaces and line breaks are not important. An object definition can span multiple lines.
     psycho: 'oh God mother..blood!',
@@ -381,12 +381,12 @@ var horror = { // Using Object Initializers: Spaces and line breaks are not impo
 }; // "psycho" and "nightmareOnElm" are both PROPERTIES of the OBJECT named horror. both have strings as values.
 
 console.log(horror.psycho) // DOT NOTATION is used to access a property of an object. see: objectName.propertyName 
-console.log(typeof horror)//PRINTS element type (object)
+console.log(typeof horror) //PRINTS element type (object)
 
 
 //CLASS OBJECTS
 class Person {
-    
+
     greet(otherPerson) { //methods are (basically) functions when they exist within a CLass. (methods and functions are two sides of the same coin)
         console.log(`Hi ${otherPerson}`)
     }
@@ -407,7 +407,7 @@ ann.walk() //PRINT: The weather is nice!
 //------------------------------------------------------------------------------------------
 
 //CONSTRUCTORS ==============================================================
-    //A constructor is a special method for assigning properties to any object. These are automatically called when creating an object. This allows you to create only a single object. Sometimes, we need to set an "object type" that can be used to create a number of objects of a single type. The standard way to create an "object type" is to use an object constructor function.
+//A constructor is a special method for assigning properties to any object. These are automatically called when creating an object. This allows you to create only a single object. Sometimes, we need to set an "object type" that can be used to create a number of objects of a single type. The standard way to create an "object type" is to use an object constructor function.
 class Car {
 
     constructor(make, model, year, color) { //inside the parentheses we pass the properties of the parent object as parameters. 
@@ -452,33 +452,34 @@ let person = {
 person.intro()
 
 var martin = 2;
-switch(martin) { // we can use the switch statement to perform different actions based on different conditions. The switch expression is evaluated once. The value of the expression is compared with the values of each case, and if there’s a match, that block of code is executed. You can have as many case statements as you need.
-        case 1:
+switch (martin) { // we can use the switch statement to perform different actions based on different conditions. The switch expression is evaluated once. The value of the expression is compared with the values of each case, and if there’s a match, that block of code is executed. You can have as many case statements as you need.
+    case 1:
         console.log("...n'if I tell you a duck could pull a truck, thenshutupnhookthasuckaup");
         break; // The break keyword essentially switches the switch statement off. Breaking out of the switch block stops the execution of more code and case testing inside the block. Usually, a break should be put in each case statement.
-        case 2:
+    case 2:
         console.log("Jerome we aint tryna be hangin wit you either man..");
         break;
-        default: // Often there will be no match, but we still need the program to output something...for this we use the default keyword, which specifies the code to run if there’s no case match. The default block can be omitted, if there is no need to handle the case when no match is found.
+    default: // Often there will be no match, but we still need the program to output something...for this we use the default keyword, which specifies the code to run if there’s no case match. The default block can be omitted, if there is no need to handle the case when no match is found.
         console.log("Yeah come on Jerome we aint got all night, now look you gonna help us or what? ...");
 }
 
 var x = 3;
 switch (x) {
     case 1:
-    console.log(x);
-    break;
+        console.log(x);
+        break;
     case 2:
-    console.log(x+2);
-    break;
+        console.log(x + 2);
+        break;
     default:
-    console.log(x+5); // prints: 8
+        console.log(x + 5); // prints: 8
 }
 
-for(l =0; l <= 10; l++) {
-    if(l == 5) {
+for (l = 0; l <= 10; l++) {
+    if (l == 5) {
         continue; // Unlike the break statement, the continue statement breaks only one iteration in the loop, and continues with the next iteration.
-    } console.log(l + " skipping 5") // The value 5 is not printed in your console, because continue skips that iteration of the loop.
+    }
+    console.log(l + " skipping 5") // The value 5 is not printed in your console, because continue skips that iteration of the loop.
 }
 
 // THE DATE OBJECT: The Date object enables us to work with dates. A date consists of a year, a month, a day, an hour, a minute, a second and milliseconds. Using new Date(), lets create a new date object with the current date and time:
@@ -493,14 +494,14 @@ console.log(day); //prints: the current date and time
 
 // THE DOM: When you open any webpage in a browser, the HTML of the page is loaded and rendered visually on the screen. To accomplish that, the browser builds the Document Object Model of that page, which is an object oriented model of its logical structure. The DOM of an HTML document can be represented as a nested set of boxes. JavaScript can be used to manipulate the DOM of a page dynamically add, delete and modify elements. 
 
-    //DOM TREE: The DOM represents a document as a tree structure. HTML elements become interrelated nodes in a tree. All those nodes in the tree have some kind of relations among each other. Nodes can have child nodes. Nodes on the same tree level are called siblings. For Example:
+//DOM TREE: The DOM represents a document as a tree structure. HTML elements become interrelated nodes in a tree. All those nodes in the tree have some kind of relations among each other. Nodes can have child nodes. Nodes on the same tree level are called siblings. For Example:
 
-            // <html> has two children (<head>, <body>);
-            // <head> has one child (<title>) and one parent (<html>);
-            // <title> has one parent (<head>) and no children;
-            // <body> has two children (<h1> and <a>) and one parent (<html>); 
+// <html> has two children (<head>, <body>);
+// <head> has one child (<title>) and one parent (<html>);
+// <title> has one parent (<head>) and no children;
+// <body> has two children (<h1> and <a>) and one parent (<html>); 
 
-    // It is important to understand the relationships between elements in an HTML document in order to be able to manipulate them with JavaScript.
+// It is important to understand the relationships between elements in an HTML document in order to be able to manipulate them with JavaScript.
 
 //THE DOCUMENT OBJECT  
 
@@ -522,13 +523,13 @@ for (var i = 0; i < secondInsert.length; i++) {
 
 // Each element in the DOM has a set of properties and methods that provide information about their relationships in the DOM:
 
-    // element.childNodes returns an array of an element's child nodes.
-    // element.firstChild returns the first child node of an element.
-    // element.lastChild returns the last child node of an element.
-    // element.hasChildNodes returns true if an element has any child nodes, otherwise false.
-    // element.nextSibling returns the next node at the same tree level.
-    // element.previousSibling returns the previous node at the same tree level.
-    // element.parentNode returns the parent node of an element.
+// element.childNodes returns an array of an element's child nodes.
+// element.firstChild returns the first child node of an element.
+// element.lastChild returns the last child node of an element.
+// element.hasChildNodes returns true if an element has any child nodes, otherwise false.
+// element.nextSibling returns the next node at the same tree level.
+// element.previousSibling returns the previous node at the same tree level.
+// element.parentNode returns the parent node of an element.
 
 // CHANGING ATTRIBUTES 
 
@@ -540,22 +541,22 @@ pic.src = "https://tinyurl.com/y8r87l52";
 var entry2 = document.getElementById("entrypoint");
 entry2.style.color = "white"; // The style of HTML elements can also be changed using JavaScript. All style attributes can be accessed using the style object of the element. 
 
-    // document.getElementById("myBtn").onClick = changeBackgroundColor;
-    // function changeBackgroundColor() {
-    //     document.querySelector('body').style.background = "MediumOrchid";
-    // }
+// document.getElementById("myBtn").onClick = changeBackgroundColor;
+// function changeBackgroundColor() {
+//     document.querySelector('body').style.background = "MediumOrchid";
+// }
 
 // CREATING ELEMENTS
 
 // Use the following methods to create new nodes:
 
-    //element.cloneNode() clones an element and returns the resulting node.
-    // document.createElement(element) creates a new element node.
-    // document.createTextNode(text) creates a new text node.
+//element.cloneNode() clones an element and returns the resulting node.
+// document.createElement(element) creates a new element node.
+// document.createTextNode(text) creates a new text node.
 
-    // var para = document.createElement("p")
-    // var node = document.createTextNode("Some new text");
-    // para.appendChild(node); // element.appendChild(newNode) adds a new child node to an element as the last child node.
+// var para = document.createElement("p")
+// var node = document.createTextNode("Some new text");
+// para.appendChild(node); // element.appendChild(newNode) adds a new child node to an element as the last child node.
 
-    // var div = document.getElementById("demo2");
-    // div.appendChild(p);
+// var div = document.getElementById("demo2");
+// div.appendChild(p);
