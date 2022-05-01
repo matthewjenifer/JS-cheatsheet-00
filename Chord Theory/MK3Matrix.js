@@ -248,12 +248,12 @@ let chord12min8 = new Chord(12,'Min8','Cmi9ma7','minor');
 console.log("--------------")
 console.log(chord1maj1.padData())
 console.log("--------------")
-console.log(chord2maj1.type)
-console.log(chord2maj1.pad)
-console.log(chord2maj1.name)
-console.log(chord2maj1.numeral)
+console.log(chord1maj1.type)
+console.log(chord1maj1.name)
+// console.log(chord2maj1.name())
+console.log(chord1maj1.numeral)
 console.log("----")
-console.log(chord2maj1.mode)
+console.log(chord1maj1.mode)
 console.log("----")
 // console.log(chord2maj1.padData())
 // console.log(chord3maj1.padData())
@@ -463,28 +463,16 @@ console.log("----")
 // console.log(chord12min8.padData())
 // console.log("--------------")
 
-let a = 1;
-let bFlat = 2;
-let b = 3;
-let c = 4;
-let cSharp = 5;
-let d = 6;
-let eFlat = 7;
-let e = 8;
-let f = 9;
-let fSharp = 10;
-let g = 11;
-let gSharp = 12;
 
-let rootNote = a;
-let secondDeg = bFlat;
-let thirdDeg = b;
-let fourthDeg = c;
-let fifthDeg = cSharp;
-let sixthDeg = d;
-let seventhDeg = eFlat;
-let eighthDeg = e;
-let ninthDeg = f;
-let tenthDeg = fSharp;
-let eleventhDeg = g;
-let twelveDeg = gSharp;
+let rootNote = 1;
+let secondDeg = 2;
+let thirdDeg = 3;
+let fourthDeg = 4;
+let fifthDeg = 5;
+let sixthDeg = 6;
+let seventhDeg = 7;
+let eighthDeg = 8;
+let ninthDeg = 9;
+let tenthDeg = 10;
+let eleventhDeg = 11;
+let twelveDeg = 12;
