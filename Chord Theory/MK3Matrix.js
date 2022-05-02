@@ -284,14 +284,13 @@ let chord12min8 = new Chord(12,root,'mi9 ma7','minor','-','-','Min8','B');
 console.log("--------------");
 // console.log(chord1maj1.type);
 // console.log(chord1maj1.name);
-// console.log(chord2maj1.name());
 // console.log(chord1maj1.numeral);
 // console.log("----");
 // console.log(chord1maj1.mode);
-console.log("----");
+// console.log("----");
 console.log(chord1maj1.padData());
-// console.log(chord2maj1.padData())
-// console.log(chord3maj1.padData())
+console.log(chord2maj1.padData())
+console.log(chord3maj1.padData())
 // console.log(chord4maj1.padData())
 // console.log(chord5maj1.padData())
 // console.log(chord6maj1.padData())
@@ -483,7 +482,7 @@ console.log(chord1maj1.padData());
 // console.log(chord10min7.padData())
 // console.log(chord11min7.padData())
 // console.log(chord12min7.padData())
-console.log("--------------")
+// console.log("--------------")
 // console.log(chord1min8.padData())
 // console.log(chord2min8.padData())
 // console.log(chord3min8.padData())
@@ -495,5 +494,5 @@ console.log("--------------")
 // console.log(chord9min8.padData())
 // console.log(chord10min8.padData())
 // console.log(chord11min8.padData())
-console.log(chord12min8.padData())
+// console.log(chord12min8.padData())
 // console.log("--------------");
