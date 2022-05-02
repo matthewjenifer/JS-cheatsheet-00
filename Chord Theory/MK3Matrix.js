@@ -1,4 +1,5 @@
 // https://www.figma.com/file/cSKRnG5LTuPCbYysuOPPww/ChordTheoryApp?node-id=0%3A1
+// https://replit.com/@matthewjenifer/JS-scratch#script.js
 // https://www.reddit.com/r/maschine/comments/u3043j/chord_mode_cheatsheet_inspired_by_7_super_common/
 
 class Chord {
