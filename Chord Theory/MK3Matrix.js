@@ -64,10 +64,12 @@ let overFour = `${eighth}${slash}${twelve}`;
 let overFive = `${eighth}${slash}${sixth}`;
 let overSix = `${root}${slash}${fifth}`;
 let overSeven = `${root}${slash}${sixth}`;
+let overEight = `${sixth}${slash}${tenth}`;
 
 let overMinor = `${tenth}${minor}${slash}${fifth}`;
 let overMinorTwo = `${tenth}${minor}${slash}${second}`;
 let overMinorThree = `${third}${minor}${slash}${eighth}`;
+let overMinorFour = `${third}${minor}${slash}${root}`;
 
 
 let chord1maj1 = new Chord(1,'Maj1', root ,"-",'major', '(I)','Ionian', 'C'); 
@@ -149,17 +151,17 @@ let chord11maj6 = new Chord(11,'Maj6',overSeven,'-','major');
 let chord12maj6 = new Chord(12,'Maj6',eighth,'sus4','major');
 
 let chord1maj7 = new Chord(1,'Maj7', root ,'major');
-let chord2maj7 = new Chord(2,'Maj7','G','major');
-let chord3maj7 = new Chord(3,'Maj7','Ami','minor');
-let chord4maj7 = new Chord(4,'Maj7','Emi','minor');
-let chord5maj7 = new Chord(5,'Maj7','F','major');
-let chord6maj7 = new Chord(6,'Maj7','C/E','major');
-let chord7maj7 = new Chord(7,'Maj7','Dmi','minor');
-let chord8maj7 = new Chord(8,'Maj7','Dmi/C','minor');
-let chord9maj7 = new Chord(9,'Maj7','G7/B','major');
-let chord10maj7 = new Chord(10,'Maj7','G','major');
-let chord11maj7 = new Chord(11,'Maj7','F/A','major');
-let chord12maj7 = new Chord(12,'Maj7','G7/B','major');
+let chord2maj7 = new Chord(2,'Maj7',eighth,'-','major');
+let chord3maj7 = new Chord(3,'Maj7',tenth,'mi','minor');
+let chord4maj7 = new Chord(4,'Maj7',fifth,'mi','minor');
+let chord5maj7 = new Chord(5,'Maj7',sixth,'-','major');
+let chord6maj7 = new Chord(6,'Maj7',overSix,'-','major');
+let chord7maj7 = new Chord(7,'Maj7',third,'mi','minor');
+let chord8maj7 = new Chord(8,'Maj7',overMinorFour,'-','minor');
+let chord9maj7 = new Chord(9,'Maj7',eighth,'7/B','major');
+let chord10maj7 = new Chord(10,'Maj7',eighth,'-','major');
+let chord11maj7 = new Chord(11,'Maj7',overEight,'-','major');
+let chord12maj7 = new Chord(12,'Maj7',eighth,'7/B','major');
 
 let chord1maj8 = new Chord(1,'Maj8','Cma9','major');
 let chord2maj8 = new Chord(2,'Maj8','C#dim','minor');
