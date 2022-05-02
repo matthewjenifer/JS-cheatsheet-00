@@ -194,6 +194,7 @@ let tenthDash9 = `${tenth}${dash9}`;
 
 let eleventhMi7Flat5 = `${eleventh}${minor7Flat5}`
 let eleventhAdd9 = `${eleventh}${add9}`;
+let eleventhDash6 = `${eleventh}${dash6}`;
 let eleventhDash7 = `${eleventh}${dash7}`;
 let eleventhDash9 = `${eleventh}${dash9}`;
 
