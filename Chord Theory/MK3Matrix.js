@@ -121,7 +121,7 @@ let chord12maj2 = new Chord(12,eighth,'6','major','-','-','Maj2','B');
 
 let chord1maj3 = new Chord(1,root,'major','-','-','Maj3','C');
 let chord2maj3 = new Chord(2,tenth,'mi','minor','-','-','Maj3','C#');
-let chord3maj3 = new Chord(3,sixth,'maj7','major','-','-','Maj3','D');
+let chord3maj3 = new Chord(3,sixth,'ma7','major','-','-','Maj3','D');
 let chord4maj3 = new Chord(4,eighth,'sus4','major','-','-','Maj3','Eb');
 let chord5maj3 = new Chord(5,tenth,'mi-add9','minor','-','-','Maj3','E');
 let chord6maj3 = new Chord(6,sixth,'6','major','-','-','Maj3','F');
