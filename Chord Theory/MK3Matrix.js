@@ -129,68 +129,76 @@ let rootMin7 = `${root}${minor7}`;
 let rootMin9 = `${root}${minor9}`;
 let rootMinor11 = `${root}${minor11}`;
 let rootMinorSharp5 = `${root}${minorSharp5}`;
-let thirdMinor = `${third}${minor}`;
-let fifthMinor = `${fifth}${minor}`;
-let sixthMinor = `${sixth}${minor}`;
-let sixthMinor9 = `${sixth}${minor9}`;
-let eighthMinor = `${eighth}${minor}`;
-let tenthMinor = `${tenth}${minor}`;
-let thirdMinor7 = `${third}${minor7}`;
-let fourthMinor7 = `${fourth}${minor7}`;
-let fifthMinor7 = `${fifth}${minor7}`;
-let ninthMinor7 = `${ninth}${minor7}`;
-let fifthMinor9 = `${fifth}${minor9}`;
-let tenthMinor7 = `${tenth}${minor7}`;
-let tenthMinor11 = `${tenth}${minor11}`;
-let fourthMajor7 = `${fourth}${major7}`;
-let sixthMajor7 = `${sixth}${major7}`;
-let ninthMajor7 = `${ninth}${major7}`;
-
 let rootSus2 = `${root}${sus2}`;
-let thirdSus2 = `${third}${sus2}`;
 let rootAdd9 = `${root}${add9}`;
 let rootSus9 = `${root}${sus9}`;
 let rootMa9 = `${root}${major9}`;
 let rootSus4 = `${root}${sus4}`;
-let thirdSus4 = `${third}${sus4}`;
-let fifthSus4 = `${fifth}${sus4}`;
-let eighthSus4 = `${eighth}${sus4}`;
-let eighthSevSus4 = `${eighth}${sevSus4}`;
-
-let eighthAdd9 = `${eighth}${add9}`;
-let thirdMi9 = `${third}${minor}${add9}`;
-let tenthMi9 = `${tenth}${minor}${add9}`;
-let sixthAdd9 = `${sixth}${add9}`;
-let ninthAdd9 = `${ninth}${add9}`;
-let eleventhAdd9 = `${eleventh}${add9}`;
-let sixthDash6 = `${sixth}${dash6}`;
-let eighthDash6 = `${eighth}${dash6}`;
-let ninthDash6 = `${ninth}${dash6}`;
-let ninthDash9 = `${ninth}${dash9}`;
-let eighthDash7 = `${eighth}${dash7}`;
-let eighthDash7Sus4 = `${eighth}${dash7}${sus4}`;
-let eleventhDash7 = `${eleventh}${dash7}`;
-let eleventhDash9 = `${eleventh}${dash9}`;
-let tenthDash9 = `${tenth}${dash9}`;
-let twelveSixNine = `${twelve}${sixSlashNine}`
-
-let fourthDim7 = `${fourth}${dim7}`
-let secondDim = `${second}${dim}`
 let root9Sharp5 = `${root}${nineSharp5}`
-let sixthMa7Add13 = `${sixth}${maj7add13}`
-let thirdMinor11 = `${third}${minor11}`
-let thirdMi7Flat5 = `${third}${minor7Flat5}`
-let eleventhMi7Flat5 = `${eleventh}${minor7Flat5}`
-let eighth7Flat9 = `${eighth}${sevenFlat9}`
-let eighthSevSharp9 = `${eighth}${sevenSharp9}`
-let eighthSevFlat9Flat13 = `${eighth}${sevenFlat9Flat13}`
-let eighthAddFlat9 = `${eighth}${addFlat9}`
 let rootMiAdd9 = `${root}${miAdd9}`
 let rootMinor69 = `${root}${minorSixSlashNine}`
 let rootMin9Ma7 = `${root}${minor9ma7}`
 let rootSevNineThirteen = `${root}${seven9SharpThirteen}`
+
+let secondDim = `${second}${dim}`
+
+let thirdMinor = `${third}${minor}`;
+let thirdMinor7 = `${third}${minor7}`;
+let thirdMi9 = `${third}${minor}${add9}`;
+let thirdSus2 = `${third}${sus2}`;
+let thirdSus4 = `${third}${sus4}`;
+let thirdMinor11 = `${third}${minor11}`
+let thirdMi7Flat5 = `${third}${minor7Flat5}`
+
+let fourthMinor7 = `${fourth}${minor7}`;
+let fourthMajor7 = `${fourth}${major7}`;
+let fourthDim7 = `${fourth}${dim7}`
+
+let fifthMinor = `${fifth}${minor}`;
+let fifthMinor7 = `${fifth}${minor7}`;
+let fifthMinor9 = `${fifth}${minor9}`;
+let fifthSus4 = `${fifth}${sus4}`;
+
+let sixthAdd9 = `${sixth}${add9}`;
+let sixthDash6 = `${sixth}${dash6}`;
+let sixthMinor = `${sixth}${minor}`;
+let sixthMajor7 = `${sixth}${major7}`;
+let sixthMinor9 = `${sixth}${minor9}`;
+let sixthMa7Add13 = `${sixth}${maj7add13}`
+
+let eighthMinor = `${eighth}${minor}`;
+let eighthSus4 = `${eighth}${sus4}`;
+let eighthSevSus4 = `${eighth}${sevSus4}`;
+let eighthAdd9 = `${eighth}${add9}`;
+let eighthDash6 = `${eighth}${dash6}`;
+let eighthDash7 = `${eighth}${dash7}`;
+let eighthDash7Sus4 = `${eighth}${dash7}${sus4}`;
+let eighth7Flat9 = `${eighth}${sevenFlat9}`
+let eighthSevSharp9 = `${eighth}${sevenSharp9}`
+let eighthSevFlat9Flat13 = `${eighth}${sevenFlat9Flat13}`
+let eighthAddFlat9 = `${eighth}${addFlat9}`
+
+let ninthMajor7 = `${ninth}${major7}`;
+let ninthMinor7 = `${ninth}${minor7}`;
+let ninthAdd9 = `${ninth}${add9}`;
+let ninthDash6 = `${ninth}${dash6}`;
+let ninthDash9 = `${ninth}${dash9}`;
 let ninthSevSharp11 = `${ninth}${sevenSharpEleven}`
 let ninthMaj7Sharp5 = `${ninth}${major7Sharp5}`
+
+let tenthMinor = `${tenth}${minor}`;
+let tenthMinor7 = `${tenth}${minor7}`;
+let tenthMinor11 = `${tenth}${minor11}`;
+let tenthMi9 = `${tenth}${minor}${add9}`;
+let tenthDash9 = `${tenth}${dash9}`;
+
+let eleventhMi7Flat5 = `${eleventh}${minor7Flat5}`
+let eleventhAdd9 = `${eleventh}${add9}`;
+let eleventhDash7 = `${eleventh}${dash7}`;
+let eleventhDash9 = `${eleventh}${dash9}`;
+
+let twelveSixNine = `${twelve}${sixSlashNine}`
+
 
 let chord1maj1 = new Chord(1,root ,"-",'major', '(I)','Ionian', 'Maj1','C'); 
 let chord2maj1 = new Chord(2,fifthMinor ,'-','minor', '(iii)', 'Phrygian','Maj1','C#'); 
