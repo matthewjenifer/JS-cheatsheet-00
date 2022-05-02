@@ -19,7 +19,7 @@ class Chord {
         console.log("Chord Name:", this.name);
     }
     accent() {
-        console.log("Chord Name:", this.accent);
+        console.log("Chord Accent:", this.accent);
     }
     quality() {
         console.log("Maj/Min:", this.quality);
