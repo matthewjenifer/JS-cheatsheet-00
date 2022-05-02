@@ -49,10 +49,25 @@ let fifth = 'E';
 let sixth = 'F';
 let seventh = 'F#';
 let eighth = 'G';
-let ninth = 'G#';
+let ninth = 'G#/Ab';
 let tenth = 'A';
 let eleventh = 'Bb';
 let twelve = 'B';
+
+let minor = 'mi';
+
+let slash = "/";
+let overOne = `${root}${slash}${twelve}`;
+let overTwo = `${root}${slash}${tenth}`;
+let overThree = `${root}${slash}${eighth}`;
+let overFour = `${eighth}${slash}${twelve}`;
+let overFive = `${eighth}${slash}${sixth}`;
+let overSix = `${root}${slash}${fifth}`;
+let overSeven = `${root}${slash}${sixth}`;
+
+let overMinor = `${tenth}${minor}${slash}${fifth}`;
+let overMinorTwo = `${tenth}${minor}${slash}${second}`;
+let overMinorThree = `${third}${minor}${slash}${eighth}`;
 
 
 let chord1maj1 = new Chord(1,'Maj1', root ,"-",'major', '(I)','Ionian', 'C'); 
@@ -68,70 +83,70 @@ let chord10maj1 = new Chord(10,'Maj1', sixth ,'-6','major','n/a','A');
 let chord11maj1 = new Chord(11,'Maj1', eighth ,'-sus4','major','n/a','Bb');
 let chord12maj1 = new Chord(12,'Maj1', eighth ,'-','major','n/a','B');
 
-let chord1maj2 = new Chord(1,'Maj2', root,'major');
-let chord2maj2 = new Chord(2,'Maj2','C/B','major');
-let chord3maj2 = new Chord(3,'Maj2','C/A','major');
-let chord4maj2 = new Chord(4,'Maj2','C/G','major');
-let chord5maj2 = new Chord(5,'Maj2','Fadd9','major');
-let chord6maj2 = new Chord(6,'Maj2','Fmi','minor');
-let chord7maj2 = new Chord(7,'Maj2','Csus9','major');
-let chord8maj2 = new Chord(8,'Maj2','Ami7','minor');
-let chord9maj2 = new Chord(9,'Maj2','Emi','minor');
-let chord10maj2 = new Chord(10,'Maj2','F','major');
-let chord11maj2 = new Chord(11,'Maj2','Gsus4','major');
-let chord12maj2 = new Chord(12,'Maj2','G6','major');
+let chord1maj2 = new Chord(1,'Maj2', root,'-','major');
+let chord2maj2 = new Chord(2,'Maj2',overOne,'-','major');
+let chord3maj2 = new Chord(3,'Maj2',overTwo,'-','major');
+let chord4maj2 = new Chord(4,'Maj2',overThree,'-','major');
+let chord5maj2 = new Chord(5,'Maj2',sixth,'add9','major');
+let chord6maj2 = new Chord(6,'Maj2',sixth,'mi','minor');
+let chord7maj2 = new Chord(7,'Maj2',root,'sus9','major');
+let chord8maj2 = new Chord(8,'Maj2',tenth,'mi7','minor');
+let chord9maj2 = new Chord(9,'Maj2',fifth,'mi','minor');
+let chord10maj2 = new Chord(10,'Maj2',sixth,'-','major');
+let chord11maj2 = new Chord(11,'Maj2',eighth,'sus4','major');
+let chord12maj2 = new Chord(12,'Maj2',eighth,'6','major');
 
-let chord1maj3 = new Chord(1,'Maj3', root ,'major');
-let chord2maj3 = new Chord(2,'Maj3','Ami','minor');
-let chord3maj3 = new Chord(3,'Maj3','Fmaj7','major');
-let chord4maj3 = new Chord(4,'Maj3','Gsus4','major');
-let chord5maj3 = new Chord(5,'Maj3','Amiadd9','minor');
-let chord6maj3 = new Chord(6,'Maj3','F6','major');
-let chord7maj3 = new Chord(7,'Maj3','Csus2','minor');
-let chord8maj3 = new Chord(8,'Maj3','G','major');
-let chord9maj3 = new Chord(9,'Maj3','Dsus2','minor');
-let chord10maj3 = new Chord(10,'Maj3','Bbadd9','major');
-let chord11maj3 = new Chord(11,'Maj3','Gsus4','major');
-let chord12maj3 = new Chord(12,'Maj3','Fadd9','major');
+let chord1maj3 = new Chord(1,'Maj3',root,'major');
+let chord2maj3 = new Chord(2,'Maj3',tenth,'mi','minor');
+let chord3maj3 = new Chord(3,'Maj3',sixth,'maj7','major');
+let chord4maj3 = new Chord(4,'Maj3',eighth,'sus4','major');
+let chord5maj3 = new Chord(5,'Maj3',tenth,'mi-add9','minor');
+let chord6maj3 = new Chord(6,'Maj3',sixth,'6','major');
+let chord7maj3 = new Chord(7,'Maj3',root,'sus2','minor');
+let chord8maj3 = new Chord(8,'Maj3',eighth,'-','major');
+let chord9maj3 = new Chord(9,'Maj3',third,'sus2','minor');
+let chord10maj3 = new Chord(10,'Maj3',eleventh,'-add9','major');
+let chord11maj3 = new Chord(11,'Maj3',eighth,'sus4','major');
+let chord12maj3 = new Chord(12,'Maj3',sixth,'add9','major');
 
-let chord1maj4 = new Chord(1,'Maj4', root ,'major');
-let chord2maj4 = new Chord(2,'Maj4','G','major');
-let chord3maj4 = new Chord(3,'Maj4','Ami','minor');
-let chord4maj4 = new Chord(4,'Maj4','F6','major');
-let chord5maj4 = new Chord(5,'Maj4','F','major');
-let chord6maj4 = new Chord(6,'Maj4','Ami/E','minor');
-let chord7maj4 = new Chord(7,'Maj4','Dmi7','minor');
-let chord8maj4 = new Chord(8,'Maj4','Ami/C','minor');
-let chord9maj4 = new Chord(9,'Maj4','Gadd9','major');
-let chord10maj4 = new Chord(10,'Maj4','Ami7','minor');
-let chord11maj4 = new Chord(11,'Maj4','G/B','major');
-let chord12maj4 = new Chord(12,'Maj4','Dmi/G','minor');
+let chord1maj4 = new Chord(1,'Maj4', root,'-','major');
+let chord2maj4 = new Chord(2,'Maj4',eighth,'-','major');
+let chord3maj4 = new Chord(3,'Maj4',tenth,'mi','minor');
+let chord4maj4 = new Chord(4,'Maj4',sixth,'6','major');
+let chord5maj4 = new Chord(5,'Maj4',sixth,'-','major');
+let chord6maj4 = new Chord(6,'Maj4',overMinor,'-','minor');
+let chord7maj4 = new Chord(7,'Maj4',third,'mi7','minor');
+let chord8maj4 = new Chord(8,'Maj4',overMinorTwo,'-','minor');
+let chord9maj4 = new Chord(9,'Maj4',eighth,'add9','major');
+let chord10maj4 = new Chord(10,'Maj4',tenth,'mi7','minor'); 
+let chord11maj4 = new Chord(11,'Maj4',overThree,'-','major');
+let chord12maj4 = new Chord(12,'Maj4',overMinorThree,'-','minor');
 
-let chord1maj5 = new Chord(1,'Maj5', root ,'major');
-let chord2maj5 = new Chord(2,'Maj5','D','major');
-let chord3maj5 = new Chord(3,'Maj5','F','major');
-let chord4maj5 = new Chord(4,'Maj5', root ,'major');
-let chord5maj5 = new Chord(5,'Maj5','Ab','major');
-let chord6maj5 = new Chord(6,'Maj5','Eb','major');
-let chord7maj5 = new Chord(7,'Maj5','Bb','major');
-let chord8maj5 = new Chord(8,'Maj5','F','major');
-let chord9maj5 = new Chord(9,'Maj5','G7sus4','major');
-let chord10maj5 = new Chord(10,'Maj5','Bbadd9','minor');
-let chord11maj5 = new Chord(11,'Maj5','F6','major');
-let chord12maj5 = new Chord(12,'Maj5','Cadd9','major');
+let chord1maj5 = new Chord(1,'Maj5', root ,'-','major');
+let chord2maj5 = new Chord(2,'Maj5',third,'-','major');
+let chord3maj5 = new Chord(3,'Maj5',sixth,'-','major');
+let chord4maj5 = new Chord(4,'Maj5', root ,'-','major');
+let chord5maj5 = new Chord(5,'Maj5',ninth,'-','major');
+let chord6maj5 = new Chord(6,'Maj5',fourth,'-','major');
+let chord7maj5 = new Chord(7,'Maj5',eleventh,'-','major');
+let chord8maj5 = new Chord(8,'Maj5',sixth,'-','major');
+let chord9maj5 = new Chord(9,'Maj5',eighth,'7sus4','major');
+let chord10maj5 = new Chord(10,'Maj5',eleventh,'add9','minor');
+let chord11maj5 = new Chord(11,'Maj5',sixth,'6','major');
+let chord12maj5 = new Chord(12,'Maj5',root,'add9','major');
 
 let chord1maj6 = new Chord(1,'Maj6', root ,'major');
-let chord2maj6 = new Chord(2,'Maj6','G','major');
-let chord3maj6 = new Chord(3,'Maj6','Dmi','minor');
-let chord4maj6 = new Chord(4,'Maj6','Ami','minor');
-let chord5maj6 = new Chord(5,'Maj6','F','major');
-let chord6maj6 = new Chord(6,'Maj6','G/F','major');
-let chord7maj6 = new Chord(7,'Maj6','C/E','major');
-let chord8maj6 = new Chord(8,'Maj6','Ami7','minor');
-let chord9maj6 = new Chord(9,'Maj6','Dmi7','minor');
-let chord10maj6 = new Chord(10,'Maj6','Emi7','minor');
-let chord11maj6 = new Chord(11,'Maj6','C/F','major');
-let chord12maj6 = new Chord(12,'Maj6','Gsus4','major');
+let chord2maj6 = new Chord(2,'Maj6',eighth,'-','major');
+let chord3maj6 = new Chord(3,'Maj6',third,'mi','minor');
+let chord4maj6 = new Chord(4,'Maj6',tenth,'mi','minor');
+let chord5maj6 = new Chord(5,'Maj6',sixth,'-','major');
+let chord6maj6 = new Chord(6,'Maj6',overFive,'-','major');
+let chord7maj6 = new Chord(7,'Maj6',overSix,'-','major');
+let chord8maj6 = new Chord(8,'Maj6',tenth,'mi7','minor');
+let chord9maj6 = new Chord(9,'Maj6',third,'mi7','minor');
+let chord10maj6 = new Chord(10,'Maj6',fifth,'mi7','minor');
+let chord11maj6 = new Chord(11,'Maj6',overSeven,'-','major');
+let chord12maj6 = new Chord(12,'Maj6',eighth,'sus4','major');
 
 let chord1maj7 = new Chord(1,'Maj7', root ,'major');
 let chord2maj7 = new Chord(2,'Maj7','G','major');
@@ -264,86 +279,78 @@ let chord11min8 = new Chord(11,'Min8','G7(b9,b13)','major');
 let chord12min8 = new Chord(12,'Min8','Cmi9ma7','minor');
 
 console.log("--------------");
-console.log(chord1maj1.padData());
-// console.log(chord2maj1.padData());
-// console.log(chord3maj1.padData());
-// console.log(chord4maj1.padData());
-// console.log(chord5maj1.padData());
-// console.log(chord6maj1.padData());
-// console.log(chord7maj1.padData());
-// console.log(chord8maj1.padData());
-console.log("--------------");
-console.log(chord1maj1.type);
-console.log(chord1maj1.name);
+// console.log(chord1maj1.type);
+// console.log(chord1maj1.name);
 // console.log(chord2maj1.name());
-console.log(chord1maj1.numeral);
+// console.log(chord1maj1.numeral);
+// console.log("----");
+// console.log(chord1maj1.mode);
 console.log("----");
-console.log(chord1maj1.mode);
-console.log("----");
-// console.log(chord2maj1.padData())
-// console.log(chord3maj1.padData())
-// console.log(chord4maj1.padData())
-// console.log(chord5maj1.padData())
-// console.log(chord6maj1.padData())
-// console.log(chord7maj1.padData())
-// console.log(chord8maj1.padData())
-// console.log(chord9maj1.padData())
-// console.log(chord10maj1.padData())
-// console.log(chord11maj1.padData())
-// console.log(chord12maj1.padData())
-// console.log("--------------")
-// console.log(chord1maj2.padData())
-// console.log(chord2maj2.padData())
-// console.log(chord3maj2.padData())
-// console.log(chord4maj2.padData())
-// console.log(chord5maj2.padData())
-// console.log(chord6maj2.padData())
-// console.log(chord7maj2.padData())
-// console.log(chord8maj2.padData())
-// console.log(chord9maj2.padData())
-// console.log(chord10maj2.padData())
-// console.log(chord11maj2.padData())
-// console.log(chord12maj2.padData())
-// console.log("--------------")
-// console.log(chord1maj3.padData())
-// console.log(chord2maj3.padData())
-// console.log(chord3maj3.padData())
-// console.log(chord4maj3.padData())
-// console.log(chord5maj3.padData())
-// console.log(chord6maj3.padData())
-// console.log(chord7maj3.padData())
-// console.log(chord8maj3.padData())
-// console.log(chord9maj3.padData())
-// console.log(chord10maj3.padData())
-// console.log(chord11maj3.padData())
-// console.log(chord12maj3.padData())
-// console.log("--------------")
-// console.log(chord1maj4.padData())
-// console.log(chord2maj4.padData())
-// console.log(chord3maj4.padData())
-// console.log(chord4maj4.padData())
-// console.log(chord5maj4.padData())
-// console.log(chord6maj4.padData())
-// console.log(chord7maj4.padData())
-// console.log(chord8maj4.padData())
-// console.log(chord9maj4.padData())
-// console.log(chord10maj4.padData())
-// console.log(chord11maj4.padData())
-// console.log(chord12maj4.padData())
-// console.log("--------------")
-// console.log(chord1maj5.padData())
-// console.log(chord2maj5.padData())
-// console.log(chord3maj5.padData())
-// console.log(chord4maj5.padData())
-// console.log(chord5maj5.padData())
-// console.log(chord6maj5.padData())
-// console.log(chord7maj5.padData())
-// console.log(chord8maj5.padData())
-// console.log(chord9maj5.padData())
-// console.log(chord10maj5.padData())
-// console.log(chord11maj5.padData())
-// console.log(chord12maj5.padData())
-// console.log("--------------")
+console.log(chord1maj1.padData());
+console.log(chord2maj1.padData())
+console.log(chord3maj1.padData())
+console.log(chord4maj1.padData())
+console.log(chord5maj1.padData())
+console.log(chord6maj1.padData())
+console.log(chord7maj1.padData())
+console.log(chord8maj1.padData())
+console.log(chord9maj1.padData())
+console.log(chord10maj1.padData())
+console.log(chord11maj1.padData())
+console.log(chord12maj1.padData())
+console.log("--------------")
+console.log(chord1maj2.padData())
+console.log(chord2maj2.padData())
+console.log(chord3maj2.padData())
+console.log(chord4maj2.padData())
+console.log(chord5maj2.padData())
+console.log(chord6maj2.padData())
+console.log(chord7maj2.padData())
+console.log(chord8maj2.padData())
+console.log(chord9maj2.padData())
+console.log(chord10maj2.padData())
+console.log(chord11maj2.padData())
+console.log(chord12maj2.padData())
+console.log("--------------")
+console.log(chord1maj3.padData())
+console.log(chord2maj3.padData())
+console.log(chord3maj3.padData())
+console.log(chord4maj3.padData())
+console.log(chord5maj3.padData())
+console.log(chord6maj3.padData())
+console.log(chord7maj3.padData())
+console.log(chord8maj3.padData())
+console.log(chord9maj3.padData())
+console.log(chord10maj3.padData())
+console.log(chord11maj3.padData())
+console.log(chord12maj3.padData())
+console.log("--------------")
+console.log(chord1maj4.padData())
+console.log(chord2maj4.padData())
+console.log(chord3maj4.padData())
+console.log(chord4maj4.padData())
+console.log(chord5maj4.padData())
+console.log(chord6maj4.padData())
+console.log(chord7maj4.padData())
+console.log(chord8maj4.padData())
+console.log(chord9maj4.padData())
+console.log(chord10maj4.padData())
+console.log(chord11maj4.padData())
+console.log(chord12maj4.padData())
+console.log("--------------")
+console.log(chord1maj5.padData())
+console.log(chord2maj5.padData())
+console.log(chord3maj5.padData())
+console.log(chord4maj5.padData())
+console.log(chord5maj5.padData())
+console.log(chord6maj5.padData())
+console.log(chord7maj5.padData())
+console.log(chord8maj5.padData())
+console.log(chord9maj5.padData())
+console.log(chord10maj5.padData())
+console.log(chord11maj5.padData())
+console.log(chord12maj5.padData())
+console.log("--------------")
 // console.log(chord1maj6.padData())
 // console.log(chord2maj6.padData())
 // console.log(chord3maj6.padData())
