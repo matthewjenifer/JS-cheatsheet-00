@@ -1,4 +1,4 @@
-let root = 'G';
+let root = 'C#';
 
 class Chord {
     constructor(pad, name, accent, quality, numeral, mode, type, smartkey) {
@@ -757,7 +757,6 @@ function isRoot() {
 
         console.log(chord4maj1.padData())
         console.log("-----")
-        console.log(chord4maj2.padData())
         console.log(chord4maj2.padData())
 
     } else if (root == 'D') {
