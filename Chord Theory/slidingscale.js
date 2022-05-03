@@ -1,4 +1,4 @@
-let root = 'D';
+let root = 'G';
 
 class Chord {
     constructor(pad, name, accent, quality, numeral, mode, type, smartkey) {
@@ -417,6 +417,8 @@ function isRoot() {
         console.log("-----")
 
         console.log(chord4maj1.padData())
+        console.log("-----")
+        console.log(chord4maj2.padData())
 
     } else if (root == 'C#') {
         let second = 'D';
@@ -754,6 +756,9 @@ function isRoot() {
         console.log("-----")
 
         console.log(chord4maj1.padData())
+        console.log("-----")
+        console.log(chord4maj2.padData())
+        console.log(chord4maj2.padData())
 
     } else if (root == 'D') {
         let second = 'Eb';
@@ -1091,6 +1096,8 @@ function isRoot() {
         console.log("-----")
 
         console.log(chord4maj1.padData())
+        console.log("-----")
+        console.log(chord4maj2.padData())
 
     } else if (root == 'Eb') {
         let second = 'E';
@@ -1428,6 +1435,8 @@ function isRoot() {
         console.log("-----")
 
         console.log(chord4maj1.padData())
+        console.log("-----")
+        console.log(chord4maj2.padData())
 
     } else if (root == 'E') {
         let second = 'F';
@@ -1765,6 +1774,8 @@ function isRoot() {
         console.log("-----")
 
         console.log(chord4maj1.padData())
+        console.log("-----")
+        console.log(chord4maj2.padData())
 
     } else if (root == 'F') {
         let second = 'F#';
@@ -2102,6 +2113,8 @@ function isRoot() {
         console.log("-----")
 
         console.log(chord4maj1.padData())
+        console.log("-----")
+        console.log(chord4maj2.padData())
 
     } else if (root == 'F#') {
         let second = 'G';
@@ -2439,6 +2452,8 @@ function isRoot() {
         console.log("-----")
 
         console.log(chord4maj1.padData())
+        console.log("-----")
+        console.log(chord4maj2.padData())
 
     } else if (root == 'G') {
         let second = 'G#(Ab)';
@@ -2776,6 +2791,8 @@ function isRoot() {
         console.log("-----")
 
         console.log(chord4maj1.padData())
+        console.log("-----")
+        console.log(chord4maj2.padData())
 
     } else if (root == 'G#' || root == 'Ab') {
         let second = 'A';
@@ -3113,6 +3130,8 @@ function isRoot() {
         console.log("-----")
 
         console.log(chord4maj1.padData())
+        console.log("-----")
+        console.log(chord4maj2.padData())
 
     } else if (root == 'A') {
         let second = 'Bb';
@@ -3450,6 +3469,8 @@ function isRoot() {
         console.log("-----")
 
         console.log(chord4maj1.padData())
+        console.log("-----")
+        console.log(chord4maj2.padData())
 
     } else if (root == 'Bb') {
         let second = 'B';
@@ -3787,6 +3808,8 @@ function isRoot() {
         console.log("-----")
 
         console.log(chord4maj1.padData())
+        console.log("-----")
+        console.log(chord4maj2.padData())
 
     } else if (root == 'B') {
 
@@ -4125,6 +4148,8 @@ function isRoot() {
         console.log("-----")
 
         console.log(chord4maj1.padData())
+        console.log("-----")
+        console.log(chord4maj2.padData())
 
     }
 
