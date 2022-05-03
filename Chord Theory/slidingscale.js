@@ -43,18 +43,6 @@ class Chord {
 
 function isRoot() {
 
-    let second = 'C#';
-    let third = 'D';
-    let fourth = 'Eb';
-    let fifth = 'E';
-    let sixth = 'F';
-    let seventh = 'F#';
-    let eighth = 'G';
-    let ninth = 'G#(Ab)';
-    let tenth = 'A';
-    let eleventh = 'Bb';
-    let twelve = 'B';
-
     let minor = 'mi';
     let minor6 = 'mi6';
     let minor7 = 'mi7';
