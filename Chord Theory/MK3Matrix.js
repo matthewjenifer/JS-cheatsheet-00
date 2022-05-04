@@ -2,6 +2,7 @@
 // https://replit.com/@matthewjenifer/JS-scratch#script.js
 // https://replit.com/@matthewjenifer/JScompile#script.js
 // https://www.hooktheory.com/trends
+// https://www.solfej.io/scales/c-dorian
 
 class Chord {
     constructor(pad, name, accent, quality, numeral, mode, type, smartkey) {

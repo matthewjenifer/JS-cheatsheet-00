@@ -1,5 +1,5 @@
 class Scale {
-    constructor(root, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelth, octave) {
+    constructor(root, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelfth, octave) {
         this.root = root;
         this.second = second;
         this.third = third;
@@ -11,7 +11,7 @@ class Scale {
         this.ninth = ninth;
         this.tenth = tenth;
         this.eleventh = eleventh;
-        this.twelth = twelth;
+        this.twelfth = twelfth;
         this.octave = octave;
     }
     root() {
@@ -47,11 +47,11 @@ class Scale {
     eleventh() {
         console.log("Eleventh Degree:", this.eleventh);
     }
-    twelth() {
-        console.log("Twelth Degree:", this.twelth);
+    twelfth() {
+        console.log("Twelfth Degree:", this.twelfth);
     }
     octave() {
-        console.log("Ocatve:", this.octave);
+        console.log("Octave:", this.octave);
     }
     scaleData() {
         return this;
@@ -77,6 +77,16 @@ console.log(aNatMinor.root + " Aeolian Mode:")
 console.log("----")
 console.log(aNatMinor.scaleData())
 console.log("----")
+
+//let cIonian = new Scale('C','-','D','-','E','F','-','G','-','A','-','B','C');
+let cDorian = new Scale('C','-','D','Eb','-','F','-','G','-','A','Bb','-','C');
+let cPhrygian = new Scale('C','C#','-','Eb','-','F','-','G','G#','-','Bb','-','C');
+let cLydian = new Scale('C','-','D','-','E','-','F#','G','-','A','-','B','C');
+let cMixolydian = new Scale('C','-','D','-','E','F','-','G','-','A','Bb','-','C');
+let cAeolian = new Scale('C','-','D','Eb','-','F','-','G','G#','-','Bb','-','C');
+let cLocrian = new Scale('C','C#','-','Eb','-','F','F#','G','G#','-','Bb','-','C');
+
+let cSharpIonian = new Scale('C#','-','Eb','-','F','F#','-','-','A','Bb','-','C','C#');
 
 
 //yasiine suggestion: ===================================================================
