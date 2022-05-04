@@ -1,4 +1,7 @@
-// https://replit.com/join/wafitzqvrt-matthewjenifer | https://www.solfej.io/scales/b-dorian | https://www.onlinepianist.com/virtual-piano
+// https://replit.com/join/wafitzqvrt-matthewjenifer 
+// https://www.solfej.io/scales/b-dorian 
+// https://www.onlinepianist.com/virtual-piano
+// https://youtu.be/ue7SkGsIMhI?t=716
 
 document.getElementById("myButton").onclick = function () {
     root = document.getElementById("myRoot").value; //accepts root note input
@@ -294,13 +297,13 @@ document.getElementById("myButton").onclick = function () {
 
         } else {
             console.log("invalid root")
-            document.getElementById("yourModeSir").innerHTML = "MODE DOES NOT EXIST!";
+            document.getElementById("yourModeSir").innerHTML = "...MODE DOES NOT EXIST!";
         }
     }
     makeDorian()
     if (root == 'A' || root == 'Ab' || root == 'B' || root == 'Bb' || root == 'C' || root == 'C#' || root == 'D' || root == 'D#' || root == 'E' || root == 'Eb' || root == 'F' || root == 'F#' || root == 'G' || root == 'G#') {
         document.getElementById("myLabel").innerHTML = root + " Dorian is below:";
     } else {
-        document.getElementById("myLabel").innerHTML = " try again, my man..";
+        document.getElementById("myLabel").innerHTML = " try again, my man...";
     }
 }
