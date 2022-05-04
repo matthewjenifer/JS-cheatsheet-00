@@ -1,5 +1,5 @@
 class Scale {
-    constructor(root, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelth, octave) {
+    constructor(root, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelfth, octave) {
         this.root = root;
         this.second = second;
         this.third = third;
@@ -11,7 +11,7 @@ class Scale {
         this.ninth = ninth;
         this.tenth = tenth;
         this.eleventh = eleventh;
-        this.twelth = twelth;
+        this.twelfth = twelfth;
         this.octave = octave;
     }
     root() {
@@ -47,11 +47,11 @@ class Scale {
     eleventh() {
         console.log("Eleventh Degree:", this.eleventh);
     }
-    twelth() {
-        console.log("Twelth Degree:", this.twelth);
+    twelfth() {
+        console.log("Twelfth Degree:", this.twelfth);
     }
     octave() {
-        console.log("Ocatve:", this.octave);
+        console.log("Octave:", this.octave);
     }
     scaleData() {
         return this;
@@ -79,7 +79,7 @@ console.log("----")
 // =================================yasiine suggestion: ==========================================
 
 // const values = ['C','C#','D','Eb','E','F','F#','G','G#(Ab)','A','Bb','B','C',];
-// const keys = ['root','second','third','fourth','fifth','sixth','sevnth','eighth','ninth','tenth','eleventh','twelfth','octave',];
+// const keys = ['root','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh','twelfth','octave',];
 
 // let obj = {}
 // for(let i = 0; i < keys.length; i++) {
