@@ -43,7 +43,7 @@ document.getElementById("myButton").onclick = function () {
         }
     };
 
-    function makeDorian() {
+    function makeMode() {
         if (root == 'C') {
             let major2nd = 'D';
             let minor3rd = 'Eb(D#)';
@@ -300,7 +300,7 @@ document.getElementById("myButton").onclick = function () {
             document.getElementById("yourModeSir").innerHTML = "...MODE DOES NOT EXIST!";
         }
     }
-    makeDorian()
+    makeMode()
     if (root == 'A' || root == 'Ab' || root == 'B' || root == 'Bb' || root == 'C' || root == 'C#' || root == 'D' || root == 'D#' || root == 'E' || root == 'Eb' || root == 'F' || root == 'F#' || root == 'G' || root == 'G#') {
         document.getElementById("myLabel").innerHTML = root + " Dorian is below:";
     } else {
