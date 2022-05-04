@@ -1,5 +1,5 @@
 class Scale {
-    constructor(root, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelfth, octave) {
+    constructor(root, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelth, octave) {
         this.root = root;
         this.second = second;
         this.third = third;
@@ -11,7 +11,7 @@ class Scale {
         this.ninth = ninth;
         this.tenth = tenth;
         this.eleventh = eleventh;
-        this.twelfth = twelfth;
+        this.twelth = twelth;
         this.octave = octave;
     }
     root() {
@@ -47,8 +47,8 @@ class Scale {
     eleventh() {
         console.log("Eleventh Degree:", this.eleventh);
     }
-    twelfth() {
-        console.log("twelfth Degree:", this.twelfth);
+    twelth() {
+        console.log("Twelth Degree:", this.twelth);
     }
     octave() {
         console.log("Ocatve:", this.octave);
@@ -58,14 +58,19 @@ class Scale {
     }
 };
 
-let cMajor = new Scale('C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'G#(Ab)', 'A', 'Bb', 'B', 'C', );
+let cIonian = new Scale('C', '-', 'D', '-', 'E', 'F', '-', 'G', '-', 'A', '-', 'B', 'C');
+let dDorian = new Scale('D', '-', 'E', 'F', '-', 'G', '-', 'A', '-', 'B', 'C', '-', 'D');
+let ePhrygian = new Scale('E', 'F', '-', 'G', '-', 'A', '-', 'B', 'C', '-', 'D', '-', 'E');
+let fLydian = new Scale('F', '-', 'G', '-', 'A', '-', 'B', 'C', '-', 'D', '-', 'E', 'F');
+let gMixolydian = new Scale('G', '-', 'A', '-', 'B', 'C', '-', 'D', '-', 'E', 'F', '-', 'G');
+let bLocrian = new Scale('A', '-', 'B', 'C', '-', 'D', '-', 'E', 'F', '-', 'G', '-', 'A');
 
 console.log("----")
 console.log("----")
 
-console.log("Root Note: " + cMajor.root)
+console.log("Root Note: " + cIonian.root)
 console.log("----")
-console.log(cMajor.scaleData())
+console.log(cIonian.scaleData())
 console.log("----")
 
 
