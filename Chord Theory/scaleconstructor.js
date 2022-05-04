@@ -63,7 +63,8 @@ let dDorian = new Scale('D', '-', 'E', 'F', '-', 'G', '-', 'A', '-', 'B', 'C', '
 let ePhrygian = new Scale('E', 'F', '-', 'G', '-', 'A', '-', 'B', 'C', '-', 'D', '-', 'E');
 let fLydian = new Scale('F', '-', 'G', '-', 'A', '-', 'B', 'C', '-', 'D', '-', 'E', 'F');
 let gMixolydian = new Scale('G', '-', 'A', '-', 'B', 'C', '-', 'D', '-', 'E', 'F', '-', 'G');
-let bLocrian = new Scale('A', '-', 'B', 'C', '-', 'D', '-', 'E', 'F', '-', 'G', '-', 'A');
+let aAeolian = new Scale('A', '-', 'B', 'C', '-', 'D', '-', 'E', 'F', '-', 'G', '-', 'A');
+let bLocrian = new Scale('B', 'C', '-', 'D', '-', 'E', 'F', '-', 'G', '-', 'A', '-', 'B');
 
 console.log("----")
 console.log("----")
