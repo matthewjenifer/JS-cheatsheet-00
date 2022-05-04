@@ -1,5 +1,6 @@
 // https://www.figma.com/file/cSKRnG5LTuPCbYysuOPPww/ChordTheoryApp?node-id=0%3A1
 // https://replit.com/@matthewjenifer/JS-scratch#script.js
+// https://replit.com/@matthewjenifer/JScompile#script.js
 // https://www.hooktheory.com/trends
 
 class Chord {
@@ -53,7 +54,7 @@ let eighth = 'G';
 let ninth = 'G#(Ab)';
 let tenth = 'A';
 let eleventh = 'Bb';
-let twelve = 'B';
+let twelfth = 'B';
 
 let minor = 'mi';
 let minor6 = 'mi6';
@@ -93,15 +94,15 @@ let slash = "/";
 let seven = "7";
 let plus = "+";
 
-let overOne = `${root}${slash}${twelve}`;
+let overOne = `${root}${slash}${twelfth}`;
 let overTwo = `${root}${slash}${tenth}`;
 let overThree = `${root}${slash}${eighth}`;
-let overFour = `${eighth}${slash}${twelve}`;
+let overFour = `${eighth}${slash}${twelfth}`;
 let overFive = `${eighth}${slash}${sixth}`;
 let overSix = `${root}${slash}${fifth}`;
 let overSeven = `${root}${slash}${sixth}`;
 let overEight = `${sixth}${slash}${tenth}`;
-let overNine = `${eighth}${slash}${twelve}`;
+let overNine = `${eighth}${slash}${twelfth}`;
 
 let overMinor = `${tenth}${minor}${slash}${fifth}`;
 let overMinorTwo = `${tenth}${minor}${slash}${root}`;
@@ -120,7 +121,7 @@ let minElevOver = `${root}${minor11}${slash}${eighth}`;
 
 let slashSeven = `${seventh}${seven}${slash}${eleventh}`;
 let slashEight = `${ninth}${slash}${eighth}`;
-let plusSlash = `${eighth}${plus}${slash}${twelve}`;
+let plusSlash = `${eighth}${plus}${slash}${twelfth}`;
 let eighthPlus = `${eighth}${plus}`;
 
 let rootEleven = `${root}${eleven}`;
@@ -199,7 +200,7 @@ let eleventhDash6 = `${eleventh}${dash6}`;
 let eleventhDash7 = `${eleventh}${dash7}`;
 let eleventhDash9 = `${eleventh}${dash9}`;
 
-let twelveSixNine = `${twelve}${sixSlashNine}`
+let twelveSixNine = `${twelfth}${sixSlashNine}`
 
 
 let chord1maj1 = new Chord(1, root, "-", 'major', '(I)', 'Ionian', 'Maj1', 'C');
