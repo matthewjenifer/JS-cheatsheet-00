@@ -75,7 +75,8 @@ console.log(cIonian.scaleData())
 console.log("----")
 
 
-//yasiine suggestion: ======================================================================================
+
+// =================================yasiine suggestion: ==========================================
 
 // const values = ['C','C#','D','Eb','E','F','F#','G','G#(Ab)','A','Bb','B','C',];
 // const keys = ['root','second','third','fourth','fifth','sixth','sevnth','eighth','ninth','tenth','eleventh','twelfth','octave',];
