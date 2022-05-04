@@ -1,5 +1,5 @@
 class Scale {
-    constructor(root, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelfth, octave) {
+    constructor(root, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelth, octave) {
         this.root = root;
         this.second = second;
         this.third = third;
@@ -11,7 +11,7 @@ class Scale {
         this.ninth = ninth;
         this.tenth = tenth;
         this.eleventh = eleventh;
-        this.twelfth = twelfth;
+        this.twelth = twelth;
         this.octave = octave;
     }
     root() {
@@ -47,11 +47,11 @@ class Scale {
     eleventh() {
         console.log("Eleventh Degree:", this.eleventh);
     }
-    twelfth() {
-        console.log("Twelfth Degree:", this.twelfth);
+    twelth() {
+        console.log("Twelth Degree:", this.twelth);
     }
     octave() {
-        console.log("Octave:", this.octave);
+        console.log("Ocatve:", this.octave);
     }
     scaleData() {
         return this;
@@ -69,17 +69,16 @@ let bLocrian = new Scale('B', 'C', '-', 'D', '-', 'E', 'F', '-', 'G', '-', 'A', 
 console.log("----")
 console.log("----")
 
-console.log("Root Note: " + cIonian.root)
+console.log(cIonian.root + " Ionian Mode:")
 console.log("----")
 console.log(cIonian.scaleData())
 console.log("----")
 
 
-
-// =================================yasiine suggestion: ==========================================
+//yasiine suggestion: ===================================================================
 
 // const values = ['C','C#','D','Eb','E','F','F#','G','G#(Ab)','A','Bb','B','C',];
-// const keys = ['root','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh','twelfth','octave',];
+// const keys = ['root','second','third','fourth','fifth','sixth','sevnth','eighth','ninth','tenth','eleventh','twelfth','octave',];
 
 // let obj = {}
 // for(let i = 0; i < keys.length; i++) {
