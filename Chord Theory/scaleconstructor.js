@@ -78,7 +78,7 @@ console.log("----")
 console.log(aNatMinor.scaleData())
 console.log("----")
 
-//let cIonian = new Scale('C','-','D','-','E','F','-','G','-','A','-','B','C');
+//let cIonian = new Scale('C','-','D','-','E','F','-','G','-','A','-','B','C'); | C Major
 let cDorian = new Scale('C','-','D','Eb','-','F','-','G','-','A','Bb','-','C');
 let cPhrygian = new Scale('C','C#','-','Eb','-','F','-','G','G#','-','Bb','-','C');
 let cLydian = new Scale('C','-','D','-','E','-','F#','G','-','A','-','B','C');
