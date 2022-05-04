@@ -1,4 +1,7 @@
-class Scale {
+// https://www.onlinepianist.com/virtual-piano
+// random aside: keys are only major and minor.. https://youtu.be/E3vYVGMgZYY
+
+class Scale { 
     constructor(root, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelfth, octave) {
         this.root = root;
         this.second = second;
@@ -84,8 +87,7 @@ let cPhrygian = new Scale('C','C#','-','Eb','-','F','-','G','G#','-','Bb','-','C
 let cLydian = new Scale('C','-','D','-','E','-','F#','G','-','A','-','B','C');
 let cMixolydian = new Scale('C','-','D','-','E','F','-','G','-','A','Bb','-','C');
 let cAeolian = new Scale('C','-','D','Eb','-','F','-','G','G#','-','Bb','-','C');
-let cLocrian = new Scale('C','C#','-','Eb','-','F','F#','G','G#','-','Bb','-','C');
-
+let cLocrian = new Scale('C','C#','-','Eb','-','F','F#','G','G#','-','Bb','-','C'); // https://www.solfej.io/scales/c-locrian
 let cSharpIonian = new Scale('C#','-','Eb','-','F','F#','-','-','A','Bb','-','C','C#');
 
 
