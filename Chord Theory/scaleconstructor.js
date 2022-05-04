@@ -69,8 +69,6 @@ let bLocrian = new Scale('B', 'C', '-', 'D', '-', 'E', 'F', '-', 'G', '-', 'A', 
 let aNatMinor = aAeolian; //**
 
 console.log("----")
-console.log("----")
-
 console.log(cIonian.root + " Ionian Mode:")
 console.log("----")
 console.log(cIonian.scaleData())
