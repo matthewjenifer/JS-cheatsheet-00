@@ -92,7 +92,7 @@ let cSharpIonian = new Scale('C#','-','Eb','-','F','F#','-','-','A','Bb','-','C'
 //yasiine suggestion: ===================================================================
 
 // const values = ['C','C#','D','Eb','E','F','F#','G','G#(Ab)','A','Bb','B','C',];
-// const keys = ['root','second','third','fourth','fifth','sixth','sevnth','eighth','ninth','tenth','eleventh','twelfth','octave',];
+// const keys = ['root','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh','twelfth','octave',];
 
 // let obj = {}
 // for(let i = 0; i < keys.length; i++) {
