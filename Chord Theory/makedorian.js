@@ -63,6 +63,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/c-dorian-mode-on-piano-keyboard.png"; 
 
         } else if (root == 'C#' || root == 'Db') {
             let major2nd = 'D#(Eb)';
@@ -83,6 +85,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/c-sharp-dorian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'D') {
@@ -104,6 +108,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/dorian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'Eb' || root == 'D#') {
@@ -125,6 +131,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/d-sharp-dorian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'E') {
@@ -146,6 +154,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/e-dorian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'F') {
@@ -167,6 +177,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/f-dorian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'F#' || root == 'Gb') {
@@ -188,6 +200,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/f-sharp-dorian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'G') {
@@ -209,6 +223,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/g-dorian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'G#' || root == 'Ab') {
@@ -230,6 +246,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/g-sharp-dorian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'A') {
@@ -251,6 +269,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/a-dorian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'Bb' || root == 'A#') {
@@ -272,6 +292,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/b-flat-dorian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'B') {
@@ -293,6 +315,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/b-dorian-mode-on-piano-keyboard.png"; 
 
 
         } else {

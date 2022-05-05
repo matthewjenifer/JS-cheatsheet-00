@@ -58,6 +58,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/c-lydian-mode-on-piano-keyboard.png"; 
 
         } else if (root == 'C#' || root == 'Db') {
             let major2nd = 'D#(Eb)';
@@ -78,6 +80,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/c-sharp-lydian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'D') {
@@ -99,6 +103,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/d-lydian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'Eb' || root == 'D#') {
@@ -120,6 +126,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/e-flat-lydian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'E') {
@@ -141,6 +149,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/e-lydian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'F') {
@@ -162,6 +172,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/lydian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'F#' || root == 'Gb') {
@@ -183,6 +195,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/f-sharp-lydian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'G') {
@@ -204,6 +218,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/g-lydian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'G#' || root == 'Ab') {
@@ -225,6 +241,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/g-sharp-lydian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'A') {
@@ -246,6 +264,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/a-lydian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'Bb' || root == 'A#') {
@@ -267,6 +287,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/b-flat-lydian-mode-on-piano-keyboard.png"; 
 
 
         } else if (root == 'B') {
@@ -288,6 +310,8 @@ document.getElementById("myButton").onclick = function () {
             console.log(collected);
 
             document.getElementById("yourModeSir").innerHTML = JSON.stringify(collected);
+            const image = document.querySelector("img");
+            image.src = "https://m.basicmusictheory.com/img/b-lydian-mode-on-piano-keyboard.png"; 
 
 
         } else {
