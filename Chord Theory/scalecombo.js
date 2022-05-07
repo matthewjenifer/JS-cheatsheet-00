@@ -886,7 +886,7 @@ document.getElementById("myButton").onclick = function () {
 
         document.getElementById("yourScaleSir").innerHTML = JSON.stringify(collected);
         const image = document.querySelector("img");
-        image.src = "https://m.basicmusictheory.com/img/e-phrygian-mode-on-piano-keyboard.png";
+        image.src = "https://m.basicmusictheory.com/img/phrygian-mode-on-piano-keyboard.png";
     } else if (r == 5 && m == 7) {
         console.log('Dorian');
         let root = 'E';
@@ -2230,11 +2230,11 @@ document.getElementById("myButton").onclick = function () {
         console.log('B Dorian');
 
         let root = 'B';
-        let minor2nd = 'C';
+        let minor2nd = 'C#';
         let minor3rd = 'D';
         let perfect4th = 'E';
-        let diminished5th = 'F';
-        let minor6th = 'G';
+        let diminished5th = 'F#';
+        let minor6th = 'G#';
         let minor7th = 'A';
 
         let comma = ', ';
