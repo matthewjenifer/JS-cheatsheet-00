@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <label id="myLabel">Select Scale</label><br><br>
+
+    <select id="rootSelect">
+        <option value=" " selected="selected">- Select Root -</option>
+        <option value="1">C</option>
+        <option value="2">C#</option>
+        <option value="3">D</option>
+        <option value="4">Eb</option>
+        <option value="5">E</option>
+        <option value="6">F</option>
+        <option value="7">F#</option>
+        <option value="8">G</option>
+        <option value="9">G#</option>
+        <option value="10">A</option>
+        <option value="11">Bb</option>
+        <option value="12">B</option>
+    </select>
+
+    <select id="modeSelect">
+        <option value=" " selected="selected">- Select Mode/Scale -</option>
+        <option value="1">Ionian</option>
+        <option value="2">Aeolian</option>
+        <option value="3">Mixolydian</option>
+        <option value="4">Lydian</option>
+        <option value="5">Locrian</option>
+        <option value="6">Phrygian</option>
+        <option value="7">Dorian</option>
+        <option value=" ">---</option>
+        <option value="9">Pentatonic</option>
+    </select>
+
+    <button type="button" id="myButton">fetch</button><br>
+    <br>
+    <div id="yourScaleSir"></div>
+    <br>
+    <br>
+    <img />
+    <script src="scalecombo.js"></script>
+</body>
+
+</html>
