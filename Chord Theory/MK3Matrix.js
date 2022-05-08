@@ -6,6 +6,7 @@
 // https://youtube.com/playlist?list=PLXAhCH9FJ8zVhF7skX2ppb92UMs4DkFS2
 // https://www.youtube.com/playlist?list=PLXAhCH9FJ8zVEOaX75fWUbxOeBTwAFo-y
 // https://www.youtube.com/playlist?list=PLXAhCH9FJ8zWm17RdQFAkdsghd8aKU_dq
+// https://www.hooktheory.com/api/trends/docs
 
 
 class Chord {
