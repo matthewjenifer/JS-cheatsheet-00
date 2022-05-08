@@ -3,6 +3,10 @@
 // https://replit.com/@matthewjenifer/JScompile#script.js
 // https://www.hooktheory.com/trends
 // https://www.solfej.io/scales/c-dorian
+// https://youtube.com/playlist?list=PLXAhCH9FJ8zVhF7skX2ppb92UMs4DkFS2
+// https://www.youtube.com/playlist?list=PLXAhCH9FJ8zVEOaX75fWUbxOeBTwAFo-y
+// https://www.youtube.com/playlist?list=PLXAhCH9FJ8zWm17RdQFAkdsghd8aKU_dq
+
 
 class Chord {
     constructor(pad, name, accent, quality, numeral, mode, type, smartkey) {
