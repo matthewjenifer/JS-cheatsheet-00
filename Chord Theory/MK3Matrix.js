@@ -1,12 +1,13 @@
 // https://www.figma.com/file/cSKRnG5LTuPCbYysuOPPww/ChordTheoryApp?node-id=0%3A1
 // https://replit.com/@matthewjenifer/JS-scratch#script.js
 // https://replit.com/@matthewjenifer/JScompile#script.js
-// https://www.hooktheory.com/trends
 // https://www.solfej.io/scales/c-dorian
 // https://youtube.com/playlist?list=PLXAhCH9FJ8zVhF7skX2ppb92UMs4DkFS2
 // https://www.youtube.com/playlist?list=PLXAhCH9FJ8zVEOaX75fWUbxOeBTwAFo-y
 // https://www.youtube.com/playlist?list=PLXAhCH9FJ8zWm17RdQFAkdsghd8aKU_dq
 // https://www.hooktheory.com/api/trends/docs
+// https://chordify.net/pages/chord-progression-i-v-vi-iv/
+// https://replit.com/@matthewjenifer/Pad1ChordInputBeta#index.html
 
 
 class Chord {
