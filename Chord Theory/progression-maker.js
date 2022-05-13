@@ -219,7 +219,7 @@ document.getElementById("myButton").onclick = function () {
             let chord1maj1 = new Chord(1, root, "-", 'major', romanOne, 'Ionian', 'Maj1', 'C');
             let chord2maj1 = new Chord(2, fifthMinor, '-', 'minor', romanThreeMin, 'Phrygian', 'Maj1', 'C#');
             let chord3maj1 = new Chord(3, sixth, '-', 'major', romanFour, 'Lydian', 'Maj1', 'D');
-            let chord4maj1 = new Chord(4, eighth, '-', 'major', romanFive, 'Mixolydian', 'Maj1', 'Eb'); 
+            let chord4maj1 = new Chord(4, eighth, '-', 'major', romanFive, 'Mixolydian', 'Maj1', 'Eb');
             let chord5maj1 = new Chord(5, tenthMinor, '-', 'minor', romanSixMin, 'Aeolian', 'Maj1', 'E');
             let chord6maj1 = new Chord(6, fifthSus4, '-', 'major', romanThree, '-', 'Maj1', 'F');
             let chord7maj1 = new Chord(7, eighthAdd9, '-', 'major', romanFive, '-', 'Maj1', 'F#');
@@ -4199,6 +4199,6 @@ document.getElementById("myButton").onclick = function () {
 
     isRoot()
 
-    document.getElementById("myLabel").innerHTML = "[4165 | I-V-ii/iii/vi-IV Progression:]...the M(V)gic starts on line 421! (hint: \"U Can't _ Me\" - by Tupa_ Shakur)";
+    document.getElementById("myLabel").innerHTML = "[4165 | I-V-ii/iii/vi-IV Progression:]";
     // document.getElementById("firstPad").innerHTML = chord4maj2.padData();
 }
