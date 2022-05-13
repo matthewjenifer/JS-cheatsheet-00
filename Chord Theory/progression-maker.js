@@ -429,16 +429,39 @@ document.getElementById("myButton").onclick = function () {
             console.log("-----")
             console.log('Root(I)Chord is now: ' + root)
             console.log("-----")
+            console.log(chord1maj1.padData())
+            console.log("-----")
+            console.log("(V) Chord Options: ")
+            console.log("-----")
+            console.log('Pad-' + chord4maj1.pad + ': ' + chord4maj1.name + ' | SmartKey:' + chord4maj1.smartkey)
+            console.log('Pad-' + chord11maj1.pad + ': ' + chord11maj1.name + ' | SmartKey:' + chord11maj1.smartkey)
+            console.log('Pad-' + chord7maj1.pad + ': ' + chord7maj1.name + ' | SmartKey:' + chord7maj1.smartkey)
+            console.log("-----")
+            console.log("(ii)(iii)(vi) Chord Options: ")
+            console.log("-----")
+            console.log('Pad-' + chord2maj1.pad + ': ' + chord2maj1.name + ' | SmartKey:' + chord2maj1.smartkey)
+            console.log('Pad-' + chord5maj1.pad + ': ' + chord5maj1.name + ' | SmartKey:' + chord5maj1.smartkey)
+            console.log('Pad-' + chord8maj1.pad + ': ' + chord8maj1.name + ' | SmartKey:' + chord8maj1.smartkey)
+            console.log("-----")
+            console.log("(IV) Chord Options: ")
+            console.log("-----")
+            console.log('Pad-' + chord3maj1.pad + ': ' + chord3maj1.name + ' | SmartKey:' + chord3maj1.smartkey)
+            console.log('Pad-' + chord10maj1.pad + ': ' + chord10maj1.name + ' | SmartKey:' + chord10maj1.smartkey)
+            console.log('Pad-' + chord9maj1.pad + ': ' + chord9maj1.name + ' | SmartKey:' + chord9maj1.smartkey)
 
-            // console.log(chord4maj1.padData())
-            document.getElementById("secondPad").innerHTML = JSON.stringify(chord4maj1.padData());
-            document.getElementById("thirdPad").innerHTML = JSON.stringify(chord5maj1.padData());
-            document.getElementById("fourthPad").innerHTML = JSON.stringify(chord3maj1.padData());
-            console.log(chord11maj1.padData())
-            console.log("-----")
-            console.log(chord5maj1.padData())
-            console.log("-----")
-            console.log(chord10maj1.padData())
+            document.getElementById("2ndPad").innerHTML = JSON.stringify(chord4maj1.padData());
+            document.getElementById("3rdPad").innerHTML = JSON.stringify(chord5maj1.padData());
+            document.getElementById("4thPad").innerHTML = JSON.stringify(chord3maj1.padData());
+            // console.log(chord11maj1.padData())
+            // console.log("-----")
+            document.getElementById("2ndPad2").innerHTML = JSON.stringify(chord11maj1.padData());
+            document.getElementById("3rdPad2").innerHTML = JSON.stringify(chord5maj1.padData());
+            document.getElementById("4thPad2").innerHTML = JSON.stringify(chord10maj1.padData());
+            // console.log("-----")
+            // console.log(chord10maj1.padData())
+            document.getElementById("2ndPad3").innerHTML = JSON.stringify(chord7maj1.padData());
+            document.getElementById("3rdPad3").innerHTML = JSON.stringify(chord5maj1.padData());
+            document.getElementById("4thPad3").innerHTML = JSON.stringify(chord9maj1.padData());
 
         } else if (root == 'C#') {
             let second = 'D';
@@ -4176,6 +4199,6 @@ document.getElementById("myButton").onclick = function () {
 
     isRoot()
 
-    document.getElementById("myLabel").innerHTML = "[4165 | I-V-vi-IV:]...the M(V)gic starts on line 421! (hint: \"U Can't _ Me\" - by Tupa_ Shakur)";
+    document.getElementById("myLabel").innerHTML = "[4165 | I-V-ii/iii/vi-IV Progression:]...the M(V)gic starts on line 421! (hint: \"U Can't _ Me\" - by Tupa_ Shakur)";
     // document.getElementById("firstPad").innerHTML = chord4maj2.padData();
 }
