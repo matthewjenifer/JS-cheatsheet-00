@@ -8,4 +8,5 @@ function sumOdds(arr) { //the long way
     sum = oddsOnly.reduce((acc, val) => {return acc + val},0) //..found this syntax on google tho
     console.log("odds: ", oddsOnly," sum: ", sum)
 }
+
 sumOdds(numArray)
