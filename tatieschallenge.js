@@ -2,7 +2,7 @@ const numArray = [ 2, 5, 9, 12, 208, 333, 18, 11, 0]; //Write a function called 
 
 function evenNumbers() {
     for(let value of numArray){
-        if(value % 2 == 0 && value != 0) {
+        if(value % 2 == 0) {
             console.log(value + ' is even')
         }
     }
@@ -10,7 +10,7 @@ function evenNumbers() {
 
 function oddNumbers() {
     for(let value of numArray){
-        if(!(value % 2 == 0) && value != 0) {
+        if(!(value % 2 == 0)) {
             console.log(value + ' is odd')
         }
     }
