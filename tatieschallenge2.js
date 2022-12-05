@@ -7,7 +7,7 @@ const sumOdds = (arr) => {
                 oddsOnly.push(arr[i])
             } 
         }
-        sum = oddsOnly.reduce((acc, val) => {return acc + val},0) 
+        sum = oddsOnly.reduce((acc, val) => {return acc + val},0) //reduce refresher: https://youtu.be/3mGbzELRBkM 
     console.log("odds of the given array are: ", oddsOnly," returning a sum of: ", sum)
 }
 
