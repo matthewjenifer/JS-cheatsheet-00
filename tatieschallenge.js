@@ -4,17 +4,16 @@ function evenNumbers(arr) {
     for(let val of arr){
         if(val % 2 == 0) {
             console.log(val + ' is even')
-        }
-    }
-};
-
-function oddNumbers(arr) {
-    for(let val of arr){
-        if(!(val % 2 == 0)) {
+        } else {
             console.log(val + ' is odd')
         }
     }
 };
 
 evenNumbers(numArray);
-oddNumbers();
+
+//Touqeer Shakeel's take via Linked-in
+
+// const isOddOrEven = (_arr, isOdd) => numArray.filter(value => isOdd ? value && value % 2 > 0 : value && value % 2 === 0);
+
+// isOddOrEven(numArray)
