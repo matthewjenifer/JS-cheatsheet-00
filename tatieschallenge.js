@@ -12,8 +12,19 @@ function evenNumbers(arr) {
 
 evenNumbers(numArray);
 
-//Touqeer Shakeel's take via Linked-in
+// GPT simplified. 
 
-// const isOddOrEven = (_arr, isOdd) => numArray.filter(value => isOdd ? value && value % 2 > 0 : value && value % 2 === 0);
+function evenNumbers(nums) {
+    return nums.filter(num => num % 2 === 0);
+}
 
-// isOddOrEven(numArray)
+function oddNumbers(nums) {
+    return nums.filter(num => num % 2 !== 0);
+}
+
+
+const evenNums = evenNumbers(numArray);
+console.log(evenNums);  // [2, 12, 208, 18, 0]
+
+const oddNums = oddNumbers(numArray);
+console.log(oddNums);  // [5, 9, 333, 11]

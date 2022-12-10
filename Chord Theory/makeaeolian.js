@@ -40,14 +40,8 @@ document.getElementById("myButton").onclick = function () {
 
     function makeMode() {
         if (root == 'C') {
-            let major2nd = 'D';
-            let minor3rd = 'Eb';
-            let perfect4th = 'F';
-            let perfect5th = 'G';
-            let minor6th = 'Ab';
-            let minor7th = 'Bb';
-
-            let comma = ', ';
+            let major2nd = 'D', minor3rd = 'Eb', perfect4th = 'F', perfect5th = 'G', minor6th = 'Ab', minor7th = 'Bb';
+    let comma = ', ';
 
             let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
 

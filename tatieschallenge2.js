@@ -8,15 +8,17 @@ const sumOdds = (arr) => {
 }
 
 sumOdds(numArray)
+console.log(numArray[4])//prints: 208
 
 //==================
 
-// function main() {
-//     var hour = parseInt(readLine(), 10);
-//     // Your code goes here
+/* the 0 at the end of line 6 represents the initial value for the acc (i.e., accumulator) parameter in the reduce() method.
 
-//     time = hour >= 0 && hour <= 12 ? "am" : "pm";
+The reduce() method is a built-in JavaScript method that is used to reduce an array of values to a single value. It does this by applying a function to each element in the array, and the function takes two arguments: the acc parameter, which represents the accumulated value, and the val parameter, which represents the current element in the array.
 
-//     console.log(time)
-// }
+In the given line of code, the reduce() method is used to sum the elements in the oddsOnly array. The acc parameter is used to keep track of the current sum, and the val parameter is used to represent the current element in the array. The function adds the current element val to the accumulated value acc, and it returns the result as the new value of acc. This process is repeated for each element in the array, and the final value of acc is the sum of all the elements in the array.
+
+The 0 at the end of the line of code represents the initial value for the acc parameter. When the reduce() method is called, it will start with an acc value of 0, and it will use this value as the starting point for the accumulation. Then, as the function iterates over the elements in the array, it will add each element to the acc value, and the final result will be the sum of all the elements in the array.
+
+Overall, the 0 in the given line of code is an important part of the reduce() method, as it sets the initial value for the accumulation process. Without this initial value, the reduce() method would not be able to sum the elements in the array correctly. */
 
