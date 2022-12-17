@@ -1,13 +1,31 @@
 // The relationship between scales and keys in music theory.
 
-
 const SCALE_TYPES = [  // Define an array of scale types, where each scale type is an array of intervals relative to the tonic
+
 [0, 2, 4, 5, 7, 9, 11], // Major scale  
 [0, 2, 3, 5, 7, 8, 10], // Natural minor scale
 [0, 2, 3, 5, 7, 8, 11], // Harmonic minor scale
 [0, 2, 3, 5, 7, 9, 11], // Melodic minor scale (ascending)
 [0, 2, 3, 5, 7, 8, 10]  // Melodic minor scale (descending)
 ];
+
+/* Here are the scale degrees represented by each numeric value in the SCALE_TYPES array:
+
+0 represents the tonic, or the first degree of the scale.
+2 represents the supertonic, or the second degree of the scale.
+3 represents the mediant, or the third degree of the scale.
+4 represents the subdominant, or the fourth degree of the scale.
+5 represents the dominant, or the fifth degree of the scale.
+7 represents the submediant, or the sixth degree of the scale.
+8 represents the leading tone, or the seventh degree of the scale (in a Natural minor scale)  
+
+    (The 8th note, also known as the dominant, is called the leading tone because it has a strong       tendency to resolve to the tonic, or first note, of the scale. This resolution creates a sense of musical tension and resolution, which is an important aspect of tonal music. The term "leading tone" is also sometimes used to refer to the 7th scale degree in major scales, which has a similar function and is also a half step below the tonic. However, the 8th scale degree is more commonly referred to as the leading tone.)
+
+9 represents the subtonic, or the seventh degree of the scale (in a Melodic minor scale).
+10 represents the octave, or the eighth degree of the scale (in a Natural minor scale or a Melodic minor scale (descending)).
+11 represents the octave, or the eighth degree of the scale (in a Major scale, a Harmonic minor scale, or a Melodic minor scale (ascending)).
+
+It's important to note that the names of the degrees of a scale (such as tonic, supertonic, mediant, etc.) are based on the specific interval patterns of that scale and the relationships between the notes of the scale. The names of the degrees of a scale can be different in different types of scales. */
 
 const KEY_NAMES = [  "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"]; // Define an array of key names, where each key name is a string
 
@@ -38,3 +56,9 @@ const aSharpMelodicMinorScale = getScale(SCALE_TYPES[3], "A#/Bb"); // Example us
 console.table(cMajorScale);
 // console.table(aSharpMelodicMinorScale);
 
+
+/* console.table:  is a method in JavaScript that displays data as a table in the console. It is useful for formatting and displaying data in a structured way, especially when working with large datasets or objects.
+
+To use console.table, you pass it an array or an object as an argument. The table will then be displayed in the console, with each property or element displayed as a row in the table. You can also specify the properties or elements that you want to include in the table by passing an array of strings as the second argument.
+
+console.table is a useful tool for debugging and inspecting data in your JavaScript code. It can help you quickly and easily see the structure and content of your data, making it easier to understand and work with. */
