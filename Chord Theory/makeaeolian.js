@@ -40,10 +40,7 @@ document.getElementById("myButton").onclick = function () {
 
     function makeMode() {
         if (root == 'C') {
-            let major2nd = 'D', minor3rd = 'Eb', perfect4th = 'F', perfect5th = 'G', minor6th = 'Ab', minor7th = 'Bb';
-    let comma = ', ';
-
-            let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+            let major2nd = 'D', minor3rd = 'Eb', perfect4th = 'F', perfect5th = 'G', minor6th = 'Ab', minor7th = 'Bb', comma = ', ', collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
 
             console.log("----");
             console.log("Root is now " + root);
@@ -56,16 +53,7 @@ document.getElementById("myButton").onclick = function () {
             image.src = "https://m.basicmusictheory.com/img/c-aeolian-mode-on-piano-keyboard.png"; 
 
         } else if (root == 'C#' || root == 'Db') {
-            let major2nd = 'D#(Eb)';
-            let minor3rd = 'E';
-            let perfect4th = 'F#(Gb)';
-            let perfect5th = 'G#(Ab)';
-            let minor6th = 'A';
-            let minor7th = 'B';
-
-            let comma = ', ';
-
-            let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+            let major2nd = 'D#(Eb)', minor3rd = 'E', perfect4th = 'F#(Gb)', perfect5th = 'G#(Ab)', minor6th = 'A', minor7th = 'B', comma = ', ', collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
 
             console.log("----");
             console.log("Root is now " + root);
@@ -79,16 +67,7 @@ document.getElementById("myButton").onclick = function () {
 
 
         } else if (root == 'D') {
-            let major2nd = 'E';
-            let minor3rd = 'F';
-            let perfect4th = 'G';
-            let perfect5th = 'A';
-            let minor6th = 'Bb';
-            let minor7th = 'C';
-
-            let comma = ', ';
-
-            let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+            let major2nd = 'E', minor3rd = 'F', perfect4th = 'G', perfect5th = 'A', minor6th = 'Bb', minor7th = 'C', comma = ', ', collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
 
             console.log("----");
             console.log("Root is now " + root);
@@ -102,16 +81,7 @@ document.getElementById("myButton").onclick = function () {
 
 
         } else if (root == 'Eb' || root == 'D#') {
-            let major2nd = 'F';
-            let minor3rd = 'Gb(A#)';
-            let perfect4th = 'Ab(G#)';
-            let perfect5th = 'Bb';
-            let minor6th = 'Cb(B)';
-            let minor7th = 'Db(C#)';
-
-            let comma = ', ';
-
-            let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+            let major2nd = 'F', minor3rd = 'Gb(A#)', perfect4th = 'Ab(G#)', perfect5th = 'Bb', minor6th = 'Cb(B)', minor7th = 'Db(C#)', comma = ', ', collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
 
             console.log("----");
             console.log("Root is now " + root);
@@ -125,16 +95,7 @@ document.getElementById("myButton").onclick = function () {
 
 
         } else if (root == 'E') {
-            let major2nd = 'F#(Gb)';
-            let minor3rd = 'G';
-            let perfect4th = 'A';
-            let perfect5th = 'B';
-            let minor6th = 'C';
-            let minor7th = 'D';
-
-            let comma = ', ';
-
-            let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+            let major2nd = 'F#(Gb)', minor3rd = 'G', perfect4th = 'A', perfect5th = 'B', minor6th = 'C', minor7th = 'D', comma = ', ', collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
 
             console.log("----");
             console.log("Root is now " + root);
@@ -148,16 +109,7 @@ document.getElementById("myButton").onclick = function () {
 
 
         } else if (root == 'F') {
-            let major2nd = 'G';
-            let minor3rd = 'Ab(G#)';
-            let perfect4th = 'Bb';
-            let perfect5th = 'C';
-            let minor6th = 'Db(C#)';
-            let minor7th = 'Eb(D#)';
-
-            let comma = ', ';
-
-            let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+            let major2nd = 'G', minor3rd = 'Ab(G#)', perfect4th = 'Bb', perfect5th = 'C', minor6th = 'Db(C#)', minor7th = 'Eb(D#)', comma = ', ', collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
 
             console.log("----");
             console.log("Root is now " + root);
@@ -171,16 +123,7 @@ document.getElementById("myButton").onclick = function () {
 
 
         } else if (root == 'F#' || root == 'Gb') {
-            let major2nd = 'G#(Ab)';
-            let minor3rd = 'A';
-            let perfect4th = 'B';
-            let perfect5th = 'C#(Db)';
-            let minor6th = 'D';
-            let minor7th = 'E';
-
-            let comma = ', ';
-
-            let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+            let major2nd = 'G#(Ab)', minor3rd = 'A', perfect4th = 'B', perfect5th = 'C#(Db)', minor6th = 'D', minor7th = 'E', comma = ', ', collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
 
             console.log("----");
             console.log("Root is now " + root);
@@ -194,16 +137,7 @@ document.getElementById("myButton").onclick = function () {
 
 
         } else if (root == 'G') {
-            let major2nd = 'A';
-            let minor3rd = 'Bb';
-            let perfect4th = 'C';
-            let perfect5th = 'D';
-            let minor6th = 'Eb(D#)';
-            let minor7th = 'F';
-
-            let comma = ', ';
-
-            let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+            let major2nd = 'A', minor3rd = 'Bb', perfect4th = 'C', perfect5th = 'D', minor6th = 'Eb(D#)', minor7th = 'F', comma = ', ', collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
 
             console.log("----");
             console.log("Root is now " + root);
@@ -217,16 +151,7 @@ document.getElementById("myButton").onclick = function () {
 
 
         } else if (root == 'G#' || root == 'Ab') {
-            let major2nd = 'A#(Gb)';
-            let minor3rd = 'B';
-            let perfect4th = 'C#(Db)';
-            let perfect5th = 'D#(Eb)';
-            let minor6th = 'E';
-            let minor7th = 'F#(Gb)';
-
-            let comma = ', ';
-
-            let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+            let major2nd = 'A#(Gb)', minor3rd = 'B', perfect4th = 'C#(Db)', perfect5th = 'D#(Eb)', minor6th = 'E', minor7th = 'F#(Gb)', comma = ', ', collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
 
             console.log("----");
             console.log("Root is now " + root);
@@ -240,16 +165,7 @@ document.getElementById("myButton").onclick = function () {
 
 
         } else if (root == 'A') {
-            let major2nd = 'B';
-            let minor3rd = 'C';
-            let perfect4th = 'D';
-            let perfect5th = 'E';
-            let minor6th = 'F';
-            let minor7th = 'G';
-
-            let comma = ', ';
-
-            let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+            let major2nd = 'B', minor3rd = 'C', perfect4th = 'D', perfect5th = 'E', minor6th = 'F', minor7th = 'G', comma = ', ', collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
 
             console.log("----");
             console.log("Root is now " + root);
@@ -263,16 +179,7 @@ document.getElementById("myButton").onclick = function () {
 
 
         } else if (root == 'Bb' || root == 'A#') {
-            let major2nd = 'C';
-            let minor3rd = 'Db(E#)';
-            let perfect4th = 'Eb(D#)';
-            let perfect5th = 'F';
-            let minor6th = 'Gb(F#)';
-            let minor7th = 'Ab(G#)';
-
-            let comma = ', ';
-
-            let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+            let major2nd = 'C', minor3rd = 'Db(E#)', perfect4th = 'Eb(D#)', perfect5th = 'F', minor6th = 'Gb(F#)', minor7th = 'Ab(G#)', comma = ', ', collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
 
             console.log("----");
             console.log("Root is now " + root);
@@ -286,16 +193,7 @@ document.getElementById("myButton").onclick = function () {
 
 
         } else if (root == 'B') {
-            let major2nd = 'C#(Db)';
-            let minor3rd = 'D';
-            let perfect4th = 'E';
-            let perfect5th = 'F#(Gb)';
-            let minor6th = 'G';
-            let minor7th = 'A';
-
-            let comma = ', ';
-
-            let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+            let major2nd = 'C#(Db)', minor3rd = 'D', perfect4th = 'E', perfect5th = 'F#(Gb)', minor6th = 'G', minor7th = 'A', comma = ', ', collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
 
             console.log("----");
             console.log("Root is now " + root);
