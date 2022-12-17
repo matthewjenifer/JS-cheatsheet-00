@@ -7,6 +7,11 @@ const SCALE_TYPES = [  // Define an array of scale types, where each scale type 
 [0, 2, 3, 5, 7, 8, 11], // Harmonic minor scale
 [0, 2, 3, 5, 7, 9, 11], // Melodic minor scale (ascending)
 [0, 2, 3, 5, 7, 8, 10]  // Melodic minor scale (descending)
+[0, 2, 4, 7, 9], // Pentatonic scale
+[0, 2, 4, 6, 8, 10], // Whole tone scale
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], // Chromatic scale
+[0, 2, 3, 4, 7, 9], // Blues scale
+[0, 2, 4, 5, 7, 8, 9, 11] // Bebop scale
 ];
 
 /* 
@@ -27,6 +32,8 @@ Here are the scale degrees represented by each numeric value in the SCALE_TYPES 
 10 - represents the octave, or the eighth degree of the scale (in a Natural minor scale or a Melodic minor scale (descending)).
 11 - represents the octave, or the eighth degree of the scale (in a Major scale, a Harmonic minor scale, or a Melodic minor scale (ascending)).
 
+    **NOTE** - the distance between the values in your given array - [0, 2, 4, 5, 7, 9, 11] - represent the whole-half step pattern for the given scale (W-W-H-W-W-W-H)
+
 It's important to note that the names of the degrees of a scale (such as tonic, supertonic, mediant, etc.) are based on the specific interval patterns of that scale and the relationships between the notes of the scale. The names of the degrees of a scale can be different in different types of scales. 
 
 */
@@ -34,6 +41,7 @@ It's important to note that the names of the degrees of a scale (such as tonic, 
 const KEY_NAMES = [  "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"]; // Define an array of key names, where each key name is a string
 
 function getScale(scaleType, tonic) { // Define a function that takes in a scale type and tonic, and returns an array of pitch classes for the corresponding scale
+
 const tonicPitchClass = KEY_NAMES.indexOf(tonic); // Convert the tonic to a pitch class number (i.e. 0 for C, 1 for C#/Db, etc.)
 
 const scale = []; // Initialize an empty array to store the pitch classes for the scale
@@ -57,8 +65,8 @@ const cMajorScale = getScale(SCALE_TYPES[0], "C"); // Example usage: get the C m
 
 const aSharpMelodicMinorScale = getScale(SCALE_TYPES[3], "A#/Bb"); // Example usage: get the A#/Bb melodic minor scale (ascending)
 
-console.table(cMajorScale);
-// console.table(aSharpMelodicMinorScale);
+console.table(aSharpMelodicMinorScale);
+console.log(aSharpMelodicMinorScale);
 
 
 /* 
