@@ -9,9 +9,10 @@ const SCALE_TYPES = [  // Define an array of scale types, where each scale type 
 [0, 2, 3, 5, 7, 8, 10]  // Melodic minor scale (descending)
 [0, 2, 4, 7, 9], // Pentatonic scale
 [0, 2, 4, 6, 8, 10], // Whole tone scale
-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], // Chromatic scale
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], // Chromatic scale [only half-steps]
 [0, 2, 3, 4, 7, 9], // Blues scale
 [0, 2, 4, 5, 7, 8, 9, 11] // Bebop scale
+
 ];
 
 /* 
