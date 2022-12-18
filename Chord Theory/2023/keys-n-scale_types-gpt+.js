@@ -90,10 +90,20 @@ const aSharpMelodicMinorScale = getScale(SCALE_TYPES[3], "A#/Bb"); // Example us
 console.log("Notes in the C Major Scale: ");
 
 console.table(cMajorScale);
-console.table("==============");
+/* 
+
+console.table -  is a method in JavaScript that displays data as a table in the console. It is useful for formatting and displaying data in a structured way, especially when working with large datasets or objects.
+
+To use - console.table - you pass it an array or an object as an argument. The table will then be displayed in the console, with each property or element displayed as a row in the table. You can also specify the properties or elements that you want to include in the table by passing an array of strings as the second argument.
+
+console.table - is a useful tool for debugging and inspecting data in your JavaScript code. It can help you quickly and easily see the structure and content of your data, making it easier to understand and work with. 
+
+*/
+console.log("==============");
 
 console.log("Chords in the C Major Scale: ");
-console.table("==============");
+
+console.log("==============");
 
 function getChords(scale) {
     const chords = [];
@@ -112,17 +122,8 @@ function getChords(scale) {
     // }
 
 const cMajorChords = getChords(cMajorScale);
+
 for (const chord of cMajorChords) {
     console.log(chord.name + ":", chord.notes);
 }
 
-
-/* 
-
-console.table -  is a method in JavaScript that displays data as a table in the console. It is useful for formatting and displaying data in a structured way, especially when working with large datasets or objects.
-
-To use - console.table - you pass it an array or an object as an argument. The table will then be displayed in the console, with each property or element displayed as a row in the table. You can also specify the properties or elements that you want to include in the table by passing an array of strings as the second argument.
-
-console.table - is a useful tool for debugging and inspecting data in your JavaScript code. It can help you quickly and easily see the structure and content of your data, making it easier to understand and work with. 
-
-*/
