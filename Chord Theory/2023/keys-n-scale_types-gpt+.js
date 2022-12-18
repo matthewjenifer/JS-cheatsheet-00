@@ -127,15 +127,16 @@ function getChords(scale) {
     const cMajorChords = getChords(cMajorScale);
 
     // const aSharpMelodicMinorChords = getChords(aSharpMelodicMinorScale);
-    // for (const chord of aSharpMelodicMinorChords) {
-    //     console.log(chord.name + ":", chord.notes);
-    // }
-    
     
     //printing chords
     for (const chord of cMajorChords) {
         console.log(chord.name + ":", chord.notes);
     }
+    
+    // for (const chord of aSharpMelodicMinorChords) {
+    //     console.log(chord.name + ":", chord.notes);
+    // }
+    
     
     console.log("==============");
 
