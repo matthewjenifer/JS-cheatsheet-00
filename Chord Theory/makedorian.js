@@ -1,4 +1,3 @@
-// https://replit.com/join/wafitzqvrt-matthewjenifer 
 // https://www.solfej.io/scales/b-dorian 
 // https://www.onlinepianist.com/virtual-piano
 // https://youtu.be/ue7SkGsIMhI?t=716

@@ -2,6 +2,8 @@
 
 const SCALE_TYPES = [  // Define an array of scale types, where each scale type is an array of intervals relative to the tonic | https://www.musictheory.net/lessons/23
 
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], // Chromatic scale
+
 // Major scales
 [0, 2, 4, 5, 7, 9, 11], // Major scale
 [0, 2, 4, 7, 9], // Major pentatonic scale
@@ -15,7 +17,6 @@ const SCALE_TYPES = [  // Define an array of scale types, where each scale type 
 
 // Other scales
 [0, 2, 4, 6, 8, 10], // Whole tone scale
-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], // Chromatic scale
 [0, 2, 3, 4, 7, 9], // Blues scale
 [0, 2, 4, 5, 7, 8, 9, 11], // Bebop scale
 [0, 2, 3, 6, 7, 8, 11], // Gypsy scale
@@ -70,7 +71,10 @@ It's important to note that the names of the degrees of a scale (such as tonic, 
 
 */
 
+//declaring keys
 const KEY_NAMES = [  "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"]; // Define an array of key names, where each key name is a string
+
+//making scales
 function getScale(scaleType, tonic) { // Define a function that takes in a scale type and tonic, and returns an array of pitch classes for the corresponding scale
 const tonicPitchClass = KEY_NAMES.indexOf(tonic); // Convert the tonic to a pitch class number (i.e. 0 for C, 1 for C#/Db, etc.)
 const scale = []; // Initialize an empty array to store the pitch classes for the scale
@@ -84,10 +88,13 @@ for (const pitchClass of scale) { // Iterate over the pitch classes in the scale
 }
 return pitchNames; // Return the pitch names array
 }
+
+
+//declaring new scales by name
 const cMajorScale = getScale(SCALE_TYPES[0], "C"); // Example usage: get the C major scale
 const aSharpMelodicMinorScale = getScale(SCALE_TYPES[3], "A#/Bb"); // Example usage: get the A#/Bb melodic minor scale (ascending)
 
-console.log("Notes in the C Major Scale: ");
+    console.log("Notes in the C Major Scale: ");
 
 console.table(cMajorScale);
 /* 
@@ -101,10 +108,11 @@ console.table - is a useful tool for debugging and inspecting data in your JavaS
 */
 console.log("==============");
 
-console.log("Chords in the C Major Scale: ");
+    console.log("Chords in the C Major Scale: ");
 
 console.log("==============");
 
+//making chords
 function getChords(scale) {
     const chords = [];
     const chordNames = ["major", "minor", "minor", "major", "major", "minor", "diminished"];
@@ -116,35 +124,40 @@ function getChords(scale) {
         return chords;
 }
 
-// const aSharpMelodicMinorChords = getChords(aSharpMelodicMinorScale);
-// for (const chord of aSharpMelodicMinorChords) {
+    // const aSharpMelodicMinorChords = getChords(aSharpMelodicMinorScale);
+    // for (const chord of aSharpMelodicMinorChords) {
     //     console.log(chord.name + ":", chord.notes);
     // }
     
+
+    //declaring chords by name
     const cMajorChords = getChords(cMajorScale);
     
+    //printing chords
     for (const chord of cMajorChords) {
         console.log(chord.name + ":", chord.notes);
     }
     
     console.log("==============");
 
+    //making modes
     function getModes(scale) {
         const modes = [];
         for (let i = 0; i < scale.length; i++) {
-          // create a mode starting on each note of the scale
-        const mode = [scale[i], scale[(i + 1) % scale.length], scale[(i + 2) % scale.length], scale[(i + 3) % scale.length], scale[(i + 4) % scale.length], scale[(i + 5) % scale.length], scale[(i + 6) % scale.length]];
+        const mode = [scale[i], scale[(i + 1) % scale.length], scale[(i + 2) % scale.length], scale[(i + 3) % scale.length], scale[(i + 4) % scale.length], scale[(i + 5) % scale.length], scale[(i + 6) % scale.length]]; // create a mode starting on each note of the scale
         modes.push(mode);
         }
         return modes;
     }
-    
+
+    //declaring modes by name
     const cMajorModes = getModes(cMajorScale);
 
-    console.log("Modes in the C Major Scale: ");
+        console.log("Modes in the C Major Scale: ");
 
     console.log("==============");
     
+    //printing modes
     const modeNames = ["Ionian", "Dorian", "Phrygian", "Lydian", "Mixolydian", "Aeolian", "Locrian"];
     for (let i = 0; i < cMajorModes.length; i++) {
     console.log(modeNames[i] + ":", cMajorModes[i]);
