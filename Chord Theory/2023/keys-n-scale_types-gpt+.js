@@ -71,34 +71,50 @@ It's important to note that the names of the degrees of a scale (such as tonic, 
 */
 
 const KEY_NAMES = [  "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"]; // Define an array of key names, where each key name is a string
-
 function getScale(scaleType, tonic) { // Define a function that takes in a scale type and tonic, and returns an array of pitch classes for the corresponding scale
-
 const tonicPitchClass = KEY_NAMES.indexOf(tonic); // Convert the tonic to a pitch class number (i.e. 0 for C, 1 for C#/Db, etc.)
-
 const scale = []; // Initialize an empty array to store the pitch classes for the scale
-
 for (const interval of scaleType) {  // Iterate over the intervals in the scale type
     const pitchClass = (tonicPitchClass + interval) % 12; // Add the interval to the tonic pitch class and modulo 12 to get the pitch class for the current scale degree
     scale.push(pitchClass); // Push the pitch class to the scale array
 }
-
 const pitchNames = []; // Initialize an empty array to store the names of the pitches in the scale
-
 for (const pitchClass of scale) { // Iterate over the pitch classes in the scale
-    
     pitchNames.push(KEY_NAMES[pitchClass]); // Look up the name of the pitch class using the KEY_NAMES array, and push it to the pitchNames array
 }
-
 return pitchNames; // Return the pitch names array
 }
-
 const cMajorScale = getScale(SCALE_TYPES[0], "C"); // Example usage: get the C major scale
-
 const aSharpMelodicMinorScale = getScale(SCALE_TYPES[3], "A#/Bb"); // Example usage: get the A#/Bb melodic minor scale (ascending)
 
-console.table(aSharpMelodicMinorScale);
-console.log(aSharpMelodicMinorScale);
+console.log("Notes in the C Major Scale: ");
+
+console.table(cMajorScale);
+console.table("==============");
+
+console.log("Chords in the C Major Scale: ");
+console.table("==============");
+
+function getChords(scale) {
+    const chords = [];
+    const chordNames = ["major", "minor", "minor", "major", "major", "minor", "diminished"];
+    for (let i = 0; i < scale.length; i++) {
+        const chord = [scale[i], scale[(i + 2) % scale.length], scale[(i + 4) % scale.length]]; // create a chord starting on each note of the scale
+    const chordName = scale[i] + " " + chordNames[i];
+        chords.push({ name: chordName, notes: chord });
+    }
+        return chords;
+}
+
+    // const aSharpMelodicMinorChords = getChords(aSharpMelodicMinorScale);
+    // for (const chord of aSharpMelodicMinorChords) {
+    //     console.log(chord.name + ":", chord.notes);
+    // }
+
+const cMajorChords = getChords(cMajorScale);
+for (const chord of cMajorChords) {
+    console.log(chord.name + ":", chord.notes);
+}
 
 
 /* 
