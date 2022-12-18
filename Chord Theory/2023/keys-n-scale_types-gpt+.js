@@ -2,16 +2,47 @@
 
 const SCALE_TYPES = [  // Define an array of scale types, where each scale type is an array of intervals relative to the tonic | https://www.musictheory.net/lessons/23
 
-[0, 2, 4, 5, 7, 9, 11], // Major scale  
+// Major scales
+[0, 2, 4, 5, 7, 9, 11], // Major scale
+[0, 2, 4, 7, 9], // Major pentatonic scale
+
+// Minor scales
 [0, 2, 3, 5, 7, 8, 10], // Natural minor scale
 [0, 2, 3, 5, 7, 8, 11], // Harmonic minor scale
 [0, 2, 3, 5, 7, 9, 11], // Melodic minor scale (ascending)
-[0, 2, 3, 5, 7, 8, 10]  // Melodic minor scale (descending)
-[0, 2, 4, 7, 9], // Pentatonic scale
+[0, 2, 3, 5, 7, 8, 10], // Melodic minor scale (descending)
+[0, 2, 4, 7, 9], // Minor pentatonic scale
+
+// Other scales
 [0, 2, 4, 6, 8, 10], // Whole tone scale
-[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], // Chromatic scale [only half-steps]
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], // Chromatic scale
 [0, 2, 3, 4, 7, 9], // Blues scale
-[0, 2, 4, 5, 7, 8, 9, 11] // Bebop scale
+[0, 2, 4, 5, 7, 8, 9, 11], // Bebop scale
+[0, 2, 3, 6, 7, 8, 11], // Gypsy scale
+[0, 1, 4, 5, 7, 8, 11], // Arabic scale
+[0, 1, 4, 5, 7, 8, 11], // Byzantine scale
+[0, 2, 3, 6, 7, 8, 11], // Hungarian minor scale
+[0, 1, 4, 5, 7, 8, 11], // Double harmonic scale
+[0, 1, 4, 6, 8, 10, 11], // Enigmatic scale
+[0, 1, 3, 4, 6, 7, 8, 10], // Freygish scale
+[0, 1, 5, 7, 8], // Japanese scale
+
+// Modes
+[0, 2, 4, 5, 7, 9, 11], // Ionian
+[0, 2, 3, 5, 7, 9, 10], // Dorian
+[0, 1, 3, 5, 7, 8, 10], // Phrygian
+[0, 2, 4, 6, 7, 9, 11], // Lydian
+[0, 2, 4, 5, 7, 9, 10], // Mixolydian
+[0, 2, 3, 5, 7, 8, 10], // Aeolian
+[0, 1, 3, 5, 6, 8, 10], // Locrian
+[0, 1, 2, 4, 5, 7, 8, 9, 11], // Ionian b2
+[0, 1, 2, 3, 5, 7, 8, 9, 10], // Dorian b5
+[0, 1, 3, 4, 5, 7, 8, 10], // Harm Phrygian
+[0, 1, 3, 4, 5, 8, 10], // Phrygian Major
+[0, 1, 2, 4, 6, 7, 9, 11], // Lydian b3
+[0, 1, 3, 4, 5, 6, 8, 10], // Major Locrian
+[0, 1, 2, 3, 5, 6, 8, 10], // Minor Locrian
+[0, 1, 3, 4, 6, 8, 10], // Super Locrian
 
 ];
 
