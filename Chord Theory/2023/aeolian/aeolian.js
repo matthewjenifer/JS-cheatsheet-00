@@ -17,25 +17,25 @@ document.getElementById("myButton").onclick = function () {
             this.leadingTone = leadingTone;
         }
         tonic() {
-            console.log("Tonic:", this.tonic); // Root Note
+            console.log("Root Note:", this.tonic); 
         }
         supertonic() {
-            console.log("Supertonic:", this.supertonic); // Major 2nd
+            console.log("Major 2nd:", this.supertonic); 
         }
         mediant() {
-            console.log("Mediant:", this.mediant); // Minor 3rd
+            console.log("Minor 3rd:", this.mediant); 
         }
         subdominant() {
-            console.log("Subdominant:", this.subdominant); // Perfect 4th
+            console.log("Perfect 4th:", this.subdominant); 
         }
         dominant() {
-            console.log("Dominant:", this.dominant); // Perfect 5th
+            console.log("Perfect 5th:", this.dominant);
         }
         submediant() {
-            console.log("Submediant:", this.submediant); // Minor 6th
+            console.log("Minor 6th:", this.submediant); 
         }
         leadingTone() {
-            console.log("Leading Tone:", this.leadingTone); // Minor 7th
+            console.log("Minor 7th:", this.leadingTone); 
         }
         scaleData() {
             return this;
