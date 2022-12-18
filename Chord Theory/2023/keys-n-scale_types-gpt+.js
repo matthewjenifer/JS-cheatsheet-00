@@ -110,20 +110,42 @@ function getChords(scale) {
     const chordNames = ["major", "minor", "minor", "major", "major", "minor", "diminished"];
     for (let i = 0; i < scale.length; i++) {
         const chord = [scale[i], scale[(i + 2) % scale.length], scale[(i + 4) % scale.length]]; // create a chord starting on each note of the scale
-    const chordName = scale[i] + " " + chordNames[i];
+        const chordName = scale[i] + " " + chordNames[i];
         chords.push({ name: chordName, notes: chord });
     }
         return chords;
 }
 
-    // const aSharpMelodicMinorChords = getChords(aSharpMelodicMinorScale);
-    // for (const chord of aSharpMelodicMinorChords) {
+// const aSharpMelodicMinorChords = getChords(aSharpMelodicMinorScale);
+// for (const chord of aSharpMelodicMinorChords) {
     //     console.log(chord.name + ":", chord.notes);
     // }
+    
+    const cMajorChords = getChords(cMajorScale);
+    
+    for (const chord of cMajorChords) {
+        console.log(chord.name + ":", chord.notes);
+    }
+    
+    console.log("==============");
 
-const cMajorChords = getChords(cMajorScale);
+    function getModes(scale) {
+        const modes = [];
+        for (let i = 0; i < scale.length; i++) {
+          // create a mode starting on each note of the scale
+        const mode = [scale[i], scale[(i + 1) % scale.length], scale[(i + 2) % scale.length], scale[(i + 3) % scale.length], scale[(i + 4) % scale.length], scale[(i + 5) % scale.length], scale[(i + 6) % scale.length]];
+        modes.push(mode);
+        }
+        return modes;
+    }
+    
+    const cMajorModes = getModes(cMajorScale);
 
-for (const chord of cMajorChords) {
-    console.log(chord.name + ":", chord.notes);
-}
+    console.log("Modes in the C Major Scale: ");
 
+    console.log("==============");
+    
+    const modeNames = ["Ionian", "Dorian", "Phrygian", "Lydian", "Mixolydian", "Aeolian", "Locrian"];
+    for (let i = 0; i < cMajorModes.length; i++) {
+    console.log(modeNames[i] + ":", cMajorModes[i]);
+    }
