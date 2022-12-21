@@ -1,0 +1,26 @@
+#drum-machine {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+    padding: 50px 0;
+}
+
+.pad {
+    background-color: #ccc;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.pad:active {
+    background-color: #999;
+}

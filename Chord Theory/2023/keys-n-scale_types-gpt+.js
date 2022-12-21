@@ -72,7 +72,7 @@ It's important to note that the names of the degrees of a scale (such as tonic, 
 */
 
 //declaring keys
-const KEY_NAMES = [  "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Bb", "B"]; // Define an array of key names, where each key name is a string
+const KEY_NAMES = [  "C", "C#", "D", "Eb", "E", "F", "F#", "G", "G#", "A", "Bb", "B"]; // Define an array of key names, where each key name is a string
 
 //making scales
 function getScale(scaleType, tonic) { // Define a function that takes in a scale type and tonic, and returns an array of pitch classes for the corresponding scale
@@ -80,7 +80,7 @@ const tonicPitchClass = KEY_NAMES.indexOf(tonic); // Convert the tonic to a pitc
 const scale = []; // Initialize an empty array to store the pitch classes for the scale
 for (const interval of scaleType) {  // Iterate over the intervals in the scale type
     const pitchClass = (tonicPitchClass + interval) % 12; // Add the interval to the tonic pitch class and modulo 12 to get the pitch class for the current scale degree
-    scale.push(pitchClass); // Push the pitch class to the scale array
+        scale.push(pitchClass); // Push the pitch class to the scale array
 }
 const pitchNames = []; // Initialize an empty array to store the names of the pitches in the scale
 for (const pitchClass of scale) { // Iterate over the pitch classes in the scale
@@ -91,12 +91,20 @@ return pitchNames; // Return the pitch names array
 
 
 //declaring new scales by name
-const cMajorScale = getScale(SCALE_TYPES[0], "C"); // Example usage: get the C major scale
-const aSharpMelodicMinorScale = getScale(SCALE_TYPES[3], "A#/Bb"); // Example usage: get the A#/Bb melodic minor scale (ascending)
+const givenScale = getScale(SCALE_TYPES[1], "D"); // Example usage: get the C major (SCALE_TYPES[1]) scale
 
-    console.log("Notes in the C Major Scale: ");
+// function nameScale(scaleVariable) {
+//     if (scaleVariable === SCALE_TYPES[1]) {
+//     return "Major";
+//     } else {
+//     return "error";
+//     }
+// }
 
-console.table(cMajorScale);
+
+// console.log(`Notes in ${nameScale(givenScale)} scale: `);
+
+    console.table(givenScale);
 /* 
 
 console.table -  is a method in JavaScript that displays data as a table in the console. It is useful for formatting and displaying data in a structured way, especially when working with large datasets or objects.
@@ -108,7 +116,7 @@ console.table - is a useful tool for debugging and inspecting data in your JavaS
 */
 console.log("==============");
 
-    console.log("Chords in the C Major Scale: ");
+    console.log("Chords in given Scale: ");
 
 console.log("==============");
 
@@ -118,18 +126,19 @@ function getChords(scale) {
     const chordNames = ["major", "minor", "minor", "major", "major", "minor", "diminished"];
     for (let i = 0; i < scale.length; i++) {
         const chord = [scale[i], scale[(i + 2) % scale.length], scale[(i + 4) % scale.length]]; // create a chord starting on each note of the scale
+
         const chordName = scale[i] + " " + chordNames[i];
-        chords.push({ name: chordName, notes: chord });
+            chords.push({ name: chordName, notes: chord });
     }
         return chords;
 }
     //declaring chords by name
-    const cMajorChords = getChords(cMajorScale);
+    const chordInScale = getChords(givenScale);
 
     // const aSharpMelodicMinorChords = getChords(aSharpMelodicMinorScale);
     
     //printing chords
-    for (const chord of cMajorChords) {
+    for (const chord of chordInScale) {
         console.log(chord.name + ":", chord.notes);
     }
     
@@ -144,21 +153,21 @@ function getChords(scale) {
     function getModes(scale) {
         const modes = [];
         for (let i = 0; i < scale.length; i++) {
-        const mode = [scale[i], scale[(i + 1) % scale.length], scale[(i + 2) % scale.length], scale[(i + 3) % scale.length], scale[(i + 4) % scale.length], scale[(i + 5) % scale.length], scale[(i + 6) % scale.length]]; // create a mode starting on each note of the scale
-        modes.push(mode);
+            const mode = [scale[i], scale[(i + 1) % scale.length], scale[(i + 2) % scale.length], scale[(i + 3) % scale.length], scale[(i + 4) % scale.length], scale[(i + 5) % scale.length], scale[(i + 6) % scale.length]]; // create a mode starting on each note of the scale
+                modes.push(mode);
         }
         return modes;
     }
 
     //declaring modes by name
-    const cMajorModes = getModes(cMajorScale);
+    const givenModes = getModes(givenScale);
 
-        console.log("Modes in the C Major Scale: ");
+        console.log("Modes in given Scale: ");
 
-    console.log("==============");
+        console.log("==============");
     
     //printing modes
     const modeNames = ["Ionian", "Dorian", "Phrygian", "Lydian", "Mixolydian", "Aeolian", "Locrian"];
-    for (let i = 0; i < cMajorModes.length; i++) {
-    console.log(modeNames[i] + ":", cMajorModes[i]);
+    for (let i = 0; i < givenModes.length; i++) {
+        console.log(modeNames[i] + ":", givenModes[i]);
     }

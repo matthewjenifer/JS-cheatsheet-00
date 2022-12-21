@@ -1,71 +1,48 @@
 document.getElementById("myButton").onclick = function () {
 
-    let selection = document.getElementById('rootSelect');
-    let selection2 = document.getElementById('modeSelect');
-    let r = selection.selectedIndex;
-    let m = selection2.selectedIndex;
+    let selection = document.getElementById('rootSelect'), selection2 = document.getElementById('modeSelect'), r = selection.selectedIndex, m = selection2.selectedIndex;
+
     if (r == 1 && m == 1) {
         console.log('Ionian');
-        let root = 'C';
-        let major2nd = 'D';
-        let major3rd = 'E';
-        let perfect4th = 'F';
-        let perfect5th = 'G';
-        let major6th = 'A';
-        let major7th = 'B';
+        let tonic = 'C', supertonic = 'D', mediant = 'E', subdominant = 'F', dominant = 'G', submediant = 'A', leadingtone= 'B';
 
-        let comma = ', ';
-
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
-        console.log(collected);
 
-        document.getElementById("yourScaleSir").innerHTML = JSON.stringify(collected);
+        document.getElementById("yourScaleSir").innerHTML = JSON.stringify(` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`);
+
         const image = document.querySelector("img");
         image.src = "https://m.basicmusictheory.com/img/ionian-mode-on-piano-keyboard.png";
+
     } else if (r == 1 && m == 2) {
         console.log('Aeolian');
-        let root = 'C';
-        let major2nd = 'D';
-        let minor3rd = 'Eb';
-        let perfect4th = 'F';
-        let perfect5th = 'G';
-        let minor6th = 'Ab';
-        let minor7th = 'Bb';
+        let tonic = 'C', supertonic = 'D', mediant = 'Eb', subdominant = 'F', dominant = 'G', submediant = 'Ab', leadingtone = 'Bb';
 
-        let comma = ', ';
-
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
-        console.log(collected);
 
-        document.getElementById("yourScaleSir").innerHTML = JSON.stringify(collected);
+        document.getElementById("yourScaleSir").innerHTML = JSON.stringify(`${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`);
+
         const image = document.querySelector("img");
+
         image.src = "https://m.basicmusictheory.com/img/c-aeolian-mode-on-piano-keyboard.png";
+
     } else if (r == 1 && m == 3) {
         console.log('Mixolydian');
-        let root = 'C';
-        let major2nd = 'D';
-        let major3rd = 'E';
-        let perfect4th = 'F';
-        let perfect5th = 'G';
-        let major6th = 'A';
-        let minor7th = 'Bb';
+        let tonic = 'C', supertonic = 'D', mediant = 'E', subdominant = 'F', dominant = 'G', submediant = 'A', leadingtone = 'Bb';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -75,20 +52,14 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/c-mixolydian-mode-on-piano-keyboard.png";
     } else if (r == 1 && m == 4) {
         console.log('Lydian');
-        let root = 'C';
-        let major2nd = 'D';
-        let major3rd = 'E';
-        let augmented4th = 'F#(Gb)';
-        let perfect5th = 'G';
-        let major6th = 'A';
-        let major7th = 'B';
+        let tonic = 'C', supertonic = 'D', mediant = 'E', augmented4th = 'F#(Gb)', dominant = 'G', submediant = 'A', leadingtone= 'B';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${augmented4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${augmented4th}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -98,20 +69,14 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/c-lydian-mode-on-piano-keyboard.png";
     } else if (r == 1 && m == 5) {
         console.log('Locrian');
-        let root = 'C';
-        let minor2nd = 'Db(C#)';
-        let minor3rd = 'Eb(D#)';
-        let perfect4th = 'F';
-        let diminished5th = 'Gb(F#)';
-        let minor6th = 'Ab(G#)';
-        let minor7th = 'Bb';
+        let tonic = 'C', minor2nd = 'Db(C#)', mediant = 'Eb(D#)', subdominant = 'F', diminished5th = 'Gb(F#)', submediant = 'Ab(G#)', leadingtone = 'Bb';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${diminished5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${diminished5th}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -119,22 +84,23 @@ document.getElementById("myButton").onclick = function () {
         document.getElementById("yourScaleSir").innerHTML = JSON.stringify(collected);
         const image = document.querySelector("img");
         image.src = "https://m.basicmusictheory.com/img/c-locrian-mode-on-piano-keyboard.png";
+        
     } else if (r == 1 && m == 6) {
         console.log('Phrygian');
-        let root = 'C';
+        let tonic = 'C';
         let minor2nd = 'Db(C#)';
-        let minor3rd = 'Eb(D#)';
-        let perfect4th = 'F';
-        let perfect5th = 'G';
-        let minor6th = 'Ab(G#)';
-        let minor7th = 'Bb';
+        let mediant = 'Eb(D#)';
+        let subdominant = 'F';
+        let dominant = 'G';
+        let submediant = 'Ab(G#)';
+        let leadingtone = 'Bb';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -144,20 +110,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/c-phrygian-mode-on-piano-keyboard.png";
     } else if (r == 1 && m == 7) {
         console.log('Dorian');
-        let root = 'C';
-        let major2nd = 'D';
-        let minor3rd = 'Eb(D#)';
-        let perfect4th = 'F';
-        let perfect5th = 'G';
-        let major6th = 'A';
-        let minor7th = 'Bb';
+        let tonic = 'C';
+        let supertonic = 'D';
+        let mediant = 'Eb(D#)';
+        let subdominant = 'F';
+        let dominant = 'G';
+        let submediant = 'A';
+        let leadingtone = 'Bb';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -167,18 +133,18 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/c-dorian-mode-on-piano-keyboard.png";
     } else if (r == 1 && m == 9) {
         console.log('Pentatonic');
-        let root = 'C';
-        let major2nd = 'D';
-        let major3rd = 'E';
-        // let perfect4th = '-';
-        let perfect5th = 'G';
-        let major6th = 'A';
-        let comma = ', ';
+        let tonic = 'C';
+        let supertonic = 'D';
+        let mediant = 'E';
+        // let subdominant = '-';
+        let dominant = 'G';
+        let submediant = 'A';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect5th}${comma}${major6th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${dominant}${submediant}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -188,20 +154,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/c-major-pentatonic-scale-on-piano-keyboard.png";
     } else if (r == 2 && m == 1) {
         console.log('Ionian');
-        let root = 'C#';
-        let major2nd = 'D#(Eb)';
-        let major3rd = 'F';
-        let perfect4th = 'F#(Gb)';
-        let perfect5th = 'G#(Ab)';
-        let major6th = 'A#(Bb)';
-        let major7th = 'C';
+        let tonic = 'C#';
+        let supertonic = 'D#(Eb)';
+        let mediant = 'F';
+        let subdominant = 'F#(Gb)';
+        let dominant = 'G#(Ab)';
+        let submediant = 'A#(Bb)';
+        let leadingtone= 'C';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -212,20 +178,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 2 && m == 2) {
         console.log('Aeolian');
-        let root = 'C#';
-        let major2nd = 'D#(Eb)';
-        let minor3rd = 'E';
-        let perfect4th = 'F#(Gb)';
-        let perfect5th = 'G#(Ab)';
-        let minor6th = 'A';
-        let minor7th = 'B';
+        let tonic = 'C#';
+        let supertonic = 'D#(Eb)';
+        let mediant = 'E';
+        let subdominant = 'F#(Gb)';
+        let dominant = 'G#(Ab)';
+        let submediant = 'A';
+        let leadingtone = 'B';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -236,20 +202,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 2 && m == 3) {
         console.log('Mixolydian');
-        let root = 'C#';
-        let major2nd = 'D#(Eb)';
-        let major3rd = 'F';
-        let perfect4th = 'F#(Gb)';
-        let perfect5th = 'G#(Ab)';
-        let major6th = 'A#(Bb)';
-        let minor7th = 'B';
+        let tonic = 'C#';
+        let supertonic = 'D#(Eb)';
+        let mediant = 'F';
+        let subdominant = 'F#(Gb)';
+        let dominant = 'G#(Ab)';
+        let submediant = 'A#(Bb)';
+        let leadingtone = 'B';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -260,20 +226,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 2 && m == 4) {
         console.log('Lydian');
-        let root = 'C#';
-        let major2nd = 'D#(Eb)';
-        let major3rd = 'F';
+        let tonic = 'C#';
+        let supertonic = 'D#(Eb)';
+        let mediant = 'F';
         let augmented4th = 'G';
-        let perfect5th = 'G#(Ab)';
-        let major6th = 'A#(Bb)';
-        let major7th = 'C';
+        let dominant = 'G#(Ab)';
+        let submediant = 'A#(Bb)';
+        let leadingtone= 'C';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${augmented4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${augmented4th}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -285,20 +251,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 2 && m == 5) {
         console.log('Locrian');
-        let root = 'C#';
+        let tonic = 'C#';
         let minor2nd = 'D';
-        let minor3rd = 'E';
-        let perfect4th = 'F#(Gb)';
+        let mediant = 'E';
+        let subdominant = 'F#(Gb)';
         let diminished5th = 'G';
-        let minor6th = 'A';
-        let minor7th = 'B';
+        let submediant = 'A';
+        let leadingtone = 'B';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${diminished5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${diminished5th}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -310,20 +276,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 2 && m == 6) {
         console.log('Phrygian');
-        let root = 'C#';
+        let tonic = 'C#';
         let minor2nd = 'D';
-        let minor3rd = 'E';
-        let perfect4th = 'F#(Gb)';
-        let perfect5th = 'G#(Ab)';
-        let minor6th = 'A';
-        let minor7th = 'B';
+        let mediant = 'E';
+        let subdominant = 'F#(Gb)';
+        let dominant = 'G#(Ab)';
+        let submediant = 'A';
+        let leadingtone = 'B';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -335,20 +301,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 2 && m == 7) {
         console.log('Dorian');
-        let root = 'C#';
-        let major2nd = 'D#(Eb)';
-        let minor3rd = 'E';
-        let perfect4th = 'F#(Gb)';
-        let perfect5th = 'G#(Ab)';
-        let major6th = 'A#(Bb)';
-        let minor7th = 'B';
+        let tonic = 'C#';
+        let supertonic = 'D#(Eb)';
+        let mediant = 'E';
+        let subdominant = 'F#(Gb)';
+        let dominant = 'G#(Ab)';
+        let submediant = 'A#(Bb)';
+        let leadingtone = 'B';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -360,19 +326,19 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 2 && m == 9) {
         console.log('Pentatonic');
-        let root = 'C#';
-        let major2nd = 'D#(Eb)';
-        let major3rd = 'F';
-        // let perfect4th = '-';
-        let perfect5th = 'G#(Ab)';
-        let major6th = 'A#(Bb)';
+        let tonic = 'C#';
+        let supertonic = 'D#(Eb)';
+        let mediant = 'F';
+        // let subdominant = '-';
+        let dominant = 'G#(Ab)';
+        let submediant = 'A#(Bb)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect5th}${comma}${major6th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${dominant}${submediant}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -384,20 +350,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 3 && m == 1) {
         console.log('Ionian');
-        let root = 'D';
-        let major2nd = 'E';
-        let major3rd = 'F#(Gb)';
-        let perfect4th = 'G';
-        let perfect5th = 'A';
-        let major6th = 'B';
-        let major7th = 'C#(Db)';
+        let tonic = 'D';
+        let supertonic = 'E';
+        let mediant = 'F#(Gb)';
+        let subdominant = 'G';
+        let dominant = 'A';
+        let submediant = 'B';
+        let leadingtone= 'C#(Db)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -407,20 +373,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/d-ionian-mode-on-piano-keyboard.png";
     } else if (r == 3 && m == 2) {
         console.log('Aeolian');
-        let root = 'D';
-        let major2nd = 'E';
-        let minor3rd = 'F';
-        let perfect4th = 'G';
-        let perfect5th = 'A';
-        let minor6th = 'Bb';
-        let minor7th = 'C';
+        let tonic = 'D';
+        let supertonic = 'E';
+        let mediant = 'F';
+        let subdominant = 'G';
+        let dominant = 'A';
+        let submediant = 'Bb';
+        let leadingtone = 'C';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -430,20 +396,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/d-aeolian-mode-on-piano-keyboard.png";
     } else if (r == 3 && m == 3) {
         console.log('Mixolydian');
-        let root = 'D';
-        let major2nd = 'E';
-        let major3rd = 'F#(Gb)';
-        let perfect4th = 'G';
-        let perfect5th = 'A';
-        let major6th = 'B';
-        let minor7th = 'C';
+        let tonic = 'D';
+        let supertonic = 'E';
+        let mediant = 'F#(Gb)';
+        let subdominant = 'G';
+        let dominant = 'A';
+        let submediant = 'B';
+        let leadingtone = 'C';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -453,20 +419,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/d-mixolydian-mode-on-piano-keyboard.png";
     } else if (r == 3 && m == 4) {
         console.log('Lydian');
-        let root = 'D';
-        let major2nd = 'E';
-        let major3rd = 'F#(Gb)';
+        let tonic = 'D';
+        let supertonic = 'E';
+        let mediant = 'F#(Gb)';
         let augmented4th = 'G#(Ab)';
-        let perfect5th = 'A';
-        let major6th = 'B';
-        let major7th = 'C#(Db)';
+        let dominant = 'A';
+        let submediant = 'B';
+        let leadingtone= 'C#(Db)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${augmented4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${augmented4th}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -476,20 +442,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/d-lydian-mode-on-piano-keyboard.png";
     } else if (r == 3 && m == 5) {
         console.log('Locrian');
-        let root = 'D';
+        let tonic = 'D';
         let minor2nd = 'Eb(D#)';
-        let minor3rd = 'F';
-        let perfect4th = 'G';
+        let mediant = 'F';
+        let subdominant = 'G';
         let diminished5th = 'Ab(G#)';
-        let minor6th = 'Bb';
-        let minor7th = 'C';
+        let submediant = 'Bb';
+        let leadingtone = 'C';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${diminished5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${diminished5th}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -499,20 +465,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/d-locrian-mode-on-piano-keyboard.png";
     } else if (r == 3 && m == 6) {
         console.log('Phrygian');
-        let root = 'D';
+        let tonic = 'D';
         let minor2nd = 'Eb(D#)';
-        let minor3rd = 'F';
-        let perfect4th = 'G';
-        let perfect5th = 'A';
-        let minor6th = 'Bb';
-        let minor7th = 'C';
+        let mediant = 'F';
+        let subdominant = 'G';
+        let dominant = 'A';
+        let submediant = 'Bb';
+        let leadingtone = 'C';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -522,20 +488,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/d-phrygian-mode-on-piano-keyboard.png";
     } else if (r == 3 && m == 7) {
         console.log('Dorian');
-        let root = 'D';
-        let major2nd = 'E';
-        let minor3rd = 'F';
-        let perfect4th = 'G';
-        let perfect5th = 'A';
-        let major6th = 'B';
-        let minor7th = 'C';
+        let tonic = 'D';
+        let supertonic = 'E';
+        let mediant = 'F';
+        let subdominant = 'G';
+        let dominant = 'A';
+        let submediant = 'B';
+        let leadingtone = 'C';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -545,19 +511,19 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/dorian-mode-on-piano-keyboard.png";
     } else if (r == 3 && m == 9) {
         console.log('Pentatonic');
-        let root = 'D';
-        let major2nd = 'E';
-        let major3rd = 'F#(Gb)';
-        // let perfect4th = '-';
-        let perfect5th = 'A';
-        let major6th = 'B';
+        let tonic = 'D';
+        let supertonic = 'E';
+        let mediant = 'F#(Gb)';
+        // let subdominant = '-';
+        let dominant = 'A';
+        let submediant = 'B';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect5th}${comma}${major6th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${dominant}${submediant}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -567,20 +533,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/d-major-pentatonic-scale-on-piano-keyboard.png";
     } else if (r == 4 && m == 1) {
         console.log('Ionian');
-        let root = 'Eb';
-        let major2nd = 'F';
-        let major3rd = 'G';
-        let perfect4th = 'Ab(G#)';
-        let perfect5th = 'Bb';
-        let major6th = 'C';
-        let major7th = 'D';
+        let tonic = 'Eb';
+        let supertonic = 'F';
+        let mediant = 'G';
+        let subdominant = 'Ab(G#)';
+        let dominant = 'Bb';
+        let submediant = 'C';
+        let leadingtone= 'D';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -590,20 +556,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/e-flat-ionian-mode-on-piano-keyboard.png";
     } else if (r == 4 && m == 2) {
         console.log('Aeolian');
-        let root = 'Eb';
-        let major2nd = 'F';
-        let minor3rd = 'Gb(A#)';
-        let perfect4th = 'Ab(G#)';
-        let perfect5th = 'Bb';
-        let minor6th = 'Cb(B)';
-        let minor7th = 'Db(C#)';
+        let tonic = 'Eb';
+        let supertonic = 'F';
+        let mediant = 'Gb(A#)';
+        let subdominant = 'Ab(G#)';
+        let dominant = 'Bb';
+        let submediant = 'Cb(B)';
+        let leadingtone = 'Db(C#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -613,20 +579,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/e-flat-aeolian-mode-on-piano-keyboard.png";
     } else if (r == 4 && m == 3) {
         console.log('Mixolydian');
-        let root = 'Eb';
-        let major2nd = 'F';
-        let major3rd = 'G';
-        let perfect4th = 'Ab(G#)';
-        let perfect5th = 'Bb';
-        let major6th = 'C';
-        let minor7th = 'Db(C#)';
+        let tonic = 'Eb';
+        let supertonic = 'F';
+        let mediant = 'G';
+        let subdominant = 'Ab(G#)';
+        let dominant = 'Bb';
+        let submediant = 'C';
+        let leadingtone = 'Db(C#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -636,20 +602,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/e-flat-mixolydian-mode-on-piano-keyboard.png";
     } else if (r == 4 && m == 4) {
         console.log('Lydian');
-        let root = 'Eb';
-        let major2nd = 'F';
-        let major3rd = 'G';
+        let tonic = 'Eb';
+        let supertonic = 'F';
+        let mediant = 'G';
         let augmented4th = 'A';
-        let perfect5th = 'Bb';
-        let major6th = 'C';
-        let major7th = 'D';
+        let dominant = 'Bb';
+        let submediant = 'C';
+        let leadingtone= 'D';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${augmented4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${augmented4th}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -659,20 +625,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/e-flat-lydian-mode-on-piano-keyboard.png";
     } else if (r == 4 && m == 5) {
         console.log('Locrian');
-        let root = 'Eb';
+        let tonic = 'Eb';
         let minor2nd = 'F';
-        let minor3rd = 'Gb(F#)';
-        let perfect4th = 'Ab(G#)';
+        let mediant = 'Gb(F#)';
+        let subdominant = 'Ab(G#)';
         let diminished5th = 'A';
-        let minor6th = 'Cb(B)';
-        let minor7th = 'Db(C#)';
+        let submediant = 'Cb(B)';
+        let leadingtone = 'Db(C#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${diminished5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${diminished5th}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -682,20 +648,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/e-flat-locrian-mode-on-piano-keyboard.png";
     } else if (r == 4 && m == 6) {
         console.log('Phrygian');
-        let root = 'Eb';
+        let tonic = 'Eb';
         let minor2nd = 'E';
-        let minor3rd = 'Gb(F#)';
-        let perfect4th = 'Ab(G#)';
-        let perfect5th = 'Bb(A#)';
-        let minor6th = 'B(Cb)';
-        let minor7th = 'Db(C#)';
+        let mediant = 'Gb(F#)';
+        let subdominant = 'Ab(G#)';
+        let dominant = 'Bb(A#)';
+        let submediant = 'B(Cb)';
+        let leadingtone = 'Db(C#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -705,20 +671,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/e-flat-phrygian-mode-on-piano-keyboard.png";
     } else if (r == 4 && m == 7) {
         console.log('Dorian');
-        let root = 'Eb';
-        let major2nd = 'F';
-        let minor3rd = 'Gb(F#)';
-        let perfect4th = 'Ab(G#)';
-        let perfect5th = 'Bb(A#)';
-        let major6th = 'C';
-        let minor7th = 'Db(C#)';
+        let tonic = 'Eb';
+        let supertonic = 'F';
+        let mediant = 'Gb(F#)';
+        let subdominant = 'Ab(G#)';
+        let dominant = 'Bb(A#)';
+        let submediant = 'C';
+        let leadingtone = 'Db(C#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -728,19 +694,19 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/d-sharp-dorian-mode-on-piano-keyboard.png";
     } else if (r == 4 && m == 9) {
         console.log('Pentatonic');
-        let root = 'Eb';
-        let major2nd = 'F';
-        let major3rd = 'G';
-        // let perfect4th = '-';
-        let perfect5th = 'Bb';
-        let major6th = 'C';
+        let tonic = 'Eb';
+        let supertonic = 'F';
+        let mediant = 'G';
+        // let subdominant = '-';
+        let dominant = 'Bb';
+        let submediant = 'C';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect5th}${comma}${major6th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${dominant}${submediant}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -751,20 +717,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 5 && m == 1) {
         console.log('Ionian');
-        let root = 'E';
-        let major2nd = 'F#(Gb)';
-        let major3rd = 'G#(Ab)';
-        let perfect4th = 'A';
-        let perfect5th = 'B';
-        let major6th = 'C#';
-        let major7th = 'D#';
+        let tonic = 'E';
+        let supertonic = 'F#(Gb)';
+        let mediant = 'G#(Ab)';
+        let subdominant = 'A';
+        let dominant = 'B';
+        let submediant = 'C#';
+        let leadingtone= 'D#';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -774,20 +740,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/e-ionian-mode-on-piano-keyboard.png";
     } else if (r == 5 && m == 2) {
         console.log('Aeolian');
-        let root = 'E';
-        let major2nd = 'F#(Gb)';
-        let minor3rd = 'G';
-        let perfect4th = 'A';
-        let perfect5th = 'B';
-        let minor6th = 'C';
-        let minor7th = 'D';
+        let tonic = 'E';
+        let supertonic = 'F#(Gb)';
+        let mediant = 'G';
+        let subdominant = 'A';
+        let dominant = 'B';
+        let submediant = 'C';
+        let leadingtone = 'D';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -797,20 +763,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/e-aeolian-mode-on-piano-keyboard.png";
     } else if (r == 5 && m == 3) {
         console.log('Mixolydian');
-        let root = 'E';
-        let major2nd = 'F#(Gb)';
-        let major3rd = 'G#(Ab)';
-        let perfect4th = 'A';
-        let perfect5th = 'B';
-        let major6th = 'C#(Db)';
-        let minor7th = 'D';
+        let tonic = 'E';
+        let supertonic = 'F#(Gb)';
+        let mediant = 'G#(Ab)';
+        let subdominant = 'A';
+        let dominant = 'B';
+        let submediant = 'C#(Db)';
+        let leadingtone = 'D';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -820,20 +786,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/e-mixolydian-mode-on-piano-keyboard.png";
     } else if (r == 5 && m == 4) {
         console.log('Lydian');
-        let root = 'E';
-        let major2nd = 'F#(Gb)';
-        let major3rd = 'G#(Ab)';
+        let tonic = 'E';
+        let supertonic = 'F#(Gb)';
+        let mediant = 'G#(Ab)';
         let augmented4th = 'A#(Bb)';
-        let perfect5th = 'B';
-        let major6th = 'C#(Db)';
-        let major7th = 'D#(Eb)';
+        let dominant = 'B';
+        let submediant = 'C#(Db)';
+        let leadingtone= 'D#(Eb)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${augmented4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${augmented4th}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -843,20 +809,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/e-lydian-mode-on-piano-keyboard.png";
     } else if (r == 5 && m == 5) {
         console.log('Locrian');
-        let root = 'E';
+        let tonic = 'E';
         let minor2nd = 'F';
-        let minor3rd = 'G';
-        let perfect4th = 'A';
+        let mediant = 'G';
+        let subdominant = 'A';
         let diminished5th = 'Bb';
-        let minor6th = 'C';
-        let minor7th = 'D';
+        let submediant = 'C';
+        let leadingtone = 'D';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${diminished5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${diminished5th}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -866,20 +832,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/e-locrian-mode-on-piano-keyboard.png";
     } else if (r == 5 && m == 6) {
         console.log('Phrygian');
-        let root = 'E';
+        let tonic = 'E';
         let minor2nd = 'F';
-        let minor3rd = 'G';
-        let perfect4th = 'A';
-        let perfect5th = 'B';
-        let minor6th = 'C';
-        let minor7th = 'D';
+        let mediant = 'G';
+        let subdominant = 'A';
+        let dominant = 'B';
+        let submediant = 'C';
+        let leadingtone = 'D';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -889,20 +855,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/phrygian-mode-on-piano-keyboard.png";
     } else if (r == 5 && m == 7) {
         console.log('Dorian');
-        let root = 'E';
-        let major2nd = 'F#(Gb)';
-        let minor3rd = 'G';
-        let perfect4th = 'A';
-        let perfect5th = 'B';
-        let major6th = 'C#(Db)';
-        let minor7th = 'D';
+        let tonic = 'E';
+        let supertonic = 'F#(Gb)';
+        let mediant = 'G';
+        let subdominant = 'A';
+        let dominant = 'B';
+        let submediant = 'C#(Db)';
+        let leadingtone = 'D';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -912,19 +878,19 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/e-dorian-mode-on-piano-keyboard.png";
     } else if (r == 5 && m == 9) {
         console.log('Pentatonic');
-        let root = 'E';
-        let major2nd = 'F#(Gb)';
-        let major3rd = 'G#(Ab)';
-        // let perfect4th = '-';
-        let perfect5th = 'B';
-        let major6th = 'C#';
+        let tonic = 'E';
+        let supertonic = 'F#(Gb)';
+        let mediant = 'G#(Ab)';
+        // let subdominant = '-';
+        let dominant = 'B';
+        let submediant = 'C#';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect5th}${comma}${major6th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${dominant}${submediant}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -934,20 +900,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/e-major-pentatonic-scale-on-piano-keyboard.png";
     } else if (r == 6 && m == 1) {
         console.log('Ionian');
-        let root = 'F';
-        let major2nd = 'G';
-        let major3rd = 'A';
-        let perfect4th = 'Bb';
-        let perfect5th = 'C';
-        let major6th = 'D';
-        let major7th = 'E';
+        let tonic = 'F';
+        let supertonic = 'G';
+        let mediant = 'A';
+        let subdominant = 'Bb';
+        let dominant = 'C';
+        let submediant = 'D';
+        let leadingtone= 'E';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -957,20 +923,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/f-ionian-mode-on-piano-keyboard.png";
     } else if (r == 6 && m == 2) {
         console.log('Aeolian');
-        let root = 'F';
-        let major2nd = 'G';
-        let minor3rd = 'Ab(G#)';
-        let perfect4th = 'Bb';
-        let perfect5th = 'C';
-        let minor6th = 'Db(C#)';
-        let minor7th = 'Eb(D#)';
+        let tonic = 'F';
+        let supertonic = 'G';
+        let mediant = 'Ab(G#)';
+        let subdominant = 'Bb';
+        let dominant = 'C';
+        let submediant = 'Db(C#)';
+        let leadingtone = 'Eb(D#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -981,20 +947,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 6 && m == 3) {
         console.log('Mixolydian');
-        let root = 'F';
-        let major2nd = 'G';
-        let major3rd = 'A';
-        let perfect4th = 'Bb';
-        let perfect5th = 'C';
-        let major6th = 'D';
-        let minor7th = 'Eb(D#)';
+        let tonic = 'F';
+        let supertonic = 'G';
+        let mediant = 'A';
+        let subdominant = 'Bb';
+        let dominant = 'C';
+        let submediant = 'D';
+        let leadingtone = 'Eb(D#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1004,20 +970,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/f-mixolydian-mode-on-piano-keyboard.png";
     } else if (r == 6 && m == 4) {
         console.log('Lydian');
-        let root = 'F';
-        let major2nd = 'G';
-        let major3rd = 'A';
+        let tonic = 'F';
+        let supertonic = 'G';
+        let mediant = 'A';
         let augmented4th = 'B';
-        let perfect5th = 'C';
-        let major6th = 'D';
-        let major7th = 'E';
+        let dominant = 'C';
+        let submediant = 'D';
+        let leadingtone= 'E';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${augmented4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${augmented4th}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1027,20 +993,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/lydian-mode-on-piano-keyboard.png";
     } else if (r == 6 && m == 5) {
         console.log('Locrian');
-        let root = 'F';
+        let tonic = 'F';
         let minor2nd = 'Gb(F#)';
-        let minor3rd = 'Ab(G#)';
-        let perfect4th = 'Bb(A#)';
+        let mediant = 'Ab(G#)';
+        let subdominant = 'Bb(A#)';
         let diminished5th = 'Cb(B)';
-        let minor6th = 'Db(C#)';
-        let minor7th = 'Eb(D#)';
+        let submediant = 'Db(C#)';
+        let leadingtone = 'Eb(D#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${diminished5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${diminished5th}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1050,20 +1016,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/f-locrian-mode-on-piano-keyboard.png";
     } else if (r == 6 && m == 6) {
         console.log('Phrygian');
-        let root = 'F';
+        let tonic = 'F';
         let minor2nd = 'Gb';
-        let minor3rd = 'Ab(G#)';
-        let perfect4th = 'Bb(A#)';
-        let perfect5th = 'C';
-        let minor6th = 'Db(C#)';
-        let minor7th = 'Eb(D#)';
+        let mediant = 'Ab(G#)';
+        let subdominant = 'Bb(A#)';
+        let dominant = 'C';
+        let submediant = 'Db(C#)';
+        let leadingtone = 'Eb(D#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1073,20 +1039,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/f-phrygian-mode-on-piano-keyboard.png";
     } else if (r == 6 && m == 7) {
         console.log('Dorian');
-        let root = 'F';
-        let major2nd = 'G';
-        let minor3rd = 'Ab(G#)';
-        let perfect4th = 'Bb(A#)';
-        let perfect5th = 'C';
-        let major6th = 'D';
-        let minor7th = 'Eb(D#)';
+        let tonic = 'F';
+        let supertonic = 'G';
+        let mediant = 'Ab(G#)';
+        let subdominant = 'Bb(A#)';
+        let dominant = 'C';
+        let submediant = 'D';
+        let leadingtone = 'Eb(D#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1096,19 +1062,19 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/f-dorian-mode-on-piano-keyboard.png";
     } else if (r == 6 && m == 9) {
         console.log('Pentatonic');
-        let root = 'F';
-        let major2nd = 'G';
-        let major3rd = 'A';
-        // let perfect4th = '-';
-        let perfect5th = 'C';
-        let major6th = 'D';
+        let tonic = 'F';
+        let supertonic = 'G';
+        let mediant = 'A';
+        // let subdominant = '-';
+        let dominant = 'C';
+        let submediant = 'D';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect5th}${comma}${major6th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${dominant}${submediant}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1118,20 +1084,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/f-major-pentatonic-scale-on-piano-keyboard.png";
     } else if (r == 7 && m == 1) {
         console.log('Ionian');
-        let root = 'F#';
-        let major2nd = 'G#(Ab)';
-        let major3rd = 'A#(Bb)';
-        let perfect4th = 'B';
-        let perfect5th = 'C#(Db)';
-        let major6th = 'D#(Eb)';
-        let major7th = 'F';
+        let tonic = 'F#';
+        let supertonic = 'G#(Ab)';
+        let mediant = 'A#(Bb)';
+        let subdominant = 'B';
+        let dominant = 'C#(Db)';
+        let submediant = 'D#(Eb)';
+        let leadingtone= 'F';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1141,20 +1107,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/f-sharp-ionian-mode-on-piano-keyboard.png";
     } else if (r == 7 && m == 2) {
         console.log('Aeolian');
-        let root = 'F#';
-        let major2nd = 'G#(Ab)';
-        let minor3rd = 'A';
-        let perfect4th = 'B';
-        let perfect5th = 'C#(Db)';
-        let minor6th = 'D';
-        let minor7th = 'E';
+        let tonic = 'F#';
+        let supertonic = 'G#(Ab)';
+        let mediant = 'A';
+        let subdominant = 'B';
+        let dominant = 'C#(Db)';
+        let submediant = 'D';
+        let leadingtone = 'E';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1164,20 +1130,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/f-sharp-aeolian-mode-on-piano-keyboard.png";
     } else if (r == 7 && m == 3) {
         console.log('Mixolydian');
-        let root = 'F#';
-        let major2nd = 'G#(Ab)';
-        let major3rd = 'A#(Bb)';
-        let perfect4th = 'B';
-        let perfect5th = 'C#(Db)';
-        let major6th = 'D#(Eb)';
-        let minor7th = 'E';
+        let tonic = 'F#';
+        let supertonic = 'G#(Ab)';
+        let mediant = 'A#(Bb)';
+        let subdominant = 'B';
+        let dominant = 'C#(Db)';
+        let submediant = 'D#(Eb)';
+        let leadingtone = 'E';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1187,20 +1153,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/f-sharp-mixolydian-mode-on-piano-keyboard.png";
     } else if (r == 7 && m == 4) {
         console.log('Lydian');
-        let root = 'F#';
-        let major2nd = 'G#(Ab)';
-        let major3rd = 'A#(Bb)';
+        let tonic = 'F#';
+        let supertonic = 'G#(Ab)';
+        let mediant = 'A#(Bb)';
         let augmented4th = 'C';
-        let perfect5th = 'C#(Db)';
-        let major6th = 'D#(Eb)';
-        let major7th = 'F';
+        let dominant = 'C#(Db)';
+        let submediant = 'D#(Eb)';
+        let leadingtone= 'F';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${augmented4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${augmented4th}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1210,20 +1176,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/f-sharp-lydian-mode-on-piano-keyboard.png";
     } else if (r == 7 && m == 5) {
         console.log('Locrian');
-        let root = 'F#';
+        let tonic = 'F#';
         let minor2nd = 'G';
-        let minor3rd = 'A';
-        let perfect4th = 'B';
+        let mediant = 'A';
+        let subdominant = 'B';
         let diminished5th = 'C';
-        let minor6th = 'D';
-        let minor7th = 'E';
+        let submediant = 'D';
+        let leadingtone = 'E';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${diminished5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${diminished5th}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1233,20 +1199,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/f-sharp-locrian-mode-on-piano-keyboard.png";
     } else if (r == 7 && m == 6) {
         console.log('Phrygian');
-        let root = 'F#';
+        let tonic = 'F#';
         let minor2nd = 'G';
-        let minor3rd = 'A';
-        let perfect4th = 'B';
-        let perfect5th = 'C#(Db)';
-        let minor6th = 'D';
-        let minor7th = 'E';
+        let mediant = 'A';
+        let subdominant = 'B';
+        let dominant = 'C#(Db)';
+        let submediant = 'D';
+        let leadingtone = 'E';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1256,20 +1222,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://www.basicmusictheory.com/img/f-sharp-phrygian-mode-on-piano-keyboard.png";
     } else if (r == 7 && m == 7) {
         console.log('Dorian');
-        let root = 'F#';
-        let major2nd = 'G#(Ab)';
-        let minor3rd = 'A';
-        let perfect4th = 'B';
-        let perfect5th = 'C#(Db)';
-        let major6th = 'D#(Eb)';
-        let minor7th = 'E';
+        let tonic = 'F#';
+        let supertonic = 'G#(Ab)';
+        let mediant = 'A';
+        let subdominant = 'B';
+        let dominant = 'C#(Db)';
+        let submediant = 'D#(Eb)';
+        let leadingtone = 'E';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1279,19 +1245,19 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/f-sharp-dorian-mode-on-piano-keyboard.png"
     } else if (r == 7 && m == 9) {
         console.log('Pentatonic');
-        let root = 'F#';
-        let major2nd = 'G#(Ab)';
-        let major3rd = 'A#(Bb)';
-        // let perfect4th = '-';
-        let perfect5th = 'C#(Db)';
-        let major6th = 'D#(Eb)';
+        let tonic = 'F#';
+        let supertonic = 'G#(Ab)';
+        let mediant = 'A#(Bb)';
+        // let subdominant = '-';
+        let dominant = 'C#(Db)';
+        let submediant = 'D#(Eb)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect5th}${comma}${major6th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${dominant}${submediant}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1302,20 +1268,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 8 && m == 1) {
         console.log('Ionian');
 
-        let root = 'G';
-        let major2nd = 'A';
-        let major3rd = 'B';
-        let perfect4th = 'C';
-        let perfect5th = 'D';
-        let major6th = 'E';
-        let major7th = 'F#(Gb)';
+        let tonic = 'G';
+        let supertonic = 'A';
+        let mediant = 'B';
+        let subdominant = 'C';
+        let dominant = 'D';
+        let submediant = 'E';
+        let leadingtone= 'F#(Gb)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1327,20 +1293,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 8 && m == 2) {
         console.log('Aeolian');
 
-        let root = 'G';
-        let major2nd = 'A';
-        let minor3rd = 'Bb';
-        let perfect4th = 'C';
-        let perfect5th = 'D';
-        let minor6th = 'Eb(D#)';
-        let minor7th = 'F';
+        let tonic = 'G';
+        let supertonic = 'A';
+        let mediant = 'Bb';
+        let subdominant = 'C';
+        let dominant = 'D';
+        let submediant = 'Eb(D#)';
+        let leadingtone = 'F';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1352,20 +1318,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 8 && m == 3) {
         console.log('Mixolydian');
 
-        let root = 'G';
-        let major2nd = 'A';
-        let major3rd = 'B';
-        let perfect4th = 'C';
-        let perfect5th = 'D';
-        let major6th = 'E';
-        let minor7th = 'F';
+        let tonic = 'G';
+        let supertonic = 'A';
+        let mediant = 'B';
+        let subdominant = 'C';
+        let dominant = 'D';
+        let submediant = 'E';
+        let leadingtone = 'F';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1377,20 +1343,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 8 && m == 4) {
         console.log('Lydian');
 
-        let root = 'G';
-        let major2nd = 'A';
-        let major3rd = 'B';
+        let tonic = 'G';
+        let supertonic = 'A';
+        let mediant = 'B';
         let augmented4th = 'C#(Db)';
-        let perfect5th = 'D';
-        let major6th = 'E';
-        let major7th = 'F#(Gb)';
+        let dominant = 'D';
+        let submediant = 'E';
+        let leadingtone= 'F#(Gb)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${augmented4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${augmented4th}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1402,20 +1368,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 8 && m == 5) {
         console.log('Locrian');
 
-        let root = 'G';
+        let tonic = 'G';
         let minor2nd = 'Ab(F#)';
-        let minor3rd = 'Bb(A#)';
-        let perfect4th = 'C';
+        let mediant = 'Bb(A#)';
+        let subdominant = 'C';
         let diminished5th = 'Db(C#)';
-        let minor6th = 'Eb(D#)';
-        let minor7th = 'F';
+        let submediant = 'Eb(D#)';
+        let leadingtone = 'F';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${diminished5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${diminished5th}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1427,20 +1393,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 8 && m == 6) {
         console.log('Phrygian');
 
-        let root = 'G';
+        let tonic = 'G';
         let minor2nd = 'Ab(F#)';
-        let minor3rd = 'Bb(A#)';
-        let perfect4th = 'C';
-        let perfect5th = 'D';
-        let minor6th = 'Eb(D#)';
-        let minor7th = 'F';
+        let mediant = 'Bb(A#)';
+        let subdominant = 'C';
+        let dominant = 'D';
+        let submediant = 'Eb(D#)';
+        let leadingtone = 'F';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1452,20 +1418,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 8 && m == 7) {
         console.log('Dorian');
 
-        let root = 'G';
-        let major2nd = 'A';
-        let minor3rd = 'Bb(A#)';
-        let perfect4th = 'C';
-        let perfect5th = 'D';
-        let major6th = 'E';
-        let minor7th = 'F';
+        let tonic = 'G';
+        let supertonic = 'A';
+        let mediant = 'Bb(A#)';
+        let subdominant = 'C';
+        let dominant = 'D';
+        let submediant = 'E';
+        let leadingtone = 'F';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1477,19 +1443,19 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 8 && m == 9) {
         console.log('Pentatonic');
 
-        let root = 'G';
-        let major2nd = 'A';
-        let major3rd = 'B';
-        // let perfect4th = '-';
-        let perfect5th = 'D';
-        let major6th = 'E';
+        let tonic = 'G';
+        let supertonic = 'A';
+        let mediant = 'B';
+        // let subdominant = '-';
+        let dominant = 'D';
+        let submediant = 'E';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect5th}${comma}${major6th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${dominant}${submediant}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1500,20 +1466,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 9 && m == 1) {
         console.log('Ionian');
-        let root = 'G#';
-        let major2nd = 'A#(Gb)';
-        let major3rd = 'C';
-        let perfect4th = 'C#(Db)';
-        let perfect5th = 'D#(Eb)';
-        let major6th = 'F';
-        let major7th = 'G';
+        let tonic = 'G#';
+        let supertonic = 'A#(Gb)';
+        let mediant = 'C';
+        let subdominant = 'C#(Db)';
+        let dominant = 'D#(Eb)';
+        let submediant = 'F';
+        let leadingtone= 'G';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1523,20 +1489,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/g-sharp-ionian-mode-on-piano-keyboard.png";
     } else if (r == 9 && m == 2) {
         console.log('Aeolian');
-        let root = 'G#';
-        let major2nd = 'A#(Gb)';
-        let minor3rd = 'B';
-        let perfect4th = 'C#(Db)';
-        let perfect5th = 'D#(Eb)';
-        let minor6th = 'E';
-        let minor7th = 'F#(Gb)';
+        let tonic = 'G#';
+        let supertonic = 'A#(Gb)';
+        let mediant = 'B';
+        let subdominant = 'C#(Db)';
+        let dominant = 'D#(Eb)';
+        let submediant = 'E';
+        let leadingtone = 'F#(Gb)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1546,20 +1512,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/g-sharp-aeolian-mode-on-piano-keyboard.png";
     } else if (r == 9 && m == 3) {
         console.log('Mixolydian');
-        let root = 'G#';
-        let major2nd = 'A#(Gb)';
-        let major3rd = 'C';
-        let perfect4th = 'C#(Db)';
-        let perfect5th = 'D#(Eb)';
-        let major6th = 'F';
-        let minor7th = 'F#(Gb)';
+        let tonic = 'G#';
+        let supertonic = 'A#(Gb)';
+        let mediant = 'C';
+        let subdominant = 'C#(Db)';
+        let dominant = 'D#(Eb)';
+        let submediant = 'F';
+        let leadingtone = 'F#(Gb)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1569,20 +1535,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/g-sharp-mixolydian-mode-on-piano-keyboard.png";
     } else if (r == 9 && m == 4) {
         console.log('Lydian');
-        let root = 'G#';
-        let major2nd = 'A#(Gb)';
-        let major3rd = 'C';
+        let tonic = 'G#';
+        let supertonic = 'A#(Gb)';
+        let mediant = 'C';
         let augmented4th = 'D';
-        let perfect5th = 'D#(Eb)';
-        let major6th = 'F';
-        let major7th = 'G';
+        let dominant = 'D#(Eb)';
+        let submediant = 'F';
+        let leadingtone= 'G';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${augmented4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${augmented4th}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1592,20 +1558,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/g-sharp-lydian-mode-on-piano-keyboard.png";
     } else if (r == 9 && m == 5) {
         console.log('Locrian');
-        let root = 'G#';
+        let tonic = 'G#';
         let minor2nd = 'A';
-        let minor3rd = 'B';
-        let perfect4th = 'C#(Db)';
+        let mediant = 'B';
+        let subdominant = 'C#(Db)';
         let diminished5th = 'D';
-        let minor6th = 'E';
-        let minor7th = 'F#(Gb)';
+        let submediant = 'E';
+        let leadingtone = 'F#(Gb)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${diminished5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${diminished5th}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1615,20 +1581,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/g-sharp-locrian-mode-on-piano-keyboard.png";
     } else if (r == 9 && m == 6) {
         console.log('Phrygian');
-        let root = 'G#';
+        let tonic = 'G#';
         let minor2nd = 'A';
-        let minor3rd = 'B';
-        let perfect4th = 'C#(Db)';
-        let perfect5th = 'D#(Eb)';
-        let minor6th = 'E';
-        let minor7th = 'F#(Gb)';
+        let mediant = 'B';
+        let subdominant = 'C#(Db)';
+        let dominant = 'D#(Eb)';
+        let submediant = 'E';
+        let leadingtone = 'F#(Gb)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1638,20 +1604,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/g-sharp-phrygian-mode-on-piano-keyboard.png";
     } else if (r == 9 && m == 7) {
         console.log('Dorian');
-        let root = 'G#';
-        let major2nd = 'A#(Bb)';
-        let minor3rd = 'B';
-        let perfect4th = 'C#(Db)';
-        let perfect5th = 'D#(Eb)';
-        let major6th = 'F';
-        let minor7th = 'F#(Gb)';
+        let tonic = 'G#';
+        let supertonic = 'A#(Bb)';
+        let mediant = 'B';
+        let subdominant = 'C#(Db)';
+        let dominant = 'D#(Eb)';
+        let submediant = 'F';
+        let leadingtone = 'F#(Gb)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1661,19 +1627,19 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/g-sharp-dorian-mode-on-piano-keyboard.png";
     } else if (r == 9 && m == 9) {
         console.log('Pentatonic');
-        let root = 'G#';
-        let major2nd = 'Bb';
-        let major3rd = 'C';
-        // let perfect4th = '-';
-        let perfect5th = 'D#(Eb)';
-        let major6th = 'F';
+        let tonic = 'G#';
+        let supertonic = 'Bb';
+        let mediant = 'C';
+        // let subdominant = '-';
+        let dominant = 'D#(Eb)';
+        let submediant = 'F';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect5th}${comma}${major6th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${dominant}${submediant}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1683,20 +1649,20 @@ document.getElementById("myButton").onclick = function () {
         image.src = "https://m.basicmusictheory.com/img/g-sharp-major-pentatonic-scale-on-piano-keyboard.png";
     } else if (r == 10 && m == 1) {
         console.log('Ionian');
-        let root = 'A';
-        let major2nd = 'B';
-        let major3rd = 'C#';
-        let perfect4th = 'D';
-        let perfect5th = 'E';
-        let major6th = 'F#(Gb)';
-        let major7th = 'G#(Ab)';
+        let tonic = 'A';
+        let supertonic = 'B';
+        let mediant = 'C#';
+        let subdominant = 'D';
+        let dominant = 'E';
+        let submediant = 'F#(Gb)';
+        let leadingtone= 'G#(Ab)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1707,20 +1673,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 10 && m == 2) {
         console.log('Aeolian');
-        let root = 'A';
-        let major2nd = 'B';
-        let minor3rd = 'C';
-        let perfect4th = 'D';
-        let perfect5th = 'E';
-        let minor6th = 'F';
-        let minor7th = 'G';
+        let tonic = 'A';
+        let supertonic = 'B';
+        let mediant = 'C';
+        let subdominant = 'D';
+        let dominant = 'E';
+        let submediant = 'F';
+        let leadingtone = 'G';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1731,20 +1697,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 10 && m == 3) {
         console.log('Mixolydian');
-        let root = 'A';
-        let major2nd = 'B';
-        let major3rd = 'C#(Db)';
-        let perfect4th = 'D';
-        let perfect5th = 'E';
-        let major6th = 'F#(Gb)';
-        let minor7th = 'G';
+        let tonic = 'A';
+        let supertonic = 'B';
+        let mediant = 'C#(Db)';
+        let subdominant = 'D';
+        let dominant = 'E';
+        let submediant = 'F#(Gb)';
+        let leadingtone = 'G';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1757,20 +1723,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 10 && m == 4) {
         console.log('Lydian');
-        let root = 'A';
-        let major2nd = 'B';
-        let major3rd = 'C#(Db)';
+        let tonic = 'A';
+        let supertonic = 'B';
+        let mediant = 'C#(Db)';
         let augmented4th = 'D#(Eb)';
-        let perfect5th = 'E';
-        let major6th = 'F#(Gb)';
-        let major7th = 'G#(Ab)';
+        let dominant = 'E';
+        let submediant = 'F#(Gb)';
+        let leadingtone= 'G#(Ab)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${augmented4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${augmented4th}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1781,20 +1747,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 10 && m == 5) {
         console.log('Locrian');
-        let root = 'A';
+        let tonic = 'A';
         let minor2nd = 'Bb';
-        let minor3rd = 'C';
-        let perfect4th = 'D';
+        let mediant = 'C';
+        let subdominant = 'D';
         let diminished5th = 'Eb(D#)';
-        let minor6th = 'F';
-        let minor7th = 'G';
+        let submediant = 'F';
+        let leadingtone = 'G';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${diminished5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${diminished5th}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1806,20 +1772,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 10 && m == 6) {
         console.log('Phrygian');
-        let root = 'A';
+        let tonic = 'A';
         let minor2nd = 'Bb(A#)';
-        let minor3rd = 'C';
-        let perfect4th = 'D';
-        let perfect5th = 'E';
-        let minor6th = 'F';
-        let minor7th = 'G';
+        let mediant = 'C';
+        let subdominant = 'D';
+        let dominant = 'E';
+        let submediant = 'F';
+        let leadingtone = 'G';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1831,20 +1797,20 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 10 && m == 7) {
         console.log('Dorian');
-        let root = 'A';
-        let major2nd = 'B';
-        let minor3rd = 'C';
-        let perfect4th = 'D';
-        let perfect5th = 'E';
-        let major6th = 'F#';
-        let minor7th = 'G';
+        let tonic = 'A';
+        let supertonic = 'B';
+        let mediant = 'C';
+        let subdominant = 'D';
+        let dominant = 'E';
+        let submediant = 'F#';
+        let leadingtone = 'G';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1855,19 +1821,19 @@ document.getElementById("myButton").onclick = function () {
 
     } else if (r == 10 && m == 9) {
         console.log('Pentatonic');
-        let root = 'A';
-        let major2nd = 'B';
-        let major3rd = 'C#';
-        // let perfect4th = '-';
-        let perfect5th = 'E';
-        let major6th = 'F#(Gb)';
+        let tonic = 'A';
+        let supertonic = 'B';
+        let mediant = 'C#';
+        // let subdominant = '-';
+        let dominant = 'E';
+        let submediant = 'F#(Gb)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect5th}${comma}${major6th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${dominant}${submediant}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1882,20 +1848,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 11 && m == 1) {
         console.log('Ionian');
 
-        let root = 'Bb';
-        let major2nd = 'C';
-        let major3rd = 'D';
-        let perfect4th = 'Eb(D#)';
-        let perfect5th = 'F';
-        let major6th = 'G';
-        let major7th = 'A';
+        let tonic = 'Bb';
+        let supertonic = 'C';
+        let mediant = 'D';
+        let subdominant = 'Eb(D#)';
+        let dominant = 'F';
+        let submediant = 'G';
+        let leadingtone= 'A';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1907,20 +1873,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 11 && m == 2) {
         console.log('Aeolian');
 
-        let root = 'Bb';
-        let major2nd = 'C';
-        let minor3rd = 'Db(E#)';
-        let perfect4th = 'Eb(D#)';
-        let perfect5th = 'F';
-        let minor6th = 'Gb(F#)';
-        let minor7th = 'Ab(G#)';
+        let tonic = 'Bb';
+        let supertonic = 'C';
+        let mediant = 'Db(E#)';
+        let subdominant = 'Eb(D#)';
+        let dominant = 'F';
+        let submediant = 'Gb(F#)';
+        let leadingtone = 'Ab(G#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1933,20 +1899,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 11 && m == 3) {
         console.log('Mixolydian');
 
-        let root = 'Bb';
-        let major2nd = 'C';
-        let major3rd = 'D';
-        let perfect4th = 'Eb(D#)';
-        let perfect5th = 'F';
-        let major6th = 'G';
-        let minor7th = 'Ab(G#)';
+        let tonic = 'Bb';
+        let supertonic = 'C';
+        let mediant = 'D';
+        let subdominant = 'Eb(D#)';
+        let dominant = 'F';
+        let submediant = 'G';
+        let leadingtone = 'Ab(G#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1958,20 +1924,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 11 && m == 4) {
         console.log('Lydian');
 
-        let root = 'Bb';
-        let major2nd = 'C';
-        let major3rd = 'D';
+        let tonic = 'Bb';
+        let supertonic = 'C';
+        let mediant = 'D';
         let augmented4th = 'E';
-        let perfect5th = 'F';
-        let major6th = 'G';
-        let major7th = 'A';
+        let dominant = 'F';
+        let submediant = 'G';
+        let leadingtone= 'A';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${augmented4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${augmented4th}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -1983,20 +1949,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 11 && m == 5) {
         console.log('Locrian');
 
-        let root = 'Bb';
+        let tonic = 'Bb';
         let minor2nd = 'Cb(B)';
-        let minor3rd = 'Db(C#)';
-        let perfect4th = 'Eb(D#)';
+        let mediant = 'Db(C#)';
+        let subdominant = 'Eb(D#)';
         let diminished5th = 'E';
-        let minor6th = 'Gb(F#)';
-        let minor7th = 'Ab(G#)';
+        let submediant = 'Gb(F#)';
+        let leadingtone = 'Ab(G#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${diminished5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${diminished5th}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -2008,20 +1974,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 11 && m == 6) {
         console.log('Phrygian');
 
-        let root = 'Bb';
+        let tonic = 'Bb';
         let minor2nd = 'Cb(B)';
-        let minor3rd = 'Db(C#)';
-        let perfect4th = 'Eb(D#)';
-        let perfect5th = 'F';
-        let minor6th = 'Gb(A#)';
-        let minor7th = 'Ab(G#)';
+        let mediant = 'Db(C#)';
+        let subdominant = 'Eb(D#)';
+        let dominant = 'F';
+        let submediant = 'Gb(A#)';
+        let leadingtone = 'Ab(G#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -2033,20 +1999,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 11 && m == 7) {
         console.log('Dorian');
 
-        let root = 'Bb';
-        let major2nd = 'C';
-        let minor3rd = 'Db(C#)';
-        let perfect4th = 'Eb(D#)';
-        let perfect5th = 'F';
-        let major6th = 'G';
-        let minor7th = 'Ab(G#)';
+        let tonic = 'Bb';
+        let supertonic = 'C';
+        let mediant = 'Db(C#)';
+        let subdominant = 'Eb(D#)';
+        let dominant = 'F';
+        let submediant = 'G';
+        let leadingtone = 'Ab(G#)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -2058,18 +2024,18 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 11 && m == 9) {
         console.log('Pentatonic');
 
-        let root = 'Bb';
-        let major2nd = 'C';
-        let major3rd = 'D';
-        // let perfect4th = '-';
-        let perfect5th = 'F';
-        let major6th = 'G';
-        let comma = ', ';
+        let tonic = 'Bb';
+        let supertonic = 'C';
+        let mediant = 'D';
+        // let subdominant = '-';
+        let dominant = 'F';
+        let submediant = 'G';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect5th}${comma}${major6th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${dominant}${submediant}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -2080,20 +2046,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 12 && m == 1) {
         console.log('Ionian');
 
-        let root = 'B';
-        let major2nd = 'C#(Db)';
-        let major3rd = 'D#(Eb)';
-        let perfect4th = 'E';
-        let perfect5th = 'F#(Gb)';
-        let major6th = 'G#(Ab)';
-        let major7th = 'A#(Bb)';
+        let tonic = 'B';
+        let supertonic = 'C#(Db)';
+        let mediant = 'D#(Eb)';
+        let subdominant = 'E';
+        let dominant = 'F#(Gb)';
+        let submediant = 'G#(Ab)';
+        let leadingtone= 'A#(Bb)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -2105,20 +2071,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 12 && m == 2) {
         console.log('Aeolian');
 
-        let root = 'B';
-        let major2nd = 'C#(Db)';
-        let minor3rd = 'D';
-        let perfect4th = 'E';
-        let perfect5th = 'F#(Gb)';
-        let minor6th = 'G';
-        let minor7th = 'A';
+        let tonic = 'B';
+        let supertonic = 'C#(Db)';
+        let mediant = 'D';
+        let subdominant = 'E';
+        let dominant = 'F#(Gb)';
+        let submediant = 'G';
+        let leadingtone = 'A';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -2130,20 +2096,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 12 && m == 3) {
         console.log('Mixolydian');
 
-        let root = 'B';
-        let major2nd = 'C#(Db)';
-        let major3rd = 'D#(Eb)';
-        let perfect4th = 'E';
-        let perfect5th = 'F#(Gb)';
-        let major6th = 'G#(Ab)';
-        let minor7th = 'A';
+        let tonic = 'B';
+        let supertonic = 'C#(Db)';
+        let mediant = 'D#(Eb)';
+        let subdominant = 'E';
+        let dominant = 'F#(Gb)';
+        let submediant = 'G#(Ab)';
+        let leadingtone = 'A';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${major6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -2155,20 +2121,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 12 && m == 4) {
         console.log('Lydian');
 
-        let root = 'B';
-        let major2nd = 'C#(Db)';
-        let major3rd = 'D#(Eb)';
+        let tonic = 'B';
+        let supertonic = 'C#(Db)';
+        let mediant = 'D#(Eb)';
         let augmented4th = 'F';
-        let perfect5th = 'F#(Gb)';
-        let major6th = 'G#(Ab)';
-        let major7th = 'A#(Bb)';
+        let dominant = 'F#(Gb)';
+        let submediant = 'G#(Ab)';
+        let leadingtone= 'A#(Bb)';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${augmented4th}${comma}${perfect5th}${comma}${major6th}${comma}${major7th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${augmented4th}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -2180,20 +2146,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 12 && m == 5) {
         console.log('Locrian');
 
-        let root = 'B';
+        let tonic = 'B';
         let minor2nd = 'C';
-        let minor3rd = 'D';
-        let perfect4th = 'E';
+        let mediant = 'D';
+        let subdominant = 'E';
         let diminished5th = 'F';
-        let minor6th = 'G';
-        let minor7th = 'A';
+        let submediant = 'G';
+        let leadingtone = 'A';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${diminished5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${diminished5th}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -2205,20 +2171,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 12 && m == 6) {
         console.log('B Phrygian')
 
-        let root = 'B';
+        let tonic = 'B';
         let minor2nd = 'C';
-        let minor3rd = 'D';
-        let perfect4th = 'E';
-        let perfect5th = 'F#(Gb)';
-        let minor6th = 'G';
-        let minor7th = 'A';
+        let mediant = 'D';
+        let subdominant = 'E';
+        let dominant = 'F#(Gb)';
+        let submediant = 'G';
+        let leadingtone = 'A';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${perfect5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${dominant}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -2229,20 +2195,20 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 12 && m == 7) {
         console.log('B Dorian');
 
-        let root = 'B';
+        let tonic = 'B';
         let minor2nd = 'C#';
-        let minor3rd = 'D';
-        let perfect4th = 'E';
+        let mediant = 'D';
+        let subdominant = 'E';
         let diminished5th = 'F#';
-        let minor6th = 'G#';
-        let minor7th = 'A';
+        let submediant = 'G#';
+        let leadingtone = 'A';
 
-        let comma = ', ';
+        
 
-        let collected = ` ${root}${comma}${minor2nd}${comma}${minor3rd}${comma}${perfect4th}${comma}${diminished5th}${comma}${minor6th}${comma}${minor7th}${comma}`;
+        let collected = ` ${tonic}${minor2nd}${mediant}${subdominant}${diminished5th}${submediant}${leadingtone}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
@@ -2254,18 +2220,18 @@ document.getElementById("myButton").onclick = function () {
     } else if (r == 12 && m == 9) {
         console.log('B Pentatonic');
 
-        let root = 'B';
-        let major2nd = 'C#(Db)';
-        let major3rd = 'D#(Eb)';
-        // let perfect4th = '-';
-        let perfect5th = 'F#(Gb)';
-        let major6th = 'G#(Ab)';
-        let comma = ', ';
+        let tonic = 'B';
+        let supertonic = 'C#(Db)';
+        let mediant = 'D#(Eb)';
+        // let subdominant = '-';
+        let dominant = 'F#(Gb)';
+        let submediant = 'G#(Ab)';
+        
 
-        let collected = ` ${root}${comma}${major2nd}${comma}${major3rd}${comma}${perfect5th}${comma}${major6th}${comma}`;
+        let collected = ` ${tonic}${supertonic}${mediant}${dominant}${submediant}`;
 
         console.log("----");
-        console.log("Root is now " + root);
+        console.log("Root is now " + tonic);
         console.log("----");
 
         console.log(collected);
