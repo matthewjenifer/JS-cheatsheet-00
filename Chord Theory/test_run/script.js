@@ -14,9 +14,9 @@ function handlePadClick(event) { // handle pad click event
                 if (audio !== audioElement) { // if the audio element is not the one that was just played
                     audio.pause(); // pause the audio
                     audio.currentTime = 0; // reset the audio to the start
+                    }
+                });
     }
-});
-}
 
 
 function handleKeyDown(event) { // handle keydown event
